@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+ <!-- Bootstrap core CSS -->
+ <style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+  <title>Homepage</title>
+  <!-- Custom styles for this template -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"> 
+</head>
+
+<body>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Trung Vu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarDropdown">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="teaching.html">Teaching</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Topics
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="qt_systems.html"> Q-system, T-system and Exactly Solved Models</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="integrability.html">Integrable Systems</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="cluster_algebra.html">Cluster Algebra</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Non-mathematics Stuff</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="flex-shrink-0">
+        
+        <!-- Banner-->
+
+        <div class="container">
+          <div class="jumbotron" style="background-color: crimson; text-align: center; margin-top: 70px;">
+            <h1 class="display-4" style="color: white;">Trung Vu</h1>
+            <p class="lead" style="color: whitesmoke;">University of Illinois at Urbana-Champaign</p>
+          </div>
+        </div>
+
+
+          <!-- START THE FEATURETTES -->
+        <div class="container">
+          <div class="row featurette ">
+            <div class="col-md-7 container-fluid">
+              <p class="lead"> My name is Trung Vu. I am currently a second-year mathematics Ph.D. student at the University of Illinois at Urbana-Champaign. I obtained my BA in mathematics with a concentration in neuroscience from St. Olaf College</p>
+              <p class="lead"> I am interested in algebraic combinatorics and combinatorial aspects of
+                representation theory and mathematical physics. Specifically, I like to think about cluster algebra, integrable systems, vertex model and vertex algebra. Currently, I am studying the T-system, Q-system and domino tiling of Aztec diamond and the artic curve phenomenon. I put down some short introductory ideas from my own notes to each of these topics on the "Topics" tab above along with references for more details.</p>
+                <p class="lead"> Recently, I started exploring the realm of quantum computing and its applications to quantum many-body problems. My hope is that quantum computing can help solving integrability and exactly solvability problems in statistical mechanics. After all, a quantum computer is an integrable system itself (check out <a href="https://link.springer.com/article/10.1007/s11128-012-0409-4"> here</a>). The idea of simulating a quantum many-body system by using another quantum system dates back to Richard Feynman but it was not until recently that some significant progress has been made (check out <a href="https://www.nature.com/articles/s41534-019-0217-0"> here</a>)  </p>
+            </div>
+            <div class="col-md-5 d-block d-sm-block d-sm-block">
+      
+              <!-- <img class="randomImage featurette-image img-fluid mx-auto"  alt="Generic placeholder image">  -->
+              <img id="randomImage" class=" featurette-image img-fluid mx-auto" />
+      
+              <script>
+                function getRandomImage() {
+                  var images = ['img/permutahedra.jpg', 'img/dynkin.png', "img/download.jpg", "img/Sixvertex2.png", "img/tiling.jpg"];
+                  var image = images[Math.floor(Math.random() * images.length)];
+      
+                  return image;
+                }
+      
+                function displayRandomImage() {
+                  var htmlImage = document.getElementById("randomImage");
+                  htmlImage.src = getRandomImage();
+                }
+      
+                displayRandomImage();
+              </script>
+      
+            </div>
+
+            
+          </div>
+            
+      <div class="container">
+
+        <h3>Publication</h3>
+            <p>
+              <ul> 
+                <li>
+                  <p id="hall">Kosmas Diveris, Trung Vu, <cite>Matrix Square Roots of Polynomials</cite>, Pi Mu Epsilon Journal, 2018</p>
+                </li>
+               </ul>
+            </p>
+      </div>
+          
+      </main>
+      
+      
+      <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+      
+      </script>
+      
+            
+        </body>
+      </html>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html> 

@@ -1,0 +1,448 @@
+<html><head><style type="text/css">pre { margin: 1px }
+    .fmt0 {  } /* normal */
+    .fmt1 {  } /* background */
+    .fmt2 { background-color: #ffcabf; } /* line:error */
+    .fmt3 { background-color: #fffbbf; } /* line:warning */
+    .fmt4 { background-color: #bfd6ff; } /* line:badbox */
+    .fmt5 {  } /* line:bookmark */
+    .fmt6 {  } /* line:bookmark0 */
+    .fmt7 {  } /* line:bookmark1 */
+    .fmt8 {  } /* line:bookmark2 */
+    .fmt9 {  } /* line:bookmark3 */
+    .fmt10 {  } /* line:bookmark4 */
+    .fmt11 {  } /* line:bookmark5 */
+    .fmt12 {  } /* line:bookmark6 */
+    .fmt13 {  } /* line:bookmark7 */
+    .fmt14 {  } /* line:bookmark8 */
+    .fmt15 {  } /* line:bookmark9 */
+    .fmt16 { color: #555580; } /* magicComment */
+    .fmt17 { background-color: #a8cf83; } /* commentTodo */
+    .fmt18 { color: #808080; } /* comment */
+    .fmt19 { color: #800000; } /* keyword */
+    .fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
+    .fmt21 { color: #808000; } /* math-keyword */
+    .fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+    .fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
+    .fmt24 { color: #008080; } /* verbatim */
+    .fmt25 { color: #800000; } /* sweave-block */
+    .fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
+    .fmt27 { color: #800000; } /* pweave-block */
+    .fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
+    .fmt29 { color: #804000; } /* picture */
+    .fmt30 { color: #c06000; } /* picture-keyword */
+    .fmt31 { font-weight: 700;background-color: #ffff7f; } /* braceMatch */
+    .fmt32 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+    .fmt33 { color: #000000;background-color: #ffef0b; } /* search */
+    .fmt34 { color: #008000; } /* numbers */
+    .fmt35 { color: #509600; } /* math-delimiter */
+    .fmt36 { color: #ff0000; } /* text */
+    .fmt37 { color: #ff0088; } /* escapeseq */
+    .fmt38 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+    .fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+    .fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+    .fmt41 { text-decoration: line-through; } /* badWord */
+    .fmt42 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+    .fmt43 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+    .fmt44 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+    .fmt45 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+    .fmt46 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+    .fmt47 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+    .fmt48 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+    .fmt49 { color: #000080; } /* environment */
+    .fmt50 { color: #008000; } /* referencePresent */
+    .fmt51 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+    .fmt52 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+    .fmt53 { color: #008000; } /* citationPresent */
+    .fmt54 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+    .fmt55 { color: #008000; } /* packagePresent */
+    .fmt56 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+    .fmt57 { font-weight: 700;color: #000000; } /* structure */
+    .fmt58 { background-color: #eeeeff; } /* current */
+    .fmt59 { background-color: #b2d8ff; } /* selection */
+    .fmt60 { background-color: #ffaaaa; } /* replacement */
+    .fmt61 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+    .fmt62 { background-color: #aaffaa; } /* diffAdd */
+    .fmt63 { background-color: #ffff50; } /* diffReplace */
+    .fmt64 { background-color: #ddffcc; } /* previewSelection */
+    .fmt65 { font-weight: 700;color: #0095ff; } /* txs-test */
+    .fmt66 { font-weight: 700; } /* txs-test-summary */
+    .fmt67 { color: #008000; } /* txs-test-pass */
+    .fmt68 { color: #c00000; } /* txs-test-fail */
+    .fmt69 { color: #ea8800; } /* txs-test-warn */
+    .fmt70 { color: #808000; } /* txs-test-qdebug */
+    .fmt71 { color: #ffa500; } /* dtx:guard */
+    .fmt72 { font-weight: 700;color: #006400; } /* dtx:macro */
+    .fmt73 { color: #008080; } /* dtx:verbatim */
+    .fmt74 { color: #cc8100; } /* dtx:specialchar */
+    .fmt75 { font-weight: 700;color: #10c010; } /* dtx:commands */
+    .fmt76 { color: #b200ff; } /* lua:keyword */
+    .fmt77 { color: #808080; } /* lua:comment */
+    .fmt78 { color: #804000; } /* asymptote:block */
+    .fmt79 { color: #800080; } /* asymptote:keyword */
+    .fmt80 { color: #808000; } /* asymptote:type */
+    .fmt81 { color: #008000; } /* asymptote:numbers */
+    .fmt82 { color: #000080; } /* asymptote:string */
+    .fmt83 { color: #808080; } /* asymptote:comment */
+    .fmt84 { color: #808080; } /* qtscript:comment */
+    .fmt85 { color: #008000; } /* qtscript:string */
+    .fmt86 { color: #000080; } /* qtscript:number */
+    .fmt87 { color: #808000; } /* qtscript:keyword */
+    .fmt88 { color: #800000; } /* qtscript:txs-variable */
+    .fmt89 { font-style: italic; } /* qtscript:txs-function */
+    .fmt90 { background-color: #ffff7f; } /* preedit */
+</style></head><body><pre><span class="fmt18">%%%%</span><span class="fmt18"> </span><span class="fmt18">This</span><span class="fmt18">  </span><span class="fmt18">macro</span><span class="fmt18"> </span><span class="fmt18">file</span><span class="fmt18"> </span><span class="fmt18">is</span><span class="fmt18"> </span><span class="fmt18">changed</span><span class="fmt18"> </span><span class="fmt18">and</span><span class="fmt18"> </span><span class="fmt18">adapted</span><span class="fmt18"> </span><span class="fmt18">from</span><span class="fmt18"> </span><span class="fmt18">professor</span><span class="fmt18"> </span><span class="fmt18">Jill</span><span class="fmt18"> </span><span class="fmt18">Dietz's</span><span class="fmt18"> </span><span class="fmt18">macro</span><span class="fmt18"> </span><span class="fmt18">from</span><span class="fmt18"> </span><span class="fmt18">St.</span><span class="fmt18"> </span><span class="fmt18">Olaf</span><span class="fmt18"> </span><span class="fmt18">College</span><span class="fmt18"> </span><span class="fmt18">in</span><span class="fmt18"> </span><span class="fmt18">MATH320</span><span class="fmt18"> </span><span class="fmt18">Linear</span><span class="fmt18"> </span><span class="fmt18">Algebra</span><span class="fmt18"> </span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">This</span><span class="fmt18"> </span><span class="fmt18">sets</span><span class="fmt18"> </span><span class="fmt18">the</span><span class="fmt18"> </span><span class="fmt18">size</span><span class="fmt18"> </span><span class="fmt18">and</span><span class="fmt18"> </span><span class="fmt18">style</span><span class="fmt18"> </span><span class="fmt18">of</span><span class="fmt18"> </span><span class="fmt18">the</span><span class="fmt18"> </span><span class="fmt18">page</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\documentclass</span>[]{article} </pre>
+<pre><span class="fmt19">\setlength</span> <span class="fmt19">\oddsidemargin</span>{-.0in} <span class="fmt19">\setlength</span> <span class="fmt19">\textwidth</span>{6.5in} </pre>
+<pre><span class="fmt19">\setlength</span> <span class="fmt19">\topmargin</span>{-.5in} <span class="fmt19">\setlength</span> <span class="fmt19">\textheight</span>{9in} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Some</span><span class="fmt18"> </span><span class="fmt18">packages</span><span class="fmt18"> </span><span class="fmt18">to</span><span class="fmt18"> </span><span class="fmt18">install</span> </pre>
+<pre><span class="fmt19">\usepackage</span>{amsfonts,amssymb,amsmath, mathtools,amsthm} </pre>
+<pre><span class="fmt19">\usepackage</span>{xcolor, color} </pre>
+<pre><span class="fmt19">\usepackage</span>{graphicx} </pre>
+<pre><span class="fmt19">\usepackage</span>{multicol} </pre>
+<pre><span class="fmt19">\usepackage</span>{url} </pre>
+<pre><span class="fmt19">\usepackage</span>{faktor} </pre>
+<pre><span class="fmt19">\usepackage</span>{hyperref} </pre>
+<pre><span class="fmt19">\usepackage</span>{ulem} </pre>
+<pre><span class="fmt19">\usepackage</span>{tikz, pgfplots} </pre>
+<pre><span class="fmt19">\usetikzlibrary</span>{positioning} </pre>
+<pre><span class="fmt19">\usepackage</span>{pdfpages} </pre>
+<pre><span class="fmt19">\usepackage</span>{soul} </pre>
+<pre><span class="fmt18">%\pgfplotsset{compat=1.14}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">various</span><span class="fmt18"> </span><span class="fmt18">inputs</span> </pre>
+<pre><span class="fmt19">\input</span> amssym.def </pre>
+<pre><span class="fmt19">\input</span> amssym.<span class="fmt38">tex</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">good</span><span class="fmt18"> </span><span class="fmt18">babble</span><span class="fmt18"> </span><span class="fmt18">textwidth</span><span class="fmt18"> </span><span class="fmt18">is</span><span class="fmt18"> </span><span class="fmt18">5.75in</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\babblewidth</span>}{<span class="fmt19">\setlength\textwidth</span>{5.75in}} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">This</span><span class="fmt18"> </span><span class="fmt18">will</span><span class="fmt18"> </span><span class="fmt18">stretch</span><span class="fmt18"> </span><span class="fmt18">out</span><span class="fmt18"> </span><span class="fmt18">the</span><span class="fmt18"> </span><span class="fmt18">page</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bigpage</span>}{  <span class="fmt19">\setlength</span> <span class="fmt19">\oddsidemargin</span>{-.25in} </pre>
+<pre>	<span class="fmt19">\setlength</span> <span class="fmt19">\textwidth</span>{6.75in} </pre>
+<pre>	<span class="fmt19">\setlength</span> <span class="fmt19">\topmargin</span>{-1in} </pre>
+<pre>	<span class="fmt19">\setlength</span> <span class="fmt19">\textheight</span>{9.75in}} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%This</span><span class="fmt18"> </span><span class="fmt18">will</span><span class="fmt18"> </span><span class="fmt18">shrink</span><span class="fmt18"> </span><span class="fmt18">the</span><span class="fmt18"> </span><span class="fmt18">page</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\smallpage</span>}{  <span class="fmt19">\setlength</span> <span class="fmt19">\oddsidemargin</span>{.5in} </pre>
+<pre>	<span class="fmt19">\setlength</span> <span class="fmt19">\textwidth</span>{5in} </pre>
+<pre>	<span class="fmt19">\setlength</span> <span class="fmt19">\topmargin</span>{0in} </pre>
+<pre>	<span class="fmt19">\setlength</span> <span class="fmt19">\textheight</span>{9in}} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\separator</span>}{<span class="fmt19">\vglue</span> .1in<span class="fmt19">\hrule\vglue</span> .1in} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\pause</span>}{<span class="fmt19">\vglue</span> .1in<span class="fmt19">\hrulefill</span> {<span class="fmt19">\tiny</span> Pause here}<span class="fmt19">\hrulefill</span> <span class="fmt19">\vglue</span> .1in} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dashedseparator</span>}{<span class="fmt19">\vspace</span>{.1in}<span class="fmt19">\underline</span>{<span class="fmt19">\hspace</span>{.5in}}<span class="fmt19">\hspace</span>{.5in}<span class="fmt19">\underline</span>{<span class="fmt19">\hspace</span>{.5in}}<span class="fmt19">\hspace</span>{.5in}<span class="fmt19">\underline</span>{<span class="fmt19">\hspace</span>{.5in}}<span class="fmt19">\hspace</span>{.5in}<span class="fmt19">\underline</span>{<span class="fmt19">\hspace</span>{.5in}}<span class="fmt19">\hspace</span>{.5in}<span class="fmt19">\underline</span>{<span class="fmt19">\hspace</span>{.5in}}<span class="fmt19">\hspace</span>{.5in}<span class="fmt19">\underline</span>{<span class="fmt19">\hspace</span>{.5in}}<span class="fmt19">\v</span><span class="fmt19">space</span>{.1in}} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\nopages</span>}{<span class="fmt19">\pagestyle</span>{empty}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bd</span>}{<span class="fmt20">\begin{document}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\ed</span>}{<span class="fmt20">\end{document}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\be</span>}{<span class="fmt20">\begin{enumerate}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\ee</span>}{<span class="fmt20">\end{enumerate}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bi</span>}{<span class="fmt20">\begin{itemize}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\ei</span>}{<span class="fmt20">\end{itemize}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bc</span>}{<span class="fmt20">\begin{center}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\ec</span>}{<span class="fmt20">\end{center}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bq</span>}{<span class="fmt20">\begin{quote}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\eq</span>}{<span class="fmt20">\end{quote}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\sub</span>}{<span class="fmt20">\subsection</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bfi</span>}[1]{<span class="fmt19">\item</span>{<span class="fmt19">\bf</span>{#1}}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bfe</span>}[1]{<span class="fmt19">\item</span>{<span class="fmt19">\bf</span>{#1}}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bfl</span>}{<span class="fmt20">\begin{flushleft}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\efl</span>}{<span class="fmt20">\end{flushleft}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\ba</span>}{<span class="fmt20">\begin{align*}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\eal</span>}{<span class="fmt20">\end{align*}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\eqal</span>}[1]{<span class="fmt20">\begin{align*}</span>#1<span class="fmt20">\end{align*}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bmc</span>}[1]{<span class="fmt20">\begin{multicols}</span>{#1}} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\emc</span>}{<span class="fmt20">\end{multicols}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bp</span>}{<span class="fmt20">\begin{proof}</span>} </pre>
+<pre>	<span class="fmt19">\newcommand</span>{<span class="fmt19">\ep</span>}{<span class="fmt20">\end{proof}</span>} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%general</span><span class="fmt18"> </span><span class="fmt18">stuff</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\caret</span>}{<span class="fmt19">\textasciicircum</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%</span><span class="fmt18"> </span><span class="fmt18">Here</span><span class="fmt18"> </span><span class="fmt18">are</span><span class="fmt18"> </span><span class="fmt18">some</span><span class="fmt18"> </span><span class="fmt18">spaces</span><span class="fmt18"> </span><span class="fmt18">%%</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\smsp</span>}{<span class="fmt19">\vspace</span>{.1in}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\medsp</span>}{<span class="fmt19">\vspace</span>{.25in}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\half</span>}{<span class="fmt19">\vspace</span>{.5in}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\inch</span>}{<span class="fmt19">\vspace</span>{1in}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\quarter</span>}{<span class="fmt19">\vspace</span>{.25in}} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\mytitle</span>}[2]{<span class="fmt20">\begin{center}</span>{<span class="fmt19">\bf</span> {#1}}<span class="fmt19">\\</span> Trung Vu<span class="fmt19">\\</span> Collin Nill </pre>
+<pre>		{#2}<span class="fmt20">\end{center}</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\centre</span>}[1]{<span class="fmt20">\begin{center}</span>{#1}<span class="fmt20">\end{center}</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bfcentre</span>}[1]{<span class="fmt20">\begin{center}</span>{<span class="fmt19">\bf</span> {#1}}<span class="fmt20">\end{center}</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\babble</span>}[1]{<span class="fmt19">\marginpar</span>{<span class="fmt19">\flushleft\scriptsize\textsf</span>{#1}}} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">here</span><span class="fmt18"> </span><span class="fmt18">is</span><span class="fmt18"> </span><span class="fmt18">highlighted/colored</span><span class="fmt18"> </span><span class="fmt18">text</span> </pre>
+<pre><span class="fmt18">%\newcommand{\hl}[1]{\textcolor{red}{#1}}</span><span class="fmt18"> </span><span class="fmt18">%note</span><span class="fmt18"> </span><span class="fmt18">that</span><span class="fmt18"> </span><span class="fmt18">\hl{}</span><span class="fmt18"> </span><span class="fmt18">highlights</span><span class="fmt18"> </span><span class="fmt18">text</span><span class="fmt18"> </span><span class="fmt18">like</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">highlighter</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\hlred</span>}[1]{<span class="fmt19">\textcolor</span>{red}{#1}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\hlblue</span>}[1]{<span class="fmt19">\textcolor</span>{blue}{#1}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\hlgreen</span>}[1]{<span class="fmt19">\textcolor</span>{green}{#1}} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%This</span><span class="fmt18"> </span><span class="fmt18">will</span><span class="fmt18"> </span><span class="fmt18">put</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">circle</span><span class="fmt18"> </span><span class="fmt18">around</span><span class="fmt18"> </span><span class="fmt18">something.</span> </pre>
+<pre><span class="fmt19">\newcommand</span>*<span class="fmt19">\circled</span>[1]{<span class="fmt19">\tikz</span>[baseline=(char.base)]{ </pre>
+<pre>		<span class="fmt19">\node</span>[shape=circle,draw,inner sep=2pt] (char) {#1};}} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Theorems</span><span class="fmt18"> </span><span class="fmt18">and</span><span class="fmt18"> </span><span class="fmt18">stuff</span> </pre>
+<pre><span class="fmt19">\theoremstyle</span>{definition} </pre>
+<pre><span class="fmt19">\newtheorem</span>{theorem}{Theorem}[section] </pre>
+<pre><span class="fmt19">\newtheorem</span>{lemma}[theorem]{Lemma} </pre>
+<pre><span class="fmt19">\newtheorem</span>{proposition}[theorem]{Proposition} </pre>
+<pre><span class="fmt19">\newtheorem</span>{corollary}[theorem]{Corollary} </pre>
+<pre><span class="fmt19">\newtheorem</span>{claim}[theorem]{Claim} </pre>
+<pre><span class="fmt19">\newtheorem</span>{definition}[theorem]{Definition} </pre>
+<pre><span class="fmt19">\newtheorem</span>{example}[theorem]{Example} </pre>
+<pre><span class="fmt19">\newtheorem</span>{note}[theorem]{Note} </pre>
+<pre><span class="fmt19">\newtheorem</span>{describe}[theorem]{Description} </pre>
+<pre><span class="fmt19">\newtheorem</span>{prob}{Problem} </pre>
+<pre><span class="fmt19">\newtheorem</span>{question}{Question}[<span class="fmt39">section</span>] </pre>
+<pre><span class="fmt19">\newtheorem</span>{remark}{Remark}[<span class="fmt39">section</span>] </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newenvironment</span>{sol}{{<span class="fmt19">\sc</span> Solution:}}{ </pre>
+<pre>	~<span class="fmt19">\hfill\rule</span>{2mm}{3mm}<span class="fmt19">\vspace</span>{.1in}} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18">   </span><span class="fmt18">\newenvironment{proof}{{\sc</span><span class="fmt18"> </span><span class="fmt18">Proof:}}{</span> </pre>
+<pre><span class="fmt18">%~\hfill\rule{2mm}{3mm}\vspace{.1in}}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Command</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">general</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\ds</span>}{<span class="fmt19">\displaystyle</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Commands</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">series</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\Sumnzero</span>}{<span class="fmt19">\displaystyle</span>{<span class="fmt19">\sum</span>_{n=0}^<span class="fmt19">\infty</span>}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\Sumnone</span>}{<span class="fmt19">\displaystyle</span>{<span class="fmt19">\sum</span>_{n=1}^<span class="fmt19">\infty</span>}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\Sumkzero</span>}{<span class="fmt19">\displaystyle</span>{<span class="fmt19">\sum</span>_{k=0}^<span class="fmt19">\infty</span>}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\Sumkone</span>}{<span class="fmt19">\displaystyle</span>{<span class="fmt19">\sum</span>_{k=1}^<span class="fmt19">\infty</span>}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\infint</span>}{<span class="fmt19">\int</span>_1^<span class="fmt19">\infty</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\zeroint</span>}{<span class="fmt19">\int</span>_0^1} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Commands</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">linear</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\LRA</span>}{<span class="fmt19">\Leftrightarrow</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectorx</span>}{{<span class="fmt19">\vec</span> x}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectory</span>}{{<span class="fmt19">\vec</span> y}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectorv</span>}{{<span class="fmt19">\vec</span> v}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectorw</span>}{{<span class="fmt19">\vec</span> w}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectorzero</span>}{{<span class="fmt19">\vec</span> 0}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectorb</span>}{{<span class="fmt19">\vec</span> b}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectoru</span>}{{<span class="fmt19">\vec</span> u}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectore</span>}{{<span class="fmt19">\vec</span> e}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vectorspan</span>}[1]{{<span class="fmt19">\rm</span> Span}\{#1\}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\rmnull</span>}[1]{{<span class="fmt19">\rm</span> null}(#1)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\length</span>}[1]{<span class="fmt19">\parallel</span> #1<span class="fmt19">\parallel</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vev</span>}{<span class="fmt19">\vectorv</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\veu</span>}{<span class="fmt19">\vectoru</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vew</span>}{<span class="fmt19">\vectorw</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vex</span>}{<span class="fmt19">\vectorx</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vey</span>}{<span class="fmt19">\vectory</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vea</span>}{<span class="fmt19">\vec</span>{a}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\veb</span>}{<span class="fmt19">\vec</span>{b}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vecc</span>}{<span class="fmt19">\vec</span>{c}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vei</span>}{<span class="fmt19">\vec</span> i} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vej</span>}{<span class="fmt19">\vec</span> j} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vek</span>}{<span class="fmt19">\vec</span> k} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\vep</span>}{<span class="fmt19">\vec</span> p} </pre>
+<pre><span class="fmt18">%\newcommand{\vez}{\vectorz}</span> </pre>
+<pre><span class="fmt18">%\newcommand{\vea}{\vectora}</span> </pre>
+<pre><span class="fmt18">%\newcommand{\veb}{\vectorb}</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\twodvec</span>}[2]{<span class="fmt21">\left[</span><span class="fmt20">\begin{array}</span>{r}{#1}<span class="fmt19">\\</span>{#2}<span class="fmt20">\end{arr</span><span class="fmt20">ay}</span><span class="fmt21">\right]</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\threedvec</span>}[3]{<span class="fmt21">\left[</span><span class="fmt20">\begin{array}</span>{r}#1<span class="fmt19">\\</span>#2<span class="fmt19">\\</span>#3<span class="fmt20">\end{a</span><span class="fmt20">rray}</span><span class="fmt21">\right]</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\mx</span>}[2]{<span class="fmt21">\left[</span><span class="fmt20">\begin{array}</span>{#1}#2<span class="fmt20">\end{array}</span><span class="fmt21">\right]</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\col</span>}[1]{{<span class="fmt19">\rm</span> Col}(#1)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\xy</span>}{<span class="fmt19">\twodvec</span>{x}{y}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\xyz</span>}{<span class="fmt19">\threedvec</span>{x}{y}{z}} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%These</span><span class="fmt18"> </span><span class="fmt18">are</span><span class="fmt18"> </span><span class="fmt18">two</span><span class="fmt18"> </span><span class="fmt18">other</span><span class="fmt18"> </span><span class="fmt18">examples</span><span class="fmt18"> </span><span class="fmt18">of</span><span class="fmt18"> </span><span class="fmt18">matrices.</span> </pre>
+<pre><span class="fmt18">%$G</span><span class="fmt18"> </span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">\bigg\{</span><span class="fmt18"> </span><span class="fmt18">\begin{pmatrix}</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt18">b</span><span class="fmt18"> </span><span class="fmt18">\\</span><span class="fmt18"> </span><span class="fmt18">0</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">\end{pmatrix}</span><span class="fmt18"> </span><span class="fmt18">\bigg|</span><span class="fmt18"> </span><span class="fmt18">a,b</span><span class="fmt18"> </span><span class="fmt18">\in</span><span class="fmt18"> </span><span class="fmt18">\mathbb{R},</span><span class="fmt18"> </span><span class="fmt18">a\neq</span><span class="fmt18"> </span><span class="fmt18">0</span><span class="fmt18"> </span><span class="fmt18">\bigg\}$</span><span class="fmt18"> </span> </pre>
+<pre><span class="fmt18">%$G</span><span class="fmt18"> </span><span class="fmt18">=</span><span class="fmt18"> </span><span class="fmt18">\bigg\{</span><span class="fmt18"> </span><span class="fmt18">\begin{bmatrix}</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt18">b</span><span class="fmt18"> </span><span class="fmt18">\\</span><span class="fmt18"> </span><span class="fmt18">0</span><span class="fmt18"> </span><span class="fmt18">&amp;</span><span class="fmt18"> </span><span class="fmt18">a</span><span class="fmt18"> </span><span class="fmt18">\end{bmatrix}</span><span class="fmt18"> </span><span class="fmt18">\bigg|</span><span class="fmt18"> </span><span class="fmt18">a,b</span><span class="fmt18"> </span><span class="fmt18">\in</span><span class="fmt18"> </span><span class="fmt18">\mathbb{R},</span><span class="fmt18"> </span><span class="fmt18">a\neq</span><span class="fmt18"> </span><span class="fmt18">0</span><span class="fmt18"> </span><span class="fmt18">\bigg\}$</span><span class="fmt18"> </span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%Commands</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">advanced</span><span class="fmt18"> </span><span class="fmt18">linear</span> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\lvw</span>}{<span class="fmt19">\mathcal</span>{L}(V,W)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\lvv</span>}{<span class="fmt19">\mathcal</span>{L}(V,V)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\lv</span>}{<span class="fmt19">\mathcal</span>{L}(V)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\mt</span>}{<span class="fmt19">\mathcal</span>{M}(T)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\bs</span>}{<span class="fmt19">\backslash</span>} </pre>
+<pre><span class="fmt18">%\newcommand{\bf}{\textbf}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Commands</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">abstract</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\integers</span>}{<span class="fmt19">\mathbb</span>{Z}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\Z</span>}{<span class="fmt19">\mathbb</span>{Z}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\K</span>}{<span class="fmt19">\mathbb</span>{K}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\zee</span>}{<span class="fmt19">\mathbb</span>{Z}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\reals</span>}{<span class="fmt19">\mathbb</span>{R}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\R</span>}{<span class="fmt19">\mathbb</span>{R}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\complex</span>}{<span class="fmt19">\mathbb</span>{C}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\C</span>}{<span class="fmt19">\mathbb</span>{C}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\normal</span>}{<span class="fmt19">\triangleleft</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\rationals</span>}{<span class="fmt19">\mathbb</span>{Q}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\Q</span>}{<span class="fmt19">\mathbb</span>{Q}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\field</span>}{<span class="fmt19">\mathbb</span>{F}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\F</span>}{<span class="fmt19">\mathbb</span>{F}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\N</span>}{<span class="fmt19">\mathbb</span>{N}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\naturals</span>}{<span class="fmt19">\mathbb</span>{N}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\aut</span>}[1]{{<span class="fmt19">\rm</span> Aut}(#1)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\Ker</span>}{{<span class="fmt19">\rm</span> Ker}\,} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\im</span>}{{<span class="fmt19">\rm</span> Im}\,} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\cyclic</span>}[1]{<span class="fmt21">\langle</span> #1 <span class="fmt21">\rangle</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\isom</span>}{<span class="fmt19">\cong</span>} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\autc</span>}[1]{{<span class="fmt19">\rm</span> Aut_c}(#1)} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\autsub</span>}[2]{{<span class="fmt19">\rm</span> Aut}_{#1}(#2)} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\NN</span>}{<span class="fmt19">\mathbb</span>{N}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\ZZ</span>}{<span class="fmt19">\mathbb</span>{Z}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\QQ</span>}{<span class="fmt19">\mathbb</span>{Q}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\RR</span>}{<span class="fmt19">\mathbb</span>{R}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\CC</span>}{<span class="fmt19">\mathbb</span>{C}} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Commands</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">DE</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dydt</span>}{<span class="fmt19">\frac</span>{dy}{dt}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dxdt</span>}{<span class="fmt19">\frac</span>{dx}{dt}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dPdt</span>}{<span class="fmt19">\frac</span>{dP}{dt}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dt</span>}[1]{<span class="fmt19">\frac</span>{d#1}{dt}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dFdt</span>}{<span class="fmt19">\frac</span>{dF}{dt}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dtwoy</span>}{<span class="fmt19">\frac</span>{d^2y}{dt^2}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\dYdt</span>}{<span class="fmt19">\frac</span>{d<span class="fmt19">\vey</span>}{dt}} </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\p</span>}{<span class="fmt19">\partial</span>} </pre>
+<pre><span class="fmt18">%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">command</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">graphics</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\newcommand</span>{<span class="fmt19">\graph</span>}[2]{<span class="fmt19">\bc\includegraphics</span>[#1]{#2}<span class="fmt19">\ec</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%</span><span class="fmt18">   </span><span class="fmt18">For</span><span class="fmt18"> </span><span class="fmt18">letters</span><span class="fmt18">   </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\usepackage</span>{tikz, rotating} </pre>
+<pre><span class="fmt19">\usepackage</span>{hyperref} </pre>
+<pre><span class="fmt19">\nopages</span> </pre>
+<pre><span class="fmt19">\pgfplotsset</span>{compat=1.16}  </pre>
+<pre> </pre>
+<pre><span class="fmt19">\usepackage</span>{tikz} </pre>
+<pre><span class="fmt19">\usetikzlibrary</span>{calc} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\title</span>{<span class="fmt38">Projective</span> Geometry Note} </pre>
+<pre><span class="fmt19">\author</span>{Trung Vu} </pre>
+<pre><span class="fmt19">\date</span>{<span class="fmt19">\today</span>} </pre>
+<pre> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\bd</span> </pre>
+<pre><span class="fmt19">\maketitle</span> </pre>
+<pre> </pre>
+<pre>   </pre>
+<pre><span class="fmt19">\normalem</span> </pre>
+<pre> </pre>
+<pre>	This note is based on the textbooks Perspective in <span class="fmt38">Projective</span> Geometry by <span class="fmt38">Jürgen</span> Richter-<span class="fmt38">Gebert</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">The</span><span class="fmt57"> </span><span class="fmt57">Axioms</span>} </pre>
+<pre> </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">definition</span></span><span class="fmt20">}</span> </pre>
+<pre>		A <span class="fmt19">\emph</span>{<span class="fmt38">projective</span> plane} is a triple <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathcal</span></span></span><span class="fmt34">{(P,</span><span class="fmt34"> </span><span class="fmt34">L,</span><span class="fmt34"> </span><span class="fmt34">I)}</span><span class="fmt35">$</span>. The set <span class="fmt35">$</span><span class="fmt34">P</span><span class="fmt35">$</span> consists of the points, and the set <span class="fmt35">$</span><span class="fmt34">L</span><span class="fmt35">$</span> <span class="fmt40">consists</span> of the lines <span class="fmt39">of</span> <span class="fmt39">the</span> geometry. <span class="fmt39">The</span> inclusion <span class="fmt35">$</span><span class="fmt34">I</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\subseteq</span></span></span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\times</span></span></span><span class="fmt34"> </span><span class="fmt34">L</span><span class="fmt35">$</span> is an incidence relation satisfying the following three axioms: </pre>
+<pre>			<span class="fmt19">\be</span> </pre>
+<pre>				<span class="fmt19">\item</span>[i)] For any two distinct points, there is exactly one line incident with both of them. </pre>
+<pre>				<span class="fmt19">\item</span>[ii)] For any two distinct lines, there is exactly one point incident with both of them.  </pre>
+<pre>				<span class="fmt19">\item</span>[iii)] There are four distinct points such that no line is incident with more than </pre>
+<pre>				two of them. </pre>
+<pre>			<span class="fmt19">\ee</span> </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">definition</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">remark</span></span><span class="fmt20">}</span> </pre>
+<pre>		The first two axioms describe a completely symmetric relation of points and lines. The second axiom simply states that (without any exception) two distinct lines will always intersect in a unique point. The first axiom states that (without any exception) two distinct points will always have a line joining them. The third axiom merely ensures that the structure is not a degenerate trivial case in which most of the points are <span class="fmt38">collinear</span> </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">remark</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>	There are various models of the <span class="fmt38">projective</span> spaces. We will build the first one (the most popular one) based on the Euclidean space. Let <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathcal</span></span></span><span class="fmt34">{(P_{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathbb</span></span></span><span class="fmt34"> </span><span class="fmt34">E},</span><span class="fmt34"> </span><span class="fmt34">L_{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathbb</span></span></span><span class="fmt34"> </span><span class="fmt34">E},</span><span class="fmt34"> </span><span class="fmt34">I_{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathbb</span></span></span><span class="fmt34"> </span><span class="fmt34">E})}</span><span class="fmt35">$</span> be set of points, lines and the usual incidence relation in Euclidean space respectively. For each line <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span> in <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\R</span></span></span><span class="fmt34">^n</span><span class="fmt35">$</span> we will associate the equivalent class of lines parallel to <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span> with a point <span class="fmt35">$</span><span class="fmt34">p_{[l]}</span><span class="fmt35">$</span> and consider this in the intersection of these lines (points at infinity). And for every point at <span class="fmt40">infinity</span>, we associate the line <span class="fmt35">$</span><span class="fmt34">l_</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\infty</span></span></span><span class="fmt35">$</span> where all <span class="fmt35">$</span><span class="fmt34">p_{[l]}</span><span class="fmt35">$</span> lies on (line at infinity). Then we will have the first model of <span class="fmt38">projective</span> space as follow:  </pre>
+<pre>		<span class="fmt19">\be</span> </pre>
+<pre>			<span class="fmt19">\item</span> <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathcal</span></span></span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">P</span></span><span class="fmt34">_{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathbb</span></span></span><span class="fmt34"> </span><span class="fmt34">E}</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cup</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">p</span></span><span class="fmt34">_{[l]}</span><span class="fmt35">$</span> </pre>
+<pre>			<span class="fmt19">\item</span> <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathcal</span></span></span><span class="fmt34"> </span><span class="fmt34">L</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">L</span></span><span class="fmt34">_{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathbb</span></span></span><span class="fmt34"> </span><span class="fmt34">E}</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cup</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">l</span></span><span class="fmt34">_</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\infty</span></span></span><span class="fmt35">$</span> </pre>
+<pre>			<span class="fmt19">\item</span> <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathcal</span></span></span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">P</span></span><span class="fmt34">_{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathbb</span></span></span><span class="fmt34"> </span><span class="fmt34">E}</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cup</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">p</span></span><span class="fmt34">_{[l]}</span><span class="fmt35">$</span> </pre>
+<pre>		<span class="fmt19">\ee</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Some</span><span class="fmt57"> </span><span class="fmt57">Small</span><span class="fmt57"> </span><span class="fmt57">Examples</span>} </pre>
+<pre>	 </pre>
+<pre> </pre>
+<pre>	Let's start with the smallest example of a <span class="fmt38">projective</span> plane. Since the <span class="fmt39">plane</span> above contain infinitely many points, a question can be asked is that <span class="fmt39">is</span> there a <span class="fmt38">projective</span> plane with finitely many points and lines? An example would be  <span class="fmt38">Fano</span> plane. Axiom (iii) tells us that it must contain at least four points, no three of which are <span class="fmt38">collinear</span>. Let the </pre>
+<pre>    four points be <span class="fmt35">$</span><span class="fmt34">A,</span><span class="fmt34"> </span><span class="fmt34">B,</span><span class="fmt34"> </span><span class="fmt34">C,</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">D</span><span class="fmt35">$</span>. Then every line through each of these points must intersect each other. There are exactly three missing intersections, namely those of the pairs <span class="fmt39">of</span> lines <span class="fmt35">$</span><span class="fmt34">(AB,</span><span class="fmt34"> </span><span class="fmt34">CD),</span><span class="fmt34"> </span><span class="fmt34">(AC,</span><span class="fmt34"> </span><span class="fmt34">BD),</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">(AD,</span><span class="fmt34"> </span><span class="fmt34">BC)</span><span class="fmt35">$</span> </pre>
+<pre>    <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+<pre>    	<span class="fmt19">\includegraphics</span>[scale=0.5]{Fano plane} </pre>
+<pre>    <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+<pre>     </pre>
+<pre>    Using the axioms, we can prove the following lemmas:  </pre>
+<pre>    <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lemma</span></span><span class="fmt20">}</span> </pre>
+<pre>    	Given <span class="fmt35">$</span><span class="fmt34">p,</span><span class="fmt34"> </span><span class="fmt34">q</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">P</span></span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">l,m</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">L</span></span><span class="fmt35">$</span> such that <span class="fmt35">$</span><span class="fmt34">pIm,</span><span class="fmt34"> </span><span class="fmt34">qIm,</span><span class="fmt34"> </span><span class="fmt34">pIl,</span><span class="fmt34"> </span><span class="fmt34">qIl</span><span class="fmt35">$</span> for <span class="fmt35">$</span><span class="fmt34">I</span><span class="fmt35">$</span> is the incident relation, then either <span class="fmt35">$</span><span class="fmt34">p=q</span><span class="fmt35">$</span> or <span class="fmt35">$</span><span class="fmt34">l=m</span><span class="fmt35">$</span> </pre>
+<pre>    <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lemma</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>    <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lemma</span></span><span class="fmt20">}</span> </pre>
+<pre>    	Every line in a <span class="fmt38">projective</span> plane incident with at least 3 distinct points </pre>
+<pre>    <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lemma</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>    <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lemma</span></span><span class="fmt20">}</span> </pre>
+<pre>    	For every point <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt35">$</span> there exists at least 1 line not incident with <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt35">$</span> </pre>
+<pre>    <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lemma</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>    And a nice theorem about the number of points and lines in a finite <span class="fmt38">projective</span> plane:  </pre>
+<pre>    <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">theorem</span></span><span class="fmt20">}</span> </pre>
+<pre>    	Let <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathcal</span></span></span><span class="fmt34">(P,</span><span class="fmt34"> </span><span class="fmt34">L,</span><span class="fmt34"> </span><span class="fmt34">I)</span><span class="fmt35">$</span> be a <span class="fmt38">projective</span> plane with finite sets <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34">L</span><span class="fmt35">$</span>. Then there exists a number <span class="fmt35">$</span><span class="fmt34">n</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\N</span></span></span><span class="fmt35">$</span> such that <span class="fmt35">$</span><span class="fmt34">|p(l)|</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">n</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">1</span><span class="fmt35">$</span> for any <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34">  </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">L</span></span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">|</span><span class="fmt34"><span class="fmt39">l</span></span><span class="fmt34">(p)|</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">n</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">1</span><span class="fmt35">$</span> for any <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">P</span></span><span class="fmt35">$</span>. </pre>
+<pre>    <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">theorem</span></span><span class="fmt20">}</span> </pre>
+<pre>    <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">proof</span></span><span class="fmt20">}</span> </pre>
+<pre>    	 </pre>
+<pre>    	Idea: first we need to show that given 2 distinct lines <span class="fmt35">$</span><span class="fmt34">m</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span> that passing through the same point <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt35">$</span> and that there are <span class="fmt35">$</span><span class="fmt34">n</span><span class="fmt35">$</span> points other that <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt35">$</span> on <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span> then there must also be <span class="fmt35">$</span><span class="fmt34">n</span><span class="fmt35">$</span> point like that on <span class="fmt35">$</span><span class="fmt34">m</span><span class="fmt35">$</span>. This can be show by look at the join of a point <span class="fmt35">$</span><span class="fmt34">q</span><span class="fmt35">$</span> not on <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span> with the other <span class="fmt35">$</span><span class="fmt34">n</span><span class="fmt35">$</span> points on <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span>.<span class="fmt19">\\</span> </pre>
+<pre>    	Then look at the direction where <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt35">$</span> is not on <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span> and there are <span class="fmt35">$</span><span class="fmt34">n+1</span><span class="fmt35">$</span> lines generated by joining <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt35">$</span> with <span class="fmt35">$</span><span class="fmt34">n+1</span><span class="fmt35">$</span> points on <span class="fmt35">$</span><span class="fmt34">l</span><span class="fmt35">$</span> </pre>
+<pre> </pre>
+<pre>    <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">proof</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>    The number <span class="fmt35">$</span><span class="fmt34">n</span><span class="fmt35">$</span> of the last proposition (which was the <span class="fmt40">number</span> of points on a line minus one) is usually called the order of <span class="fmt39">the</span> <span class="fmt38">projective</span> plane. <span class="fmt39">The</span> following proposition relates the order and <span class="fmt39">the</span> overall number of points and lines in a finite <span class="fmt38">projective</span> plane. </pre>
+<pre> </pre>
+<pre>    <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">theorem</span></span><span class="fmt20">}</span> Let <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\mathcal</span></span></span><span class="fmt34">(P,</span><span class="fmt34"> </span><span class="fmt34">L,</span><span class="fmt34"> </span><span class="fmt34">I)</span><span class="fmt35">$</span> be a <span class="fmt38">projective</span> plane with finite sets <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34">P</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34">L</span><span class="fmt35">$</span> of order <span class="fmt35">$</span><span class="fmt34">n</span><span class="fmt35">$</span>. Then we have <span class="fmt35">$</span><span class="fmt34">|P|</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">|L|</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt34"> </span><span class="fmt34">n^2</span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">n</span></span><span class="fmt34"> </span><span class="fmt34">+</span><span class="fmt34"> </span><span class="fmt34">1</span><span class="fmt35">$</span>. </pre>
+<pre>     </pre>
+<pre>    <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">theorem</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>   	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">proof</span></span><span class="fmt20">}</span>(Sketch:) Think of <span class="fmt35">$</span><span class="fmt34">(n+1)</span><span class="fmt34"><span class="fmt39">n</span></span><span class="fmt34">+1=</span><span class="fmt34"><span class="fmt39">n</span></span><span class="fmt34">^2+</span><span class="fmt34"><span class="fmt39">n</span></span><span class="fmt34">+1</span><span class="fmt35">$</span> </pre>
+<pre>   	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">proof</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt38"><span class="fmt57">Homogenous</span></span><span class="fmt57"> </span><span class="fmt57">Coordinate</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">A</span><span class="fmt57"> </span><span class="fmt57">Spatial</span><span class="fmt57"> </span><span class="fmt57">Point</span><span class="fmt57"> </span><span class="fmt57">of</span><span class="fmt57"> </span><span class="fmt57">View</span>} </pre>
+<pre>	Let <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt35">$</span> be any arbitrary field. We define the following equivalence class on <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">^3</span><span class="fmt35">$</span>:  </pre>
+<pre>	<span class="fmt35">$$</span><span class="fmt34">[v]:=</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34"><span class="fmt39">v</span></span><span class="fmt34">'</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">^3|</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\lambda</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">v</span></span><span class="fmt34">=</span><span class="fmt34"><span class="fmt39">v</span></span><span class="fmt34">',</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\lambda</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">-</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34">0</span><span class="fmt34"><span class="fmt21">\}\}</span></span><span class="fmt35">$$</span> </pre>
+<pre>	The set of all such equivalence class will be denoted by <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\ds</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\frac</span></span></span><span class="fmt34">{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">^3</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34">0,0,0</span><span class="fmt34"><span class="fmt21">\}</span></span><span class="fmt34">}{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34">0</span><span class="fmt34"><span class="fmt21">\}</span></span><span class="fmt34">}</span><span class="fmt35">$</span>. We define the orthogonal relation for the equivalence class in the canonical way that <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cyclic</span></span></span><span class="fmt34">{p,l}=0</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\LRA</span></span></span><span class="fmt34"> </span><span class="fmt34">[p]</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\perp</span></span></span><span class="fmt34"> </span><span class="fmt34">[l]</span><span class="fmt35">$</span>. So in away we think of vector and point <span class="fmt38">interchangably</span> <span class="fmt39">and</span> with this current setting a point is an equivalence class. <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>	We set <span class="fmt35">$</span><span class="fmt34">{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34">{P_</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">}}</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\ds</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\frac</span></span></span><span class="fmt34">{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">^3</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34">0,0,0</span><span class="fmt34"><span class="fmt21">\}</span></span><span class="fmt34">}{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34">0</span><span class="fmt34"><span class="fmt21">\}</span></span><span class="fmt34">}</span><span class="fmt35">$</span>  and <span class="fmt35">$</span><span class="fmt34">{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34">{L_</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">}}</span><span class="fmt34"> </span><span class="fmt34">=</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\ds</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\frac</span></span></span><span class="fmt34">{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">^3</span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34">0,0,0</span><span class="fmt34"><span class="fmt21">\}</span></span><span class="fmt34">}{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34"> </span><span class="fmt34">-</span><span class="fmt34"><span class="fmt21">\{</span></span><span class="fmt34">0</span><span class="fmt34"><span class="fmt21">\}</span></span><span class="fmt34">}</span><span class="fmt35">$</span> (consider <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34">P_</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34">L_{</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\K</span></span></span><span class="fmt34">}</span><span class="fmt35">$</span> as 2 disjoint copies of the same space). We define the incident relation on these 2 sets as for <span class="fmt35">$</span><span class="fmt34">[p]</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">P</span></span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">[l]</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\in</span></span></span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt39">L</span></span><span class="fmt35">$</span> that <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt34"> </span><span class="fmt34">I</span><span class="fmt34"> </span><span class="fmt34">l</span><span class="fmt35">$</span> if <span class="fmt35">$</span><span class="fmt34">[p]</span><span class="fmt34"> </span><span class="fmt19"><span class="fmt34"><span class="fmt21">\perp</span></span></span><span class="fmt34"> </span><span class="fmt34">[</span><span class="fmt34"><span class="fmt39">l</span></span><span class="fmt34">]</span><span class="fmt34"> </span><span class="fmt35">$</span>  </pre>
+<pre> </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">claim</span></span><span class="fmt20">}</span> </pre>
+<pre>		This is indeed a <span class="fmt38">projective</span> plane </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">claim</span></span><span class="fmt20">}</span> </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">proof</span></span><span class="fmt20">}</span> </pre>
+<pre>		For axiom 1, note that we need to show that 2 distinct points can only have 1 line incident between them. Since <span class="fmt35">$</span><span class="fmt34">p</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">q</span><span class="fmt35">$</span> are distinct they cannot just be different by a constant multiple. Then, let <span class="fmt35">$</span><span class="fmt34">p=(</span><span class="fmt34"><span class="fmt39">p</span></span><span class="fmt34">_1,</span><span class="fmt34"><span class="fmt39">p</span></span><span class="fmt34">_2,</span><span class="fmt34"><span class="fmt39">p</span></span><span class="fmt34">_3)</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">q=(</span><span class="fmt34"><span class="fmt39">q</span></span><span class="fmt34">_1,</span><span class="fmt34"><span class="fmt39">q</span></span><span class="fmt34">_2,</span><span class="fmt34"><span class="fmt39">q</span></span><span class="fmt34">_3)</span><span class="fmt35">$</span> be a representative of this equivalence class and put them into a <span class="fmt35">$</span><span class="fmt34">[2x3]</span><span class="fmt35">$</span> matrix where each of the vector is a row. Then this matrix is of rank 2 and so its kernel is of rank 1 which is 1 dimensional. But this is just <span class="fmt38">simpy</span> the claim since every line in the same 1 dimensional vector space only differ by a scalar thus is the same point in this <span class="fmt38">projective</span> plane. <span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>		For axiom 2, do the similar argument with <span class="fmt35">$</span><span class="fmt19"><span class="fmt34"><span class="fmt21">\cal</span></span></span><span class="fmt34"> </span><span class="fmt34">L</span><span class="fmt35">$</span><span class="fmt19">\\</span> </pre>
+<pre> </pre>
+<pre>		For axiom 3, abusing the notation <span class="fmt35">$</span><span class="fmt34">0</span><span class="fmt35">$</span> and <span class="fmt35">$</span><span class="fmt34">1</span><span class="fmt35">$</span> as the zero and one of the field. we have the <span class="fmt38">colinearity</span> of <span class="fmt38">tehse</span> 4 points <span class="fmt35">$</span><span class="fmt34">(0,0,1),</span><span class="fmt34"> </span><span class="fmt34">(1,1,1),</span><span class="fmt34"> </span><span class="fmt34">(0,1,1),</span><span class="fmt34"> </span><span class="fmt34">(1,0,1)</span><span class="fmt35">$</span> </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">proof</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\ed</span> </pre></body></html>
