@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: qtsystems.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: alpha.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Illegal, another \bibstyle command---line 29 of file qtsystems.aux
+ : \bibstyle
+ :          {alpha}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 30 of file qtsystems.aux
+ : \bibdata
+ :         {mybib.tex}
+I'm skipping whatever remains of this command
+Database file #1: mybib.tex.bib
+Warning--empty publisher in Baxter
+You've used 5 entries,
+            2543 wiz_defined-function locations,
+            597 strings with 5258 characters,
+and the built_in function-call counts, 1792 in all, are:
+= -- 170
+> -- 68
+< -- 3
++ -- 21
+- -- 21
+* -- 139
+:= -- 304
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 27
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 73
+empty$ -- 141
+format.name$ -- 27
+if$ -- 356
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 6
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 23
+preamble$ -- 1
+purify$ -- 33
+quote$ -- 0
+skip$ -- 60
+stack$ -- 0
+substring$ -- 113
+swap$ -- 5
+text.length$ -- 3
+text.prefix$ -- 1
+top$ -- 0
+type$ -- 36
+warning$ -- 1
+while$ -- 15
+width$ -- 6
+write$ -- 64
+(There were 2 error messages)

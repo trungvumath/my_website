@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.2)  29 JUL 2021 06:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.2)  29 JUL 2021 06:42
 entering extended mode
-**./integrable_system_page.tex
-(integrable_system_page.tex
+**./qtsystems.tex
+(qtsystems.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (C:\Users\Trung Vu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls
@@ -472,10 +472,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip62
 )
 \@indexfile=\write3
-\openout3 = `integrable_system_page.idx'.
+\openout3 = `qtsystems.idx'.
 
 
-Writing index file integrable_system_page.idx
+Writing index file qtsystems.idx
 \c@theorem=\count292
 \c@prob=\count293
 \c@question=\count294
@@ -486,8 +486,24 @@ end-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box98
-) (integrable_system_page.aux)
-\openout1 = `integrable_system_page.aux'.
+) (qtsystems.aux
+
+LaTeX Warning: Label `Baxter' multiply defined.
+
+
+LaTeX Warning: Label `Di_Francesco_2010' multiply defined.
+
+
+LaTeX Warning: Label `Di_Francesco_2014' multiply defined.
+
+
+LaTeX Warning: Label `Francesco_2009' multiply defined.
+
+
+LaTeX Warning: Label `Kuniba_2011' multiply defined.
+
+)
+\openout1 = `qtsystems.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
 LaTeX Font Info:    ... okay on input line 144.
@@ -562,57 +578,69 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 144.
 LaTeX Info: Redefining \pageref on input line 144.
 LaTeX Info: Redefining \nameref on input line 144.
- (integrable_system_page.out) (integrable_system_page.out)
+ (qtsystems.out) (qtsystems.out)
 \@outlinefile=\write4
-\openout4 = `integrable_system_page.out'.
+\openout4 = `qtsystems.out'.
 
-(integrable_system_page.toc)
+ (qtsystems.toc)
 \tf@toc=\write5
-\openout5 = `integrable_system_page.toc'.
+\openout5 = `qtsystems.toc'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 153
-.
+ [1
 
-(C:\Users\Trung Vu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 153
-.
+{C:/Users/Trung Vu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (qtsyste
+ms.bbl) [2] (qtsystems.bblpdfTeX warning (ext4): destination with the same iden
+tifier (name{cite.Baxter}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \bibitem[Bax82]{Baxter}
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{cite.Di_Francesco_2010}) has been already used, duplicate ignored
 
-(C:\Users\Trung Vu\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+<to be read again> 
+                   \relax 
+l.8 \bibitem[DF10]{Di_Francesco_2010}
+                                     pdfTeX warning (ext4): destination with th
+e same identifier (name{cite.Di_Francesco_2014}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.14 \bibitem[DF14]{Di_Francesco_2014}
+                                      pdfTeX warning (ext4): destination with t
+he same identifier (name{cite.Francesco_2009}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.20 \bibitem[FK09]{Francesco_2009}
+                                   pdfTeX warning (ext4): destination with the 
+same identifier (name{cite.Kuniba_2011}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.26 \bibitem[KNS11]{Kuniba_2011}
+                                 ) [3] (qtsystems.aux)
 
-{C:/Users/Trung Vu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2] [3] (integrable_system_page.bbl) [4] (integrable_system_page.aux)
-Package rerunfilecheck Info: File `integrable_system_page.out' has not changed.
+LaTeX Warning: There were multiply-defined labels.
 
-(rerunfilecheck)             Checksum: B615E38236B1AB269317C7098898A774;484.
+Package rerunfilecheck Info: File `qtsystems.out' has not changed.
+(rerunfilecheck)             Checksum: 7A85BB022195EEBEC3DB9B2EC69DD9B7;330.
  ) 
 Here is how much of TeX's memory you used:
- 11068 strings out of 479287
- 163610 string characters out of 2851569
- 479265 words of memory out of 3000000
- 28362 multiletter control sequences out of 15000+600000
- 407320 words of font info for 42 fonts, out of 8000000 for 9000
+ 11031 strings out of 479287
+ 162707 string characters out of 2851569
+ 470301 words of memory out of 3000000
+ 28346 multiletter control sequences out of 15000+600000
+ 405002 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,6n,74p,1044b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,5n,74p,233b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/Trung Vu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmbx10.pfb><C:/Users/Trung Vu/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Trung Vu/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Trung Vu/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Tru
-ng Vu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b><C:/Users/Trung Vu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/Trung Vu/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb><C:/Users/Trung Vu/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Trung Vu/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Trung 
-Vu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb>
-Output written on integrable_system_page.pdf (4 pages, 133831 bytes).
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Trung Vu/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on qtsystems.pdf (3 pages, 70753 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 67 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

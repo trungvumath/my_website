@@ -1,0 +1,32 @@
+\begin{thebibliography}{KNS11}
+
+\bibitem[Bax82]{Baxter}
+R.~J. Baxter.
+\newblock {\em {Exactly solved models in statistical mechanics}}.
+\newblock 1982.
+
+\bibitem[DF10]{Di_Francesco_2010}
+Philippe Di~Francesco.
+\newblock Q-system cluster algebras, paths and total positivity.
+\newblock {\em Symmetry, Integrability and Geometry: Methods and Applications},
+  Feb 2010.
+
+\bibitem[DF14]{Di_Francesco_2014}
+Philippe Di~Francesco.
+\newblock T-systems, networks and dimers.
+\newblock {\em Communications in Mathematical Physics}, 331(3):1237–1270, May
+  2014.
+
+\bibitem[FK09]{Francesco_2009}
+Philippe~Di Francesco and Rinat Kedem.
+\newblock Q-systems, heaps, paths and cluster positivity.
+\newblock {\em Communications in Mathematical Physics}, 293(3):727–802, Nov
+  2009.
+
+\bibitem[KNS11]{Kuniba_2011}
+Atsuo Kuniba, Tomoki Nakanishi, and Junji Suzuki.
+\newblock T-systems andy-systems in integrable systems.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical},
+  44(10):103001, Feb 2011.
+
+\end{thebibliography}
