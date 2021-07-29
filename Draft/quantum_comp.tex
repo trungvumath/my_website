@@ -1,0 +1,31 @@
+\section{Integrable System}
+
+The following material on integrable system is based on the the 2 resources \cite{Suntherland}  and \cite{Serban}
+\subsection{Liouville Integrability}
+Consider the system with $n$ degree if freedom; its state is described by a point in the $2n$ dimensional phase space, whose coordinates are the positions $q_i$ and the momenta $p_i$ with $n=1,\cdots, n$. The dynamics of the system is given by the Hamiltonian $H(p,q)$, $p=(p_1, \cdots,p_n)$ and $p=(p_1, \cdots, p_n)$ via the equation of motion: 
+\begin{equation}
+	\dot{q_i}=\frac{\partial H}{\partial p_i}, \hskip 1cm \dot{p_i}=-\frac{\partial H}{\partial q_i}
+\end{equation}
+where $\dot f=\frac{df}{dt}$. Then, given a quantity $F$ that characterizes some properties of the system, for example, total energy of the system, that is time dependent, $F(q(t),p(t))$ is given by
+\begin{equation}
+	\dot{F}=\{H,F\}
+\end{equation}
+where $\{.,.\}$ denote the Poisson brackets,
+\begin{equation}
+	\{F,G\}=\sum_{i=1}^{n}\left(\frac{\partial F}{\partial p_i}\frac{\partial G}{\partial q_i}-\frac{\partial G}{\partial p_i}\frac{\partial F}{\partial q_i}\right)
+\end{equation}
+The Poisson brakets of the positions and momenta are then given by
+\begin{equation}
+	\{p_i,p_j\}=0 \hskip1cm \{p_i,q_j\}=\delta_{ij} \hskip1cm \{q_i,q_j\}=0
+\end{equation}
+where $\delta_{ij}$ is the Kronecker Delta function. 
+\begin{definition}
+	A system with $n$ degrees of freedom is said to be Liouville integrable if there exist $n$ independent conserved quantities $F_i$, $\{H,F_i\}=0$ which are in involution, 
+	\begin{equation}
+		\{F_i,F_j\}=0
+	\end{equation}
+\end{definition}
+Topologically speaking, this definition forces the configuration space of an integrable system to be a torus
+\begin{theorem}[Liouville Theorem]
+	The solution of the equations of motion of a Liouville integrable model can be obtained by quadrature (i.e. by solving algebraic equation and taking some integrals)
+\end{theorem}

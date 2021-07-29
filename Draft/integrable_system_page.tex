@@ -1,0 +1,235 @@
+\documentclass[]{article}
+
+
+% Some packages to install
+\usepackage{amsfonts,amssymb,amsmath, mathtools,amsthm}
+\usepackage{xcolor, color}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{soul}
+\usepackage{hyperref}
+\makeindex
+
+%% Here are some spaces %%
+\newcommand{\smsp}{\vspace{.1in}}
+\newcommand{\medsp}{\vspace{.25in}}
+\newcommand{\half}{\vspace{.5in}}
+\newcommand{\inch}{\vspace{1in}}
+\newcommand{\quarter}{\vspace{.25in}}
+
+
+% Theorems and stuff
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{describe}[theorem]{Description}
+\newtheorem{prob}{Problem}
+\newtheorem{question}{Question}[section]
+\newtheorem{remark}{Remark}[section]
+
+
+
+
+% Command for general
+\newcommand{\ds}{\displaystyle}
+
+% Commands for series
+
+\newcommand{\Sumnzero}{\displaystyle{\sum_{n=0}^\infty}}
+\newcommand{\Sumnone}{\displaystyle{\sum_{n=1}^\infty}}
+\newcommand{\Sumkzero}{\displaystyle{\sum_{k=0}^\infty}}
+\newcommand{\Sumkone}{\displaystyle{\sum_{k=1}^\infty}}
+\newcommand{\infint}{\int_1^\infty}
+\newcommand{\zeroint}{\int_0^1}
+
+% Commands for linear
+\newcommand{\LRA}{\Leftrightarrow}
+\newcommand{\vectorx}{{\vec x}}
+\newcommand{\vectory}{{\vec y}}
+\newcommand{\vectorv}{{\vec v}}
+\newcommand{\vectorw}{{\vec w}}
+\newcommand{\vectorzero}{{\vec 0}}
+\newcommand{\vectorb}{{\vec b}}
+\newcommand{\vectoru}{{\vec u}}
+\newcommand{\vectore}{{\vec e}}
+\newcommand{\vectorspan}[1]{{\rm Span}\{#1\}}
+\newcommand{\rmnull}[1]{{\rm null}(#1)}
+\newcommand{\length}[1]{\parallel #1\parallel}
+\newcommand{\vev}{\vectorv}
+\newcommand{\veu}{\vectoru}
+\newcommand{\vew}{\vectorw}
+\newcommand{\vex}{\vectorx}
+\newcommand{\vey}{\vectory}
+\newcommand{\vea}{\vec{a}}
+\newcommand{\veb}{\vec{b}}
+\newcommand{\vecc}{\vec{c}}
+\newcommand{\vei}{\vec i}
+\newcommand{\vej}{\vec j}
+\newcommand{\vek}{\vec k}
+\newcommand{\vep}{\vec p}
+%\newcommand{\vez}{\vectorz}
+%\newcommand{\vea}{\vectora}
+%\newcommand{\veb}{\vectorb}
+\newcommand{\twodvec}[2]{\left[\begin{array}{r}{#1}\\{#2}\end{array}\right]}
+\newcommand{\threedvec}[3]{\left[\begin{array}{r}#1\\#2\\#3\end{array}\right]}
+\newcommand{\mx}[2]{\left[\begin{array}{#1}#2\end{array}\right]}
+\newcommand{\col}[1]{{\rm Col}(#1)}
+\newcommand{\xy}{\twodvec{x}{y}}
+\newcommand{\xyz}{\threedvec{x}{y}{z}}
+
+
+%These are two other examples of matrices.
+%$G = \bigg\{ \begin{pmatrix} a & b \\ 0 & a \end{pmatrix} \bigg| a,b \in \mathbb{R}, a\neq 0 \bigg\}$ 
+%$G = \bigg\{ \begin{bmatrix} a & b \\ 0 & a \end{bmatrix} \bigg| a,b \in \mathbb{R}, a\neq 0 \bigg\}$ 
+
+%Commands for advanced linear
+\newcommand{\lvw}{\mathcal{L}(V,W)}
+\newcommand{\lvv}{\mathcal{L}(V,V)}
+\newcommand{\lv}{\mathcal{L}(V)}
+\newcommand{\mt}{\mathcal{M}(T)}
+\newcommand{\bs}{\backslash}
+%\newcommand{\bf}{\textbf}
+
+% Commands for abstract
+
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\zee}{\mathbb{Z}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\normal}{\triangleleft}
+\newcommand{\rationals}{\mathbb{Q}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\aut}[1]{{\rm Aut}(#1)}
+\newcommand{\Ker}{{\rm Ker}\,}
+\newcommand{\im}{{\rm Im}\,}
+\newcommand{\cyclic}[1]{\langle #1 \rangle}
+\newcommand{\isom}{\cong}
+\newcommand{\autc}[1]{{\rm Aut_c}(#1)}
+\newcommand{\autsub}[2]{{\rm Aut}_{#1}(#2)}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% Commands for DE
+
+\newcommand{\dydt}{\frac{dy}{dt}}
+\newcommand{\dxdt}{\frac{dx}{dt}}
+\newcommand{\dPdt}{\frac{dP}{dt}}
+\newcommand{\dt}[1]{\frac{d#1}{dt}}
+\newcommand{\dFdt}{\frac{dF}{dt}}
+\newcommand{\dtwoy}{\frac{d^2y}{dt^2}}
+\newcommand{\dYdt}{\frac{d\vey}{dt}}
+\newcommand{\p}{\partial}
+
+
+\begin{document}
+	
+	\tableofcontents
+	\vskip 1cm
+	This page is my own note to help answering the question that I got a lot from fellow mathematicians "What is an integrable system?". In short, the study of integrability revolves around finding conserved quantities (independent of time) of a dynamical system. Here I provide 2 notions of integrability.  
+	\section{Classical Integrable System and Liouville Integrability}
+	
+	3 helpful resources for the study of integrability are \cite{Suntherland}, \cite{babelon_bernard_talon_2003} and \cite{hall2013quantum}
+
+	Consider the most simple case: the motion of a particle moving in $\R^n$. Then the position of a particle is an $n$-dimensional real vector $\textbf{x}=(x_1,\dots,x_n)$. Consider each coordinate of the vector as a function of time $\textbf{x}(t)=(x_1(t), \dots, x_n(t))$, the derivative of the position with respect to time provide the velocity , denoted $\dot{\textbf{x}}(t)$. From the Hamiltonian approach to classical mechanics, the energy function is a function of position and momentum ($\textbf{p}=m\dot{\textbf{x}}(t)$, where $m$ is the mass).
+	
+	For a usual classical system, there are two sorts of energy (kinetic and potential energy). Thus, we can realize the Hamiltonian as a function on $\R^{2n}$ defined by: 
+	\begin{equation}
+		H(\textbf{x},\textbf{p})=\frac{1}{2m}\sum_{j=1}^np_j^2+V(\textbf{x})
+	\end{equation}  
+	where $V(\textbf{x})$ is any potential energy function. Via this equality, we obtain the Hamiltonian's equation: 
+	\begin{equation}
+		\frac{\partial H}{\partial p_j}=\frac{p_j}{m}=\frac{dx_j}{dt} \hspace{2cm}
+		-\frac{\partial H}{\partial x_j}=-\frac{\partial V}{\partial x_j}=\frac{dp_j}{dt}
+	\end{equation}
+	The seond equation follows from Newton's Law $m\ddot{\textbf{x}}(t)=\textbf{F}(\textbf{x}(t),\dot{\textbf{x}}(t))$.
+	\begin{definition}[Poisson Bracket]
+		Let $f$ and $g$ be two smooth functions on $\R^{2n}$, i.e. entries are $(\textbf{x}, \textbf{p}$) (the space of all these vectors is called the phase space). Then the \textbf{Poisson bracket} of $f$	and $g$, denoted $\{f,g\}$ is the function:
+		\begin{equation}
+			\{f,g\}(\textbf{x}, \textbf{p})=\sum_{i=1}^{n}\left(\frac{\partial f}{\partial x_i}\frac{\partial g}{\partial p_i}-\frac{\partial f}{\partial p_i}\frac{\partial g}{\partial x_i}\right)
+		\end{equation}
+	\end{definition}
+
+	By direct calculation we can check some properties of Poisson bracket: 
+	\begin{proposition} For smooth functions $f,g$ and $h$ on $\R^{2n}$ we have: 
+		\begin{enumerate}
+			\item[1)] $\{f, g+ch\}=\{f,g\}+c\{f,h\}$ for all $c \in \R$ 
+			\item[2)] $\{g,f\}=-\{f,g\}$
+			\item[3)] $\{f,gh\}=\{f,g\}h + g\{f,h\}$
+			\item[4)] $\{f,\{g,h\}\}=\{\{f,g\},h\}+\{g,\{f,h\}\}$
+		\end{enumerate}
+	\end{proposition}
+	Note that property 1), 2), 4) implies bilinearity, skew-symmetry and Jacobi identity respectively, which confirms that the space of smooth functions on $\R^{2n}$ forms a Lie algebra under the Poisson bracket. Lie algebra plays an important role in mathematical physics and definitely worth a section for itself on my website.
+	
+	Some other easy to compute relations for the position and momentum functions are: 
+	$$\{x_i,x_j\}=0$$
+	$$\{p_i,p_j\}=0$$
+ 	$$\{x_i,p_j\}=\delta_{ij}$$
+ 	where $\delta_{ij}$ is the Kronecker Delta function. The following proposition is crucial to understand the idea of integrability:
+	
+	\begin{proposition}
+		Given a vector $(\textbf{x}(t), \textbf{p}(t))$ on the phase space that satisfies the Hamiltonian equation (2), then for any smooth function $f$ on $\R^{2n}$ we have
+		$$\frac{d}{dt}f(\textbf{x}(t), \textbf{p}(t))=\{f,H\}(\textbf{x}(t), \textbf{p}(t))$$
+		when there is no ambiguity we write this proposition as: 
+		\begin{equation}
+			\frac{d}{dt}=\{f,H\}
+		\end{equation}
+	\end{proposition}
+
+	\begin{proof}
+		\begin{equation}
+			\{f,H\}=\sum_{i=1}^{n}\left(\frac{\partial f}{\partial x_i}\frac{\partial H}{\partial p_i}-\frac{\partial f}{\partial p_i}\frac{\partial H}{\partial x_i}\right)=\sum_{i=1}^{n}\left(\frac{\partial f}{\partial x_i}\frac{\partial x_i}{\partial t} + \frac{\partial f}{\partial p_i}\frac{\partial p_i}{\partial t}\right)=\frac{d}{dt}
+		\end{equation}
+	\end{proof}
+
+	Now, if the "quantity" $f$ above is independent of time, that means $d/dt=0=\{f,H\}$, then we called $f$ is a \emph{conserved quantity} or \emph{constant of motion}. Of course, by this definition, $H$ itself is a conserved quantity which should be expected because we are claiming that the energy is conserved in time-evolution. People studying classical mechanics might also realize by now that the angular momentum is also a conserved quantity. It is well-known that finding these conserved quantities $f$ is difficult and most of them are not exactly solved (analytically). However, if we assume to  have enough of them then the solution can be found exactly by quadrature, i.e. by solving a finite number of algebraic equations and computing finite number of integrals, (known as Liouville Theorem, different from the famous Liouville Theorem in complex analysis). These systems are said to be Liouville integrable systems. We are now ready to define \emph{Liouville integrability} rigorously
+	
+
+	\begin{definition}[Liouville Integrability]
+		A system with $n$ degrees of freedom (with a $2n$-dimensional phase space) is said to be Liouville integrable if there exists $n$ independent conserved quantities $f_i$ such that $\{f_i,H\}=0$ which are in involution, 
+		\begin{equation}
+			\{F_i,F_j\}=0
+		\end{equation}
+	\end{definition}
+
+	\begin{theorem}[Liouville Theorem]
+		The solution of the equations of motion of a Liouville integrable model can be obtained by quadrature (i.e. by solving algebraic equation and taking some integrals)
+	\end{theorem}
+
+	The proof for this theorem can be found in detail in \cite{babelon_bernard_talon_2003}
+	
+	Of course, we do not want to just work with a system of only 1 particle. In fact, the reality is that we always have system of many particles. In that case the Hamiltonian is  more complicated because the energy of each particle is not conserved because the particle interacting with each other. However, we can still talk about the total energy of the system as a function of $N$ particles' states via the Newton's law: 
+	$$E(\textbf{x}^1, \dots, \textbf{x}^N, \dot{\textbf{x}}^1, \dots, \dot{\textbf{x}}^N)
+	=\sum_{j=1}^N\frac{1}{2}m_j |\dot{\textbf{x}}^j|^2 + V(\textbf{x}^1, \dots, \textbf{x}^N) $$
+	 
+	 
+	 %E(\textbf{x^1}, \dots, \textbf{x^N}, \textbf{\dot{x}^1}, \dots, \textbf{\dot{x}^N})
+	%=\sum_{j=1}^N\frac{1}{2}m_j |\textbf{\ddot{v}^j}|^2 + V(\textbf{x^1}, \dots, \textbf{x^N}) 
+	
+	\section{Quantum Integrability}
+	
+	
+	\newpage		
+	\bibliographystyle{alpha}
+	\bibliography{mybib.tex}	
+	
+\end{document}

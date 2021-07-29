@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="cluster_algebra_website.tex"> 
+<link rel="stylesheet" type="text/css" href="cluster_algebra_website.css"> 
+</head><body 
+>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Contents</h3>
+   <div class="tableofcontents">
+   &#x00A0;<span class="sectionToc" >1 <a 
+href="#x1-20001" id="QQ2-1-2">Introduction</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2 <a 
+href="#x1-30002" id="QQ2-1-3">Quiver and Exchange Matrices</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3 <a 
+href="#x1-40003" id="QQ2-1-4">Seeds and Mutation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4 <a 
+href="#x1-50004" id="QQ2-1-5">Integrable System</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >4.1 <a 
+href="#x1-60004.1" id="QQ2-1-6">Liouville Integrability</a></span>
+   </div>
+<!--l. 149--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-20001"></a>Introduction</h3>
+<!--l. 150--><p class="noindent" >The following material is based on this paper <span class="cite">[<a 
+href="#Xwilliams2013cluster">Wil13</a>]</span> Cluster Algebra was invented
+by Sergey Fomin and Andrei Zelevinsky to tackle total positivity and total
+nonnegativity problems
+<!--l. 154--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-30002"></a>Quiver and Exchange Matrices</h3>
+<!--l. 156--><p class="noindent" >Must put things in here
+<!--l. 158--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-40003"></a>Seeds and Mutation</h3>
+<!--l. 161--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-50004"></a>Integrable System</h3>
+<!--l. 163--><p class="noindent" >The following material on integrable system is based on the the 2 resources <span class="cite">[<a 
+href="#XSuntherland">Sut04</a>]</span>
+and <span class="cite">[<a 
+href="#XSerban">Ser21</a>]</span>
+   <h4 class="subsectionHead"><span class="titlemark">4.1   </span> <a 
+ id="x1-60004.1"></a>Liouville Integrability</h4>
+<!--l. 165--><p class="noindent" >Consider the system with <span 
+class="cmmi-10">n </span>degree if freedom; its state is described by a point in the
+2<span 
+class="cmmi-10">n </span>dimensional phase space, whose coordinates are the positions <span 
+class="cmmi-10">q</span><sub><span 
+class="cmmi-7">i</span></sub> and the
+momenta <span 
+class="cmmi-10">p</span><sub><span 
+class="cmmi-7">i</span></sub> with <span 
+class="cmmi-10">n </span>= 1<span 
+class="cmmi-10">,</span><img 
+src="cluster_algebra_website0x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmmi-10">,n</span>. The dynamics of the system is given by the
+Hamiltonian <span 
+class="cmmi-10">H</span>(<span 
+class="cmmi-10">p,q</span>), <span 
+class="cmmi-10">p </span>= (<span 
+class="cmmi-10">p</span><sub><span 
+class="cmr-7">1</span></sub><span 
+class="cmmi-10">,</span><img 
+src="cluster_algebra_website1x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmmi-10">,p</span><sub><span 
+class="cmmi-7">n</span></sub>) and <span 
+class="cmmi-10">p </span>= (<span 
+class="cmmi-10">p</span><sub><span 
+class="cmr-7">1</span></sub><span 
+class="cmmi-10">,</span><img 
+src="cluster_algebra_website2x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmmi-10">,p</span><sub><span 
+class="cmmi-7">n</span></sub>) via the equation of
+motion:
+                                                                  
+
+                                                                  
+   <table 
+class="equation"><tr><td><a 
+ id="x1-6001r1"></a>
+   <div class="math-display" >
+<img 
+src="cluster_algebra_website3x.png" alt="q&#x02D9;=  &#x2202;H-,     p&#x02D9;= - &#x2202;H-
+ i   &#x2202;pi       i    &#x2202;qi
+" class="math-display" ></div>
+   </td><td class="equation-label">(1)</td></tr></table>
+<!--l. 168--><p class="nopar" >
+where <span 
+class="cmmi-10">&#x1E1F;</span> = <img 
+src="cluster_algebra_website4x.png" alt="df-
+dt"  class="frac" align="middle">. Then, given a quantity <span 
+class="cmmi-10">F </span>that characterizes some properties of the
+system, for example, total energy of the system, that is time dependent, <span 
+class="cmmi-10">F</span>(<span 
+class="cmmi-10">q</span>(<span 
+class="cmmi-10">t</span>)<span 
+class="cmmi-10">,p</span>(<span 
+class="cmmi-10">t</span>))
+is given by
+   <table 
+class="equation"><tr><td><a 
+ id="x1-6002r2"></a>
+   <div class="math-display" >
+<img 
+src="cluster_algebra_website5x.png" alt="&#x02D9;
+F = {H,F }
+" class="math-display" ></div>
+   </td><td class="equation-label">(2)</td></tr></table>
+<!--l. 172--><p class="nopar" >
+where <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">.,.</span><span 
+class="cmsy-10">} </span>denote the Poisson brackets,
+   <table 
+class="equation"><tr><td><a 
+ id="x1-6003r3"></a>
+   <div class="math-display" >
+<img 
+src="cluster_algebra_website6x.png" alt="        &#x2211;n (                )
+{F,G } =     &#x2202;F-&#x2202;G--  &#x2202;G-&#x2202;F-
+        i=1  &#x2202;pi&#x2202;qi   &#x2202;pi&#x2202;qi
+" class="math-display" ></div>
+                                                                  
+
+                                                                  
+   </td><td class="equation-label">(3)</td></tr></table>
+<!--l. 176--><p class="nopar" >
+The Poisson brakets of the positions and momenta are then given by
+   <table 
+class="equation"><tr><td><a 
+ id="x1-6004r4"></a>
+   <div class="math-display" >
+<img 
+src="cluster_algebra_website7x.png" alt="{pi,pj} = 0    {pi,qj} = &#x03B4;ij      {qi,qj} = 0
+" class="math-display" ></div>
+   </td><td class="equation-label">(4)</td></tr></table>
+<!--l. 180--><p class="nopar" >
+where <span 
+class="cmmi-10">&#x03B4;</span><sub><span 
+class="cmmi-7">ij</span></sub> is the Kronecker Delta function.
+   <div class="newtheorem">
+<!--l. 182--><p class="noindent" ><span class="head">
+<a 
+ id="x1-6005r1"></a>
+<span 
+class="cmbx-10">Definition 4.1.</span>  </span>A system with <span 
+class="cmmi-10">n </span>degrees of freedom is said to be Liouville
+integrable if there exist <span 
+class="cmmi-10">n </span>independent conserved quantities <span 
+class="cmmi-10">F</span><sub><span 
+class="cmmi-7">i</span></sub>, <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">H,F</span><sub><span 
+class="cmmi-7">i</span></sub><span 
+class="cmsy-10">} </span>= 0 which
+are in involution,
+   <table 
+class="equation"><tr><td><a 
+ id="x1-6006r5"></a>
+   <div class="math-display" >
+<img 
+src="cluster_algebra_website8x.png" alt="{Fi,Fj} = 0
+" class="math-display" ></div>
+   </td><td class="equation-label">(5)</td></tr></table>
+<!--l. 186--><p class="nopar" >
+   </div>
+<!--l. 187--><p class="indent" >
+Topologically speaking, this definition forces the configuration space of an integrable
+system to be a torus
+                                                                  
+
+                                                                  
+   <div class="newtheorem">
+<!--l. 189--><p class="noindent" ><span class="head">
+<a 
+ id="x1-6007r2"></a>
+<span 
+class="cmbx-10">Theorem 4.2 </span>(Liouville Theorem)<span 
+class="cmbx-10">.</span>  </span>The solution of the equations of motion
+of a Liouville integrable model can be obtained by quadrature (i.e. by solving
+algebraic equation and taking some integrals)
+   </div>
+<!--l. 191--><p class="indent" >
+<!--l. 193--><p class="indent" >
+                                                                  
+
+                                                                  
+   <h3 class="likesectionHead"><a 
+ id="x1-70004.1"></a>References</h3>
+<!--l. 1--><p class="noindent" >
+       <div class="thebibliography">
+       <p class="bibitem" ><span class="biblabel">
+ [Ser21] <span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="XSerban"></a>Didina Serban. <span 
+class="cmti-10">Symmetries and Integrable Systems</span>, 2021.
+       </p>
+       <p class="bibitem" ><span class="biblabel">
+ [Sut04]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="XSuntherland"></a>Bill  Sutherland.    <span 
+class="cmti-10">Beautiful  models:  70  years  of  exactly  solved</span>
+       <span 
+class="cmti-10">quantum many-body problems</span>.  World Scientific, first edition edition,
+       2004.
+       </p>
+       <p class="bibitem" ><span class="biblabel">
+ [Wil13]<span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span><a 
+ id="Xwilliams2013cluster"></a>Lauren&#x00A0;K. Williams. Cluster algebras: an introduction, 2013.
+</p>
+       </div>
+    
+</body></html> 
+
+                                                                  
+
+

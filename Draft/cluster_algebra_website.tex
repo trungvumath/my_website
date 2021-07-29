@@ -1,0 +1,167 @@
+\documentclass[]{article}
+
+
+% Some packages to install
+\usepackage{amsfonts,amssymb,amsmath, mathtools,amsthm}
+\usepackage{xcolor, color}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{soul}
+\usepackage{hyperref}
+\makeindex
+
+%% Here are some spaces %%
+\newcommand{\smsp}{\vspace{.1in}}
+\newcommand{\medsp}{\vspace{.25in}}
+\newcommand{\half}{\vspace{.5in}}
+\newcommand{\inch}{\vspace{1in}}
+\newcommand{\quarter}{\vspace{.25in}}
+
+
+% Theorems and stuff
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{describe}[theorem]{Description}
+\newtheorem{prob}{Problem}
+\newtheorem{question}{Question}[section]
+\newtheorem{remark}{Remark}[section]
+
+
+
+
+% Command for general
+\newcommand{\ds}{\displaystyle}
+
+% Commands for series
+
+\newcommand{\Sumnzero}{\displaystyle{\sum_{n=0}^\infty}}
+\newcommand{\Sumnone}{\displaystyle{\sum_{n=1}^\infty}}
+\newcommand{\Sumkzero}{\displaystyle{\sum_{k=0}^\infty}}
+\newcommand{\Sumkone}{\displaystyle{\sum_{k=1}^\infty}}
+\newcommand{\infint}{\int_1^\infty}
+\newcommand{\zeroint}{\int_0^1}
+
+% Commands for linear
+\newcommand{\LRA}{\Leftrightarrow}
+\newcommand{\vectorx}{{\vec x}}
+\newcommand{\vectory}{{\vec y}}
+\newcommand{\vectorv}{{\vec v}}
+\newcommand{\vectorw}{{\vec w}}
+\newcommand{\vectorzero}{{\vec 0}}
+\newcommand{\vectorb}{{\vec b}}
+\newcommand{\vectoru}{{\vec u}}
+\newcommand{\vectore}{{\vec e}}
+\newcommand{\vectorspan}[1]{{\rm Span}\{#1\}}
+\newcommand{\rmnull}[1]{{\rm null}(#1)}
+\newcommand{\length}[1]{\parallel #1\parallel}
+\newcommand{\vev}{\vectorv}
+\newcommand{\veu}{\vectoru}
+\newcommand{\vew}{\vectorw}
+\newcommand{\vex}{\vectorx}
+\newcommand{\vey}{\vectory}
+\newcommand{\vea}{\vec{a}}
+\newcommand{\veb}{\vec{b}}
+\newcommand{\vecc}{\vec{c}}
+\newcommand{\vei}{\vec i}
+\newcommand{\vej}{\vec j}
+\newcommand{\vek}{\vec k}
+\newcommand{\vep}{\vec p}
+%\newcommand{\vez}{\vectorz}
+%\newcommand{\vea}{\vectora}
+%\newcommand{\veb}{\vectorb}
+\newcommand{\twodvec}[2]{\left[\begin{array}{r}{#1}\\{#2}\end{array}\right]}
+\newcommand{\threedvec}[3]{\left[\begin{array}{r}#1\\#2\\#3\end{array}\right]}
+\newcommand{\mx}[2]{\left[\begin{array}{#1}#2\end{array}\right]}
+\newcommand{\col}[1]{{\rm Col}(#1)}
+\newcommand{\xy}{\twodvec{x}{y}}
+\newcommand{\xyz}{\threedvec{x}{y}{z}}
+
+
+%These are two other examples of matrices.
+%$G = \bigg\{ \begin{pmatrix} a & b \\ 0 & a \end{pmatrix} \bigg| a,b \in \mathbb{R}, a\neq 0 \bigg\}$ 
+%$G = \bigg\{ \begin{bmatrix} a & b \\ 0 & a \end{bmatrix} \bigg| a,b \in \mathbb{R}, a\neq 0 \bigg\}$ 
+
+%Commands for advanced linear
+\newcommand{\lvw}{\mathcal{L}(V,W)}
+\newcommand{\lvv}{\mathcal{L}(V,V)}
+\newcommand{\lv}{\mathcal{L}(V)}
+\newcommand{\mt}{\mathcal{M}(T)}
+\newcommand{\bs}{\backslash}
+%\newcommand{\bf}{\textbf}
+
+% Commands for abstract
+
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\zee}{\mathbb{Z}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\normal}{\triangleleft}
+\newcommand{\rationals}{\mathbb{Q}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\aut}[1]{{\rm Aut}(#1)}
+\newcommand{\Ker}{{\rm Ker}\,}
+\newcommand{\im}{{\rm Im}\,}
+\newcommand{\cyclic}[1]{\langle #1 \rangle}
+\newcommand{\isom}{\cong}
+\newcommand{\autc}[1]{{\rm Aut_c}(#1)}
+\newcommand{\autsub}[2]{{\rm Aut}_{#1}(#2)}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% Commands for DE
+
+\newcommand{\dydt}{\frac{dy}{dt}}
+\newcommand{\dxdt}{\frac{dx}{dt}}
+\newcommand{\dPdt}{\frac{dP}{dt}}
+\newcommand{\dt}[1]{\frac{d#1}{dt}}
+\newcommand{\dFdt}{\frac{dF}{dt}}
+\newcommand{\dtwoy}{\frac{d^2y}{dt^2}}
+\newcommand{\dYdt}{\frac{d\vey}{dt}}
+\newcommand{\p}{\partial}
+
+
+\begin{document}
+
+\tableofcontents
+
+
+\section{Introduction}
+The following material is based on this paper \cite{williams2013cluster}
+Cluster Algebra was invented by Sergey Fomin and Andrei Zelevinsky to tackle total positivity and total nonnegativity problems
+
+
+\section{Quiver and Exchange Matrices}
+
+Must put things in here
+
+\section{Seeds and Mutation}
+
+
+
+
+\newpage		
+\bibliographystyle{alpha}
+\bibliography{mybib.tex}	
+	
+\end{document}
