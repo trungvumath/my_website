@@ -94,7 +94,24 @@
                 <div class="col-md-5 d-block d-sm-block d-sm-block">
 
                     <!-- <img class="randomImage featurette-image img-fluid mx-auto"  alt="Generic placeholder image">  -->
-                    <img  class=" featurette-image img-fluid mx-auto" src="img/about.jpg"/>
+                    <img id="randomImage" class=" featurette-image img-fluid mx-auto" />
+      
+              <script>
+                function getRandomImage() {
+                  var images = ['img/VA1.jpg', "img/VA3.jpg", 'img/VA4.jpg', 'img/about.jpg'];
+                  var image = images[Math.floor(Math.random() * images.length)];
+      
+                  return image;
+                }
+      
+                function displayRandomImage() {
+                  var htmlImage = document.getElementById("randomImage");
+                  htmlImage.src = getRandomImage();
+                }
+      
+                displayRandomImage();
+              </script>
+      
                 </div>
 
                 
