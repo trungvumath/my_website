@@ -1,0 +1,100 @@
+\documentclass{article}
+
+\usepackage{fullpage,amsmath,amssymb,amsthm}
+
+\newcommand{\D}{\displaystyle}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+
+\title{Math 199 CD2: Limit and $\epsilon$-$\delta$}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+
+\begin{enumerate}
+	
+	\item Let $E(h)=h^3$. We want to show $\D \lim_{h \to 0} E(h)=0$.
+	\begin{enumerate}
+		\item If $\epsilon=1$, then find $\delta$ so that when $0 < |h| < \delta$, we know $|E(h)| < \epsilon$.
+		\vspace{1in}
+		\item If $\epsilon=\frac{1}{8}$, then find $\delta$ so that when $0 < |h| < \delta$, we know $|E(h)| < \epsilon$.
+		\vspace{1in}
+		\item If we $\epsilon$ is not given explicitly, find $\delta$ in terms of $\epsilon$ so that when $0 < |h| < \delta$, we know $|E(h)| < \epsilon$. 
+		\vspace{1in}
+	\end{enumerate}
+
+\item For each of the following, use the $\epsilon$-$\delta$ definition of the limit to show that the limit does not exist. Use words!
+
+\begin{enumerate}
+
+\item $\D \lim_{x\to 0} \frac{|x|}{x}$.
+
+\vspace{4cm}
+
+\newpage
+\item $\D \lim_{x\to 1} \floor{x}$ where $\floor{x}$ is $x$ rounded down to the nearest integer. For example, $\floor{1.7}=\floor{1.2}=1$, $\floor{-1/2}=\floor{-2/3}=-1$
+
+\vspace{4cm}
+
+
+
+\vspace{4cm}
+
+\end{enumerate}
+
+\item We want to show that $\D \lim_{x \to 2} (2-3x) = -4$.
+\begin{enumerate}
+	\item Fill in the blanks to set up the problem using a limit of zero at zero. 
+	
+	Let $E(h)=(2-3(2+h))-(-4)=-3h$. We say that \underline{\hspace{0.5in}} has limit \underline{\hspace{0.5in}} at \underline{\hspace{0.5in}} if
+	
+	\hspace{0.5cm} for every challenge number $\epsilon > 0$,
+	
+	\hspace{1cm} there is a response number $\delta > 0$ such that
+	
+	\hspace{1.5cm} if the input \underline{\hspace{0.75cm}} is strictly between \underline{\hspace{0.75cm}} and \underline{\hspace{0.75cm}}, but \underline{\hspace{0.75cm}} is not equal to \underline{\hspace{0.75cm}},
+	
+	\hspace{2cm} then the output \underline{\hspace{0.5in}} will be strictly between \underline{\hspace{0.5in}} and \underline{\hspace{0.5in}}.
+	
+	\item Fill in the blanks to set up the problem using the traditional definition of the limit.
+	
+	We say that \underline{\hspace{0.5in}} has limit \underline{\hspace{0.5in}} at \underline{\hspace{0.5in}} if
+	
+	\hspace{0.5cm} for every challenge number $\epsilon > 0$,
+	
+	\hspace{1cm} there is a response number $\delta > 0$ such that
+	
+	\hspace{1.5cm} if $0 < \underline{\hspace{0.5in}} < \delta $,
+	
+	\hspace{2cm} then $\underline{\hspace{0.5in}} < \epsilon$.
+	
+	\item How are these two limit definitions the same? How are they different? Discuss with your group.
+	\vspace{1in}
+	\item Use either method to show $\D \lim_{x \to 2} (2-3x) = -4$.
+	\vskip 4cm
+\end{enumerate}
+
+\newpage
+
+
+
+\item Suppose $\D \lim_{x\to 0} E(x) = 0$. Use the $\epsilon$-$\delta$ definition of a limit to prove the following:
+
+\begin{enumerate}
+
+\item $\D \lim_{x\to 0} 2E(x) = 0$
+
+\vspace{4cm}
+
+\item $\D \lim_{x\to 0} E(2x) = 0$
+
+\vspace{4cm}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
