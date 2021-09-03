@@ -1,0 +1,185 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage,amsmath,amssymb,amsthm}
+
+\newcommand{\D}{\displaystyle}
+
+\title{Math 199 CD2: Asymptotics and Limit at Infinity}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+
+\begin{enumerate}
+
+\item Show that the following equation has at least 1 solution using intermediate value theorem: 
+\begin{enumerate}
+	\item $x^3+x+1=0$\vskip 3cm
+	\item $x^5+x^2+1=0$\vskip 3cm
+\end{enumerate}
+
+
+\item Calculate $\D\lim_{x\to 0} x \sin\left(\frac{1}{x}\right)$.
+
+
+
+\vfill
+
+\vfill
+
+\newpage
+
+\item In each part below, invent a function $f(x)$ with the desired properties, or show no such function can exist.
+
+\begin{enumerate}
+
+\item $\D\lim_{x\to\infty} f(x) - x = \infty$ and $\D\lim_{x\to\infty} 2x - f(x) = \infty$. Hint: Think of function in the form $f(x)=cx$ where $c$ is a constant
+
+\vfill
+
+\item $\D\lim_{x\to\infty} f(x) - x = 2$ and $\D\lim_{x\to\infty} 2x - f(x) = 2$. Hint: Limit summation might be helpful here
+
+\vfill
+
+
+\item $\D\lim_{x\to\infty} f(x) = 0$ and $\D\lim_{x\to\infty} e^x f(x) = \infty$.
+
+\vfill
+
+\item $\D\lim_{x\to\infty} f(x) = \infty$ and $\D\lim_{x\to\infty} \frac{f(x)}{\ln(x)} = 0$.
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\item \textbf{Exponentials are faster than polynomails.} In this problem you will prove that (growing) exponential functions grow faster than polynomials, a fact that you can cite later and will be very useful.
+
+\begin{enumerate}
+
+
+
+
+
+
+
+\item Expand $(x+y)^4$. Recall `binomial theorem':
+	$$(x+y)^n=\binom{n}{0}x^ny^0+\binom{n}{1}x^{n-1}y +\cdots+\binom{n}{n}x^0y^n=\sum_{i=1}^n\binom{n}{i}x^iy^{n-i}$$
+	where:
+	$$\binom{n}{i}=\frac{n!}{i!(n-i)!}$$
+\vskip 3cm
+
+\vfill
+
+\item Use the binomial theorem to show that if $\alpha\geq 0$, then $(1+\alpha)^n \geq 1 + n \alpha + \frac{n(n-1)}{2} \alpha^2$.
+\vskip 4cm
+
+
+\vfill
+
+\item Calculate $\D\lim_{n\to\infty} \frac{n}{(1+\alpha)^n}$ using (b). I'm looking for the "squeez"
+\vskip 3cm
+\vfill
+
+\vfill
+
+\item Show that $\D\lim_{x\to\infty} \frac{x^2}{2^x} = 0$ using (c) and the transformation
+\[ \lim_{x\to\infty} \frac{x^2}{2^x} = \left( \lim_{x\to\infty} \frac{x}{(\sqrt{2})^x} \right)^2 \]
+
+\newpage
+
+\item Show that $\D\lim_{x\to\infty} \frac{x^a}{c^x} = 0$ for any $a\geq 0$ and $c>1$.
+
+\vfill
+
+\vfill
+
+\end{enumerate}
+
+\item \textbf{Computing more Limits}
+\begin{enumerate}
+	\item $$\lim_{x \to \infty}\frac{x^3-2}{3x^2+4x-1}$$
+	\vskip 3cm
+	\item $$\lim_{x\to \infty}\frac{2x^2-x+1}{4x^2-3x-1}$$
+	\vskip 3cm
+	\item $$\lim_{x \to \infty}\frac{2x^2-1}{4x^3-5x-1}$$
+	\vskip 3cm 
+	\item $e^{-3x}\cos x$
+	\vskip 3cm
+\end{enumerate}
+
+\item \textbf{Little-o Notation.} The following notation is not taught in this course, but it is essential for any engineer or computer scientist. We say that $f(x) = o(g(x))$ if $\D\lim_{x\to\infty} \frac{f(x)}{g(x)} = 0$ (in this sense, $f$ grows more slowly than $g$). The `$=$' used here is not a true equality, as many distinct functions can be $o(g(x))$. Confirm the following.You don't need to finish the whole problem but it's a good practice. 
+
+\begin{enumerate}
+
+\item $x = o(x^2)$ and $x^{3/2} + \sqrt{x} = o(x^2)$.
+
+\vfill
+
+\item For any $\alpha,\beta>0$, $x^{\alpha} = o(x^{\alpha+\beta})$.
+
+\vfill
+
+\item For any $a\geq 0$ and $c > 1$, $x^a = o(c^x)$.
+
+\vfill
+
+\item $\ln(x) = o(x)$. Use the previous part but it's a bit tricky! A useful identity that you will use a lot is $x=e^{\ln(x)}$. Make it a fun exercise to verify this identity but feel free to just use it for now in this problem 
+
+\vfill
+
+\vfill
+
+\item For any $\alpha > 0$, $\ln(x) = o(x^\alpha)$. (Use a clever change of variables.)
+
+\vfill
+
+\vfill
+
+\item $2^x = o(3^x)$.
+
+\vfill
+
+\item For any $c > d > 1$, $d^x = o(c^x)$.
+
+\vfill
+
+\item $\ln(\ln(x)) = o(\ln(x))$.
+
+\vfill
+
+\item $e^{\sqrt{\ln(x)}} = o(\sqrt{x})$.
+
+\vfill
+
+\vfill
+
+\item For any $\alpha > 0$, $e^{\sqrt{\ln(x)}} = o(x^\alpha)$.
+
+\vfill
+
+\vfill
+
+\item $\ln(x) = o(e^{\sqrt{\ln(x)}})$
+
+\vfill
+
+\vfill
+
+\item $c^x = o(x^x)$.
+
+\vfill
+
+\end{enumerate}
+
+Conclusions: logarithms are slower than polynomials, which are slower than exponentials. But there are still functions slower, faster, and in between.
+
+
+\end{enumerate}
+
+\end{document}
