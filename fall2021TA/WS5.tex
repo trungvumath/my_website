@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage,amsmath,amssymb,amsthm}
+
+\newcommand{\D}{\displaystyle}
+
+\title{Math 199 CD2:  Limit Definition of Derivative}
+\date{\today}
+
+
+\begin{document}
+	
+	\maketitle
+\begin{enumerate}
+	\item Find the derivative of each function using the limit definition.  Verify with differentiation rules.
+	\begin{enumerate}
+		\item $f(x)=3x^2-2x+2$ \vskip 3cm
+		\item $V(a)=\sqrt{2a+3}$\vskip 3cm
+		\item $\D f(x)=\frac{1}{x}$\vskip 3cm
+		\item $\D f(x)=\frac{x^2+1}{x-2}$\vskip 3cm
+	\end{enumerate}
+
+	\item You will eventually learn the following rule of taking derivative:
+	$$(f(x)+g(x))'=f(x)'+g(x)'$$
+	Verify this rule with the limit definition
+	\vskip 4 cm
+	
+	
+	
+	\item For a function $f(x)$, define $f^+(x) = \lim_{h\to 0^+} \frac{f(x+h)-f(x)}{h}$ and $f^-(x) = \lim_{h\to 0^-} \frac{f(x+h)-f(x)}{h}$. We call $f^+(x)$ the right-derivative of $f(x)$, and $f^-(x)$ the left-derivative of $f(x)$.
+	
+	\begin{enumerate}
+		
+		\item Why do these names make sense?
+		
+		\vskip 2cm
+		\item For $f(x) = |x|$, find $f^+(0)$ and $f^-(0)$.
+		
+		\vskip2cm 
+		
+		\item Show $f^-(x) = \lim_{h\to 0^+} \frac{f(x)-f(x-h)}{h}$.
+		
+		\vskip 2cm
+		
+		\item Graphically interpret $f^+$ and $f^-$.
+		\vskip 2cm
+		
+		\item Find $f^+(0)$ and $f^-(0)$ for $f(x) = \begin{cases} 1, & x \geq 0, \\ 0, & x<0 \end{cases}$. Interpret this graphically.
+		
+		\vskip 4cm
+		
+		\item If $f(x)$ is not continuous at $a$, what can you say about $f^+(a)$ and $f^-(a)$?
+		
+		\vskip 2cm 
+		
+		\item If $f(x)$ is differentiable at $a$, what can you say about $f^+(a)$ and $f^-(a)$?
+		
+		\vskip 2cm
+		
+		\item Find $a$ and $b$ so that $f(x)$ is differentiable everywhere, where $f(x) = \begin{cases} ax+2 & x \leq 1 \\ x^2+b & x>1 \end{cases}$.
+		
+		\vskip2cm
+		\end{enumerate}
+	
+		\item Find the point(s) at which the tangent line to the parabola $y = ax^2 + bx + c$ is horizontal. (Notice that the solution to this problem locates the "nose" of the parabola.)
+		\vskip 6cm
+		\item \textbf{[Hard Problem]} Consider the function:
+		$$\begin{cases}
+			x, & \textnormal{if $x$ is rational}\\ 0, & \textnormal{if $x$ is irrational} 
+		\end{cases}$$
+		Determine whether $f$ is differentiable at $0$. 
+\end{enumerate}
+
+
+\end{document}
