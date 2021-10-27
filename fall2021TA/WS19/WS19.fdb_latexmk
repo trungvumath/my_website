@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1635301869 "WS19.tex" "WS19.pdf" "WS19" 1635301870
+["pdflatex"] 1635302309 "WS19.tex" "WS19.pdf" "WS19" 1635302310
   "/etc/texmf/web2c/texmf.cnf" 1634282861 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -213,12 +213,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1634282970 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1634282996 8264753 e0db1c87b3d8c2f7bbf67f8ccbc4b90c ""
-  "WS19.aux" 1635301870 1381 32f8bc9acab6d831e15db7f6c9caa90a "pdflatex"
-  "WS19.out" 1635301870 347 02db6b07ca41858ffea620377edec74c "pdflatex"
-  "WS19.tex" 1635301867 2956 7fe1b14dfda200cf09b6f143522ba8e8 ""
+  "WS19.aux" 1635302310 1381 32f8bc9acab6d831e15db7f6c9caa90a "pdflatex"
+  "WS19.out" 1635302310 347 02db6b07ca41858ffea620377edec74c "pdflatex"
+  "WS19.tex" 1635302309 2957 7a2ed536e9e00b7cabad2868ead8ab89 ""
   "macro3.tex" 1599768791 7716 45db170f5fbd77624bf4f96f8ceb86b1 ""
   (generated)
-  "WS19.out"
-  "WS19.log"
-  "WS19.pdf"
   "WS19.aux"
+  "WS19.out"
+  "WS19.pdf"
+  "WS19.log"
