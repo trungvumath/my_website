@@ -777,6 +777,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/libertine/LinLibertineT
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-ot1--base.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/libertine/LinLibertineTBI-tlf-ot1.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/libertine/LinLibertineTBI-tlf-ot1--base.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/public/newtx/nxlmi.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/newtx/LibertineMathMI.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
 INPUT resume.aux
 INPUT ./resume.out
 INPUT ./resume.out
@@ -785,6 +789,7 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.e
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb
