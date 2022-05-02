@@ -1,0 +1,242 @@
+%%%% This  macro file is changed and adapted from professor Jill Dietz's macro from St. Olaf College in MATH320 Linear Algebra 
+
+
+% This sets the size and style of the page
+
+\documentclass[]{article}
+\setlength \oddsidemargin{-.0in} \setlength \textwidth{6.5in}
+\setlength \topmargin{-.5in} \setlength \textheight{9in}
+
+% Some packages to install
+\usepackage{amsfonts,amssymb,amsmath, mathtools,amsthm}
+\usepackage{xcolor, color}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{faktor}
+\usepackage{hyperref}
+\usepackage{ulem}
+\usepackage{tikz, pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{pdfpages}
+\usepackage{soul}
+%\pgfplotsset{compat=1.14}
+
+% various inputs
+\input amssym.def
+\input amssym.tex
+
+
+
+% a good babble textwidth is 5.75in
+\newcommand{\babblewidth}{\setlength\textwidth{5.75in}}
+
+
+% This will stretch out the page
+\newcommand{\bigpage}{  \setlength \oddsidemargin{-.25in}
+            \setlength \textwidth{6.75in}
+            \setlength \topmargin{-1in}
+            \setlength \textheight{9.75in}}
+
+
+%This will shrink the page
+\newcommand{\smallpage}{  \setlength \oddsidemargin{.5in}
+            \setlength \textwidth{5in}
+            \setlength \topmargin{0in}
+            \setlength \textheight{9in}}
+
+\newcommand{\separator}{\vglue .1in\hrule\vglue .1in}
+
+\newcommand{\pause}{\vglue .1in\hrulefill {\tiny Pause here}\hrulefill \vglue .1in}
+
+\newcommand{\dashedseparator}{\vspace{.1in}\underline{\hspace{.5in}}\hspace{.5in}\underline{\hspace{.5in}}\hspace{.5in}\underline{\hspace{.5in}}\hspace{.5in}\underline{\hspace{.5in}}\hspace{.5in}\underline{\hspace{.5in}}\hspace{.5in}\underline{\hspace{.5in}}\vspace{.1in}}
+
+\newcommand{\nopages}{\pagestyle{empty}}
+\newcommand{\bd}{\begin{document}}
+\newcommand{\ed}{\end{document}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\bq}{\begin{quote}}
+\newcommand{\eq}{\end{quote}}
+\newcommand{\sub}{\subsection}
+\newcommand{\bfi}[1]{\item{\bf{#1}}}
+\newcommand{\bfe}[1]{\item{\bf{#1}}}
+\newcommand{\bfl}{\begin{flushleft}}
+\newcommand{\efl}{\end{flushleft}}
+\newcommand{\ba}{\begin{align*}}
+\newcommand{\eal}{\end{align*}}
+\newcommand{\eqal}[1]{\begin{align*}#1\end{align*}}
+\newcommand{\bmc}[1]{\begin{multicols}{#1}}
+\newcommand{\emc}{\end{multicols}}
+\newcommand{\bp}{\begin{proof}}
+\newcommand{\ep}{\end{proof}}
+
+
+%%general stuff
+\newcommand{\caret}{\textasciicircum}
+
+%% Here are some spaces %%
+\newcommand{\smsp}{\vspace{.1in}}
+\newcommand{\medsp}{\vspace{.25in}}
+\newcommand{\half}{\vspace{.5in}}
+\newcommand{\inch}{\vspace{1in}}
+\newcommand{\quarter}{\vspace{.25in}}
+
+\newcommand{\mytitle}[2]{\begin{center}{\bf {#1}}\\ Trung Vu\\ Collin Nill
+{#2}\end{center}}
+
+\newcommand{\centre}[1]{\begin{center}{#1}\end{center}}
+\newcommand{\bfcentre}[1]{\begin{center}{\bf {#1}}\end{center}}
+
+\newcommand{\babble}[1]{\marginpar{\flushleft\scriptsize\textsf{#1}}}
+
+
+% here is highlighted/colored text
+%\newcommand{\hl}[1]{\textcolor{red}{#1}} %note that \hl{} highlights text like a highlighter
+\newcommand{\hlred}[1]{\textcolor{red}{#1}}
+\newcommand{\hlblue}[1]{\textcolor{blue}{#1}}
+\newcommand{\hlgreen}[1]{\textcolor{green}{#1}}
+
+
+
+
+%This will put a circle around something.
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+% Theorems and stuff
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+     \newtheorem{lemma}[theorem]{Lemma}
+     \newtheorem{proposition}[theorem]{Proposition}
+     \newtheorem{corollary}[theorem]{Corollary}
+     \newtheorem{claim}[theorem]{Claim}
+     \newtheorem{definition}[theorem]{Definition}
+     \newtheorem{example}[theorem]{Example}
+     \newtheorem{note}[theorem]{Note}
+     \newtheorem{describe}[theorem]{Description}
+     \newtheorem{prob}{Problem}
+     \newtheorem{question}{Question}[section]
+     \newtheorem{remark}{Remark}[section]
+
+     \newenvironment{sol}{{\sc Solution:}}{
+~\hfill\rule{2mm}{3mm}\vspace{.1in}}
+
+
+  %   \newenvironment{proof}{{\sc Proof:}}{
+%~\hfill\rule{2mm}{3mm}\vspace{.1in}}
+
+
+
+% Command for general
+\newcommand{\ds}{\displaystyle}
+
+% Commands for series
+
+\newcommand{\Sumnzero}{\displaystyle{\sum_{n=0}^\infty}}
+\newcommand{\Sumnone}{\displaystyle{\sum_{n=1}^\infty}}
+\newcommand{\Sumkzero}{\displaystyle{\sum_{k=0}^\infty}}
+\newcommand{\Sumkone}{\displaystyle{\sum_{k=1}^\infty}}
+\newcommand{\infint}{\int_1^\infty}
+\newcommand{\zeroint}{\int_0^1}
+
+% Commands for linear
+\newcommand{\LRA}{\Leftrightarrow}
+\newcommand{\vectorx}{{\vec x}}
+\newcommand{\vectory}{{\vec y}}
+\newcommand{\vectorv}{{\vec v}}
+\newcommand{\vectorw}{{\vec w}}
+\newcommand{\vectorzero}{{\vec 0}}
+\newcommand{\vectorb}{{\vec b}}
+\newcommand{\vectoru}{{\vec u}}
+\newcommand{\vectore}{{\vec e}}
+\newcommand{\vectorspan}[1]{{\rm Span}\{#1\}}
+\newcommand{\rmnull}[1]{{\rm null}(#1)}
+\newcommand{\length}[1]{\parallel #1\parallel}
+\newcommand{\vev}{\vectorv}
+\newcommand{\veu}{\vectoru}
+\newcommand{\vew}{\vectorw}
+\newcommand{\vex}{\vectorx}
+\newcommand{\vey}{\vectory}
+\newcommand{\vea}{\vec{a}}
+\newcommand{\veb}{\vec{b}}
+\newcommand{\vecc}{\vec{c}}
+\newcommand{\vei}{\vec i}
+\newcommand{\vej}{\vec j}
+\newcommand{\vek}{\vec k}
+\newcommand{\vep}{\vec p}
+%\newcommand{\vez}{\vectorz}
+%\newcommand{\vea}{\vectora}
+%\newcommand{\veb}{\vectorb}
+\newcommand{\twodvec}[2]{\left[\begin{array}{r}{#1}\\{#2}\end{array}\right]}
+\newcommand{\threedvec}[3]{\left[\begin{array}{r}#1\\#2\\#3\end{array}\right]}
+\newcommand{\mx}[2]{\left[\begin{array}{#1}#2\end{array}\right]}
+\newcommand{\col}[1]{{\rm Col}(#1)}
+\newcommand{\xy}{\twodvec{x}{y}}
+\newcommand{\xyz}{\threedvec{x}{y}{z}}
+
+
+%These are two other examples of matrices.
+%$G = \bigg\{ \begin{pmatrix} a & b \\ 0 & a \end{pmatrix} \bigg| a,b \in \mathbb{R}, a\neq 0 \bigg\}$ 
+%$G = \bigg\{ \begin{bmatrix} a & b \\ 0 & a \end{bmatrix} \bigg| a,b \in \mathbb{R}, a\neq 0 \bigg\}$ 
+
+%Commands for advanced linear
+\newcommand{\lvw}{\mathcal{L}(V,W)}
+\newcommand{\lvv}{\mathcal{L}(V,V)}
+\newcommand{\lv}{\mathcal{L}(V)}
+\newcommand{\mt}{\mathcal{M}(T)}
+\newcommand{\bs}{\backslash}
+%\newcommand{\bf}{\textbf}
+
+% Commands for abstract
+
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\zee}{\mathbb{Z}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\normal}{\triangleleft}
+\newcommand{\rationals}{\mathbb{Q}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\aut}[1]{{\rm Aut}(#1)}
+\newcommand{\Ker}{{\rm Ker}\,}
+\newcommand{\im}{{\rm Im}\,}
+\newcommand{\cyclic}[1]{\langle #1 \rangle}
+\newcommand{\isom}{\cong}
+\newcommand{\autc}[1]{{\rm Aut_c}(#1)}
+\newcommand{\autsub}[2]{{\rm Aut}_{#1}(#2)}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% Commands for DE
+
+\newcommand{\dydt}{\frac{dy}{dt}}
+\newcommand{\dxdt}{\frac{dx}{dt}}
+\newcommand{\dPdt}{\frac{dP}{dt}}
+\newcommand{\dt}[1]{\frac{d#1}{dt}}
+\newcommand{\dFdt}{\frac{dF}{dt}}
+\newcommand{\dtwoy}{\frac{d^2y}{dt^2}}
+\newcommand{\dYdt}{\frac{d\vey}{dt}}
+\newcommand{\p}{\partial}
+%%%%%%%% command for graphics %%%%%%%%%%%%%
+
+
+\newcommand{\graph}[2]{\bc\includegraphics[#1]{#2}\ec}
+
+%%%%%%%%%%%%%%   For letters   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

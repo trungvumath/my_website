@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.4)  9 APR 2022 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.4)  2 MAY 2022 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,9 +650,9 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 86.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 132.
+(Font)              scaled to size 10.95pt on input line 138.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 132.
+ on input line 138.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
 fd
@@ -660,9 +660,9 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 132.
+(Font)              scaled to size 10.95pt on input line 138.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 10.95pt on input line 166.
+(Font)              scaled to size 10.95pt on input line 177.
  [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX w
@@ -670,12 +670,12 @@ arning (ext4): destination with the same identifier (name{page.}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.309 	\end{SectionTable}
+l.325 	\end{SectionTable}
                           [2]pdfTeX warning (ext4): destination with the same i
 dentifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.342 \end{document}
+l.358 \end{document}
                      [3] (./resume.aux)
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -683,7 +683,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  13513 strings out of 478994
  192478 string characters out of 5858185
- 494960 words of memory out of 5000000
+ 495960 words of memory out of 5000000
  30781 multiletter control sequences out of 15000+600000
  444160 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -700,7 +700,7 @@ eTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLib
 ertineTBI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/
 LinLibertineTI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx
 /txbsys.pfb>
-Output written on resume.pdf (3 pages, 304237 bytes).
+Output written on resume.pdf (3 pages, 304808 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
