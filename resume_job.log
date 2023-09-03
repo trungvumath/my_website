@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.15)  17 JUL 2023 22:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.15)  30 AUG 2023 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**CV.tex
-(./CV.tex
+**resume_job.tex
+(./resume_job.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -494,13 +494,14 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box60
 )
-(./CV.aux)
-\openout1 = `CV.aux'.
+(./resume_job.aux)
+\openout1 = `resume_job.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 66.
 LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line
  66.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/omlnxlmi.fd
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
 LaTeX Font Info:    ... okay on input line 66.
@@ -559,9 +560,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
 LaTeX Info: Redefining \nameref on input line 66.
- (./CV.out) (./CV.out)
+ (./resume_job.out) (./resume_job.out)
 \@outlinefile=\write3
-\openout3 = `CV.out'.
+\openout3 = `resume_job.out'.
 
 
 *geometry* driver: auto-detecting
@@ -644,13 +645,13 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 6.1pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 79.
+(Font)              scaled to size 14.4pt on input line 85.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 87.
+(Font)              scaled to size 10.95pt on input line 86.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 121.
+(Font)              scaled to size 10.95pt on input line 146.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 121.
+ on input line 146.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
 fd
@@ -658,7 +659,9 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 121.
+(Font)              scaled to size 10.95pt on input line 146.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
+(Font)              scaled to size 10.95pt on input line 184.
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -666,38 +669,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 	\end{SectionTable}
-                          [2]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 \end{document}
-                     [3] (./CV.aux)
-Package rerunfilecheck Info: File `CV.out' has not changed.
+l.390 \end{document}
+                     [2] (./resume_job.aux)
+Package rerunfilecheck Info: File `resume_job.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14162 strings out of 478268
- 213788 string characters out of 5846347
- 499893 words of memory out of 5000000
- 32161 multiletter control sequences out of 15000+600000
- 507189 words of font info for 91 fonts, out of 8000000 for 9000
+ 14159 strings out of 478268
+ 213973 string characters out of 5846347
+ 505820 words of memory out of 5000000
+ 32159 multiletter control sequences out of 15000+600000
+ 508995 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,63p,706b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc
-}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}{
-/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}</
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pf
-b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertine
-TB.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibe
-rtineTI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txbsys
-.pfb>
-Output written on CV.pdf (3 pages, 243617 bytes).
+ 60i,11n,63p,700b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc
+}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{
+/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}{/
+usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}</u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineT
+B.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLiber
+tineTBI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/Li
+nLibertineTI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/t
+xbsys.pfb>
+Output written on resume_job.pdf (2 pages, 273719 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 60 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

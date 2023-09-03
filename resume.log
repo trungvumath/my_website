@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.15)  20 FEB 2023 07:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.15)  17 JUL 2023 23:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,9 +647,9 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 86.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 142.
+(Font)              scaled to size 10.95pt on input line 146.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 142.
+ on input line 146.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
 fd
@@ -657,9 +657,9 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 142.
+(Font)              scaled to size 10.95pt on input line 146.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 10.95pt on input line 180.
+(Font)              scaled to size 10.95pt on input line 184.
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -667,13 +667,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.285 	\end{SectionTable}
+l.306 	\end{SectionTable}
                           [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.366 \end{document}
+l.387 \end{document}
                      [3] (./resume.aux)
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -698,7 +698,7 @@ eTB.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLib
 ertineTBI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/
 LinLibertineTI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx
 /txbsys.pfb>
-Output written on resume.pdf (3 pages, 306847 bytes).
+Output written on resume.pdf (3 pages, 308852 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
