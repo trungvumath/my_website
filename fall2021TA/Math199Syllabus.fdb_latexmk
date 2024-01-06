@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1703264263 "Math199Syllabus.tex" "Math199Syllabus.pdf" "Math199Syllabus" 1703264264
+["pdflatex"] 1703264197 "Math199Syllabus.tex" "Math199Syllabus.pdf" "Math199Syllabus" 1703264197
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -65,9 +65,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1660552042 2826438 0e25d3e8f59155c75a81dde258724e8b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Math199Syllabus.aux" 1703264264 686 1021e496efe4cd3ab536fd12e6d22f30 "pdflatex"
+  "Math199Syllabus.aux" 1703264197 686 470fdebd29f279999e89f3533b8c7bc8 "pdflatex"
   "Math199Syllabus.out" 0 -1 0 "pdflatex"
-  "Math199Syllabus.tex" 1703264263 8357 d64eebacc223dbadb024785fceb7347a ""
+  "Math199Syllabus.tex" 1703264195 7840 fd60671e60b7882edbbc29b25576a409 ""
   (generated)
   "Math199Syllabus.aux"
   "Math199Syllabus.log"
