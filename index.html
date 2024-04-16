@@ -1,230 +1,230 @@
-<!doctype html>
-<html lang="en">
+  <!doctype html>
+  <html lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
- <!-- Bootstrap core CSS -->
- <style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+
+   <!-- Bootstrap core CSS -->
+   <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
     }
-  }
-</style>
 
-  <title>Trung Vu - Homepage</title>
-  <!-- Custom styles for this template -->
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
 
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet"> 
-</head>
+    <title>Trung Vu - Homepage</title>
+    <!-- Custom styles for this template -->
 
-<body>
-      <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container">
-          <a class="navbar-brand" href="index.html">Trung Vu</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="current_interest.html">Current Research<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">About Me <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link active" href="teaching.html">Teaching</a>
-              </li>
-    
-              <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Topics</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="integrability.html">Integrable Systems</a>
-                  <a class="dropdown-item" href="cluster_algebra.html">Cluster Algebra</a>
-                  <a class="dropdown-item" href="qt_systems.html">T-system, Q-system and Exactly Solved Models</a>
-                </div>
-              </li>
-              <!--
-              <li class="nav-item active">
-                <a class="nav-link active" href="reading_group.html">Reading Group</a>
-              </li>
-              -->
-            </ul>
-          </div>
-        </div>
-        </nav>
-      </header>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+  </head>
 
-      <main class="flex-shrink-0">
-        
-        <!-- Banner-->
-
-        <div class="container">
-          <div class="jumbotron" style="background-color: crimson; text-align: center; margin-top: 30px;">
-            <h1 class="display-4" style="color: white;">Trung Vu</h1>
-            <p class="lead" style="color: whitesmoke;">University of Illinois at Urbana-Champaign</p>
-          </div>
-        </div>
-
-
-          <!-- START THE FEATURETTES -->
-        <div class="container">
-          <div class="row featurette ">
-            <div class="col-md-7 container-fluid">
-              <p class="lead"> My name is Trung Vu. I am currently a fourth-year mathematics Ph.D. student at the University of Illinois at Urbana-Champaign. I obtained my BA in mathematics with a concentration in neuroscience from St. Olaf College. My advisors are Professor <a href="https://math.illinois.edu/directory/profile/philippe">Philippe Di Francesco</a> and Professor <a href="https://faculty.math.illinois.edu/~rinat/">Rinat Kedem</a>.</p>
-              <p class="lead"> I am interested in algebraic combinatorics and combinatorial aspects of
-                representation theory and mathematical physics. Specifically, I like to think about cluster algebra, integrable combinatorics and vertex models. Currently, I am studying the T-system, the Q-system, domino tiling of Aztec diamond and the artic curve phenomena. I put down some short introductory ideas from my own notes to each of these topics on the "Topics" tab above along with references for more details. </p>
-                
-
-              <p class="lead"> <a href="resume.pdf"> Resume </a></p>
-            </div>
-            <div class="col-md-5 d-block d-sm-block d-sm-block">
+  <body>
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">Trung Vu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
       
-              <!-- <img class="randomImage featurette-image img-fluid mx-auto"  alt="Generic placeholder image">  -->
-              <img id="randomImage" class=" featurette-image img-fluid mx-auto" />
-      
-              <script>
-                function getRandomImage() {
-                  var images = ['img/permutahedra.jpg', 'img/dynkin.png', "img/download.jpg", "img/Sixvertex2.png", "img/tiling.jpg"];
-                  var image = images[Math.floor(Math.random() * images.length)];
-      
-                  return image;
-                }
-      
-                function displayRandomImage() {
-                  var htmlImage = document.getElementById("randomImage");
-                  htmlImage.src = getRandomImage();
-                }
-      
-                displayRandomImage();
-              </script>
-      
-            </div>
-
-            
-          </div>
-            
-      <div class="container">
-
-        <h3>Publication</h3>
-            <p>
-              <ul> 
-                <li>
-                  <p id="hall">Trung Vu (joint with Kosmas Diveris), <cite>Matrix Square Roots of Polynomials</cite>, Pi Mu Epsilon Journal, 2018</p>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="current_interest.html">Current Research<span class="sr-only">(current)</span></a>
                 </li>
-               </ul>
-            </p>
-         <h3>Submitted and Preprints</h3>
-            <p>
-              <ul> 
-                <li>
-                  <p id="hall">Trung Vu (joint with Philippe Di Francesco), <cite>Arctic Curves of T-system with slanted initial data</cite>, submitted to Journal or Physics A: Mathematical and Theoretical, 2024, <a href="https://arxiv.org/abs/2403.02479">Preprint:  arxiv.org/abs/2403.02479 </a> </p>
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html">About Me <span class="sr-only">(current)</span></a>
                 </li>
-               </ul>
-            </p>
-      </div>
+                <li class="nav-item active">
+                  <a class="nav-link active" href="teaching.html">Teaching</a>
+                </li>
+      
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Topics</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="integrability.html">Integrable Systems</a>
+                    <a class="dropdown-item" href="cluster_algebra.html">Cluster Algebra</a>
+                    <a class="dropdown-item" href="qt_systems.html">T-system, Q-system and Exactly Solved Models</a>
+                  </div>
+                </li>
+                <!--
+                <li class="nav-item active">
+                  <a class="nav-link active" href="reading_group.html">Reading Group</a>
+                </li>
+                -->
+              </ul>
+            </div>
+          </div>
+          </nav>
+        </header>
 
-     
-   
-      <div class="container">
-        <div class="overflow-auto" style="height:500px">
-          <h3>Update </h3>
-            <ul class="fancylinks" style="text-align: left; list-style-type: none">
-            <li><strong>March 2024-June 2024</strong>: Visiting researcher/participant of Geometry, Statistical Mechanics, and Integrability Long Program at Institute for Pure and Applied Mathematics, Los Angeles</li>
-            <li><strong>August 2023, 14-24th</strong>:  Dimers:
-            Combinatorics, Representation Theory and Physics at CUNY, NYC</li>
-            <li><strong>Fall 2022 - Fall 2023</strong>:  I am supported by Bourgin fellowship and University of Illinois at Urbana-Champaign Research Board </li>
-              <li><strong>April 2022</strong>:  Analytic Conbinatorics in Several Variables Workshop at American Institute of Mathematics</li>
-              <li><strong>Spring Semester 2022</strong>: I am teaching Math231 Calculus 2 Merit Section</li>  
-              <li><strong>Fall Semester 2021</strong>: I am organizing a reading group on Lie algebra and Lie Algebra representation of finite and infinite dimension. Check for information above</li>  
-              <li><strong>Fall Semester 2021</strong>: I am teaching Math 221: Calculus 1 Merit Section
-              <li><strong>July 12-23, 2021</strong>: <a href="https://qiskit.org/events/summer-school/">IBM Global Workshop in Quantum Machine Learning</a></li>
-              <li><strong>June 21-25, 2021</strong>: <a href="https://lipn.fr/~cb/LPC/2021/">9th International Conference on Lattice Path Combinatorics & Applications</a></li>
-
-        </ul>
-
-        </div>
-        
-      </div>
-
+        <main class="flex-shrink-0">
           
-      </main>
-      
-      
-      <!-- <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-      
-      </script> -->
-       <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script> -->
+          <!-- Banner-->
+
+          <div class="container">
+            <div class="jumbotron" style="background-color: crimson; text-align: center; margin-top: 30px;">
+              <h1 class="display-4" style="color: white;">Trung Vu</h1>
+              <p class="lead" style="color: whitesmoke;">University of Illinois at Urbana-Champaign</p>
+            </div>
+          </div>
+
+
+            <!-- START THE FEATURETTES -->
+          <div class="container">
+            <div class="row featurette ">
+              <div class="col-md-7 container-fluid">
+                <p class="lead"> My name is Trung Vu. I am currently a fourth-year mathematics Ph.D. student at the University of Illinois at Urbana-Champaign. I obtained my BA in mathematics with a concentration in neuroscience from St. Olaf College. My advisors are Professor <a href="https://math.illinois.edu/directory/profile/philippe">Philippe Di Francesco</a> and Professor <a href="https://faculty.math.illinois.edu/~rinat/">Rinat Kedem</a>.</p>
+                <p class="lead"> I am interested in algebraic combinatorics and combinatorial aspects of
+                  representation theory and mathematical physics. Specifically, I like to think about cluster algebra, integrable combinatorics and vertex models. Currently, I am studying the T-system, the Q-system, domino tiling of Aztec diamond and the artic curve phenomena. I put down some short introductory ideas from my own notes to each of these topics on the "Topics" tab above along with references for more details. </p>
+                  
+
+                <p class="lead"> <a href="resume.pdf"> Resume </a></p>
+              </div>
+              <div class="col-md-5 d-block d-sm-block d-sm-block">
+        
+                <!-- <img class="randomImage featurette-image img-fluid mx-auto"  alt="Generic placeholder image">  -->
+                <img id="randomImage" class=" featurette-image img-fluid mx-auto" />
+        
+                <script>
+                  function getRandomImage() {
+                    var images = ['img/permutahedra.jpg', 'img/dynkin.png', "img/download.jpg", "img/Sixvertex2.png", "img/tiling.jpg"];
+                    var image = images[Math.floor(Math.random() * images.length)];
+        
+                    return image;
+                  }
+        
+                  function displayRandomImage() {
+                    var htmlImage = document.getElementById("randomImage");
+                    htmlImage.src = getRandomImage();
+                  }
+        
+                  displayRandomImage();
+                </script>
+        
+              </div>
+
+              
+            </div>
+              
+        <div class="container">
+
+          <h3>Publication</h3>
+              <p>
+                <ul> 
+                  <li>
+                    <p id="hall">Trung Vu (joint with Kosmas Diveris), <cite>Matrix Square Roots of Polynomials</cite>, Pi Mu Epsilon Journal, 2018</p>
+                  </li>
+                 </ul>
+              </p>
+           <h3>Submitted and Preprints</h3>
+              <p>
+                <ul> 
+                  <li>
+                    <p id="hall">Trung Vu (joint with Philippe Di Francesco), <cite>Arctic Curves of T-system with slanted initial data</cite>, submitted to Journal or Physics A: Mathematical and Theoretical, 2024, <a href="https://arxiv.org/abs/2403.02479">Preprint:  arxiv.org/abs/2403.02479 </a> </p>
+                  </li>
+                 </ul>
+              </p>
+        </div>
+
+       
+     
+        <div class="container">
+          <div class="overflow-auto" style="height:500px">
+            <h3>Update </h3>
+              <ul class="fancylinks" style="text-align: left; list-style-type: none">
+              <li><strong>March 2024-June 2024</strong>: Visiting researcher/participant of Geometry, Statistical Mechanics, and Integrability Long Program at Institute for Pure and Applied Mathematics, Los Angeles</li>
+              <li><strong>August 2023, 14-24th</strong>:  Dimers:
+              Combinatorics, Representation Theory and Physics at CUNY, NYC</li>
+              <li><strong>Fall 2022 - Fall 2023</strong>:  I am supported by Bourgin fellowship and University of Illinois at Urbana-Champaign Research Board </li>
+                <li><strong>April 2022</strong>:  Analytic Conbinatorics in Several Variables Workshop at American Institute of Mathematics</li>
+                <li><strong>Spring Semester 2022</strong>: I am teaching Math231 Calculus 2 Merit Section</li>  
+                <li><strong>Fall Semester 2021</strong>: I am organizing a reading group on Lie algebra and Lie Algebra representation of finite and infinite dimension. Check for information above</li>  
+                <li><strong>Fall Semester 2021</strong>: I am teaching Math 221: Calculus 1 Merit Section
+                <li><strong>July 12-23, 2021</strong>: <a href="https://qiskit.org/events/summer-school/">IBM Global Workshop in Quantum Machine Learning</a></li>
+                <li><strong>June 21-25, 2021</strong>: <a href="https://lipn.fr/~cb/LPC/2021/">9th International Conference on Lattice Path Combinatorics & Applications</a></li>
+
+          </ul>
+
+          </div>
+          
+        </div>
+
             
+        </main>
+        
+        
+        <!-- <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        
+        </script> -->
+         <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script> -->
+              
 
 
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-        </body>
-      </html>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+          crossorigin="anonymous"></script>
+          </body>
+        </html>
+     
 
 
 
-    
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
 
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-</body>
 
-</html> 
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+
+
+      <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+      -->
+  </body>
+
+  </html> 
