@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1713476238 "resume.tex" "resume.pdf" "resume" 1713476238
+["pdflatex"] 1713476380 "resume.tex" "resume.pdf" "resume" 1713476381
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc" 1490131464 2822 11e839d2bbb939844844619b2cff7df6 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc" 1490131464 2845 db5ac527ff250456c37e44c4f86c93b4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc" 1490131464 2835 bfce207f80837ef8737b6a788d8bc760 ""
@@ -136,9 +136,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1660552042 2826438 0e25d3e8f59155c75a81dde258724e8b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "resume.aux" 1713476238 1457 7671c12f04a86370dfa87e1997954c74 "pdflatex"
+  "resume.aux" 1713476381 1457 7671c12f04a86370dfa87e1997954c74 "pdflatex"
   "resume.out" 0 -1 0 "pdflatex"
-  "resume.tex" 1713476235 14796 b6c5d7b3d5620824648d4c9a91d4f93b ""
+  "resume.tex" 1713476380 14832 f1e82e9a0f44b5acac73e851414003cf ""
   (generated)
   "resume.aux"
   "resume.log"
