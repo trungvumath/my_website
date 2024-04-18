@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.15)  3 MAR 2024 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.15)  18 APR 2024 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -645,7 +645,7 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 80.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 86.
+(Font)              scaled to size 10.95pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 146.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
@@ -679,11 +679,11 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14168 strings out of 478268
- 213970 string characters out of 5846347
- 505909 words of memory out of 5000000
- 32162 multiletter control sequences out of 15000+600000
- 510128 words of font info for 96 fonts, out of 8000000 for 9000
+ 14165 strings out of 478268
+ 213930 string characters out of 5846347
+ 504874 words of memory out of 5000000
+ 32161 multiletter control sequences out of 15000+600000
+ 509803 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,11n,63p,696b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_ks2ukx.enc
@@ -698,10 +698,10 @@ eTB.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLib
 ertineTBI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/
 LinLibertineTI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx
 /txbsys.pfb>
-Output written on resume.pdf (3 pages, 309391 bytes).
+Output written on resume.pdf (3 pages, 306945 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

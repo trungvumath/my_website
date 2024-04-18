@@ -757,8 +757,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/libertine/LinLibertineT
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-ot1.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ot1--base.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-ts1.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-ts1--base.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-ot1.vf
