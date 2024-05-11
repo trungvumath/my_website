@@ -1,0 +1,579 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-10.25, 1.5) {};
+		\node [style=none] (1) at (-9.25, 1.5) {};
+		\node [style=none] (2) at (-9.25, 0.5) {};
+		\node [style=none] (3) at (-8.25, 1.5) {};
+		\node [style=none] (4) at (-7.25, 1.5) {};
+		\node [style=none] (5) at (-7.25, 0.5) {};
+		\node [style=none] (6) at (-8.25, 0.5) {};
+		\node [style=none] (7) at (-9.25, 1.5) {};
+		\node [style=none] (8) at (-9.25, 0.5) {};
+		\node [style=none] (9) at (-8.25, 0.5) {};
+		\node [style=none] (10) at (-8.25, 1.5) {};
+		\node [style=none] (11) at (-7.25, 1.5) {};
+		\node [style=none] (12) at (-6.25, 1.5) {};
+		\node [style=none] (13) at (-6.25, 0.5) {};
+		\node [style=none] (14) at (-7.25, 0.5) {};
+		\node [style=none] (15) at (-9.25, 0.5) {};
+		\node [style=none] (16) at (-8.25, 0.5) {};
+		\node [style=none] (17) at (-8.25, -0.5) {};
+		\node [style=none] (18) at (-8.25, -0.5) {};
+		\node [style=none] (19) at (-7.25, -0.5) {};
+		\node [style=none] (20) at (-7.25, -1.5) {};
+		\node [style=none] (21) at (-7.25, -1.5) {};
+		\node [style=none] (22) at (-6.25, -1.5) {};
+		\node [style=none] (23) at (-6.25, -2.5) {};
+		\node [style=none] (24) at (-6.25, -2.5) {};
+		\node [style=none] (25) at (-5.25, -2.5) {};
+		\node [style=none] (36) at (-8.25, 0.5) {};
+		\node [style=none] (37) at (-8.25, -0.5) {};
+		\node [style=none] (38) at (-7.25, -0.5) {};
+		\node [style=none] (39) at (-7.25, 0.5) {};
+		\node [style=none] (40) at (-7.25, -0.5) {};
+		\node [style=none] (41) at (-7.25, -1.5) {};
+		\node [style=none] (42) at (-6.25, -1.5) {};
+		\node [style=none] (43) at (-6.25, -0.5) {};
+		\node [style=none] (44) at (-6.25, -1.5) {};
+		\node [style=none] (45) at (-6.25, -2.5) {};
+		\node [style=none] (46) at (-5.25, -2.5) {};
+		\node [style=none] (47) at (-5.25, -1.5) {};
+		\node [style=none] (48) at (-5.25, -2.5) {};
+		\node [style=none] (51) at (-4.25, -2.5) {};
+		\node [style=none] (60) at (-7.25, 0.5) {};
+		\node [style=none] (61) at (-6.25, 0.5) {};
+		\node [style=none] (62) at (-6.25, -0.5) {};
+		\node [style=none] (63) at (-7.25, -0.5) {};
+		\node [style=none] (64) at (-6.25, -0.5) {};
+		\node [style=none] (65) at (-5.25, -0.5) {};
+		\node [style=none] (66) at (-5.25, -1.5) {};
+		\node [style=none] (67) at (-6.25, -1.5) {};
+		\node [style=none] (68) at (-5.25, -1.5) {};
+		\node [style=none] (69) at (-4.25, -1.5) {};
+		\node [style=none] (70) at (-4.25, -2.5) {};
+		\node [style=none] (71) at (-5.25, -2.5) {};
+		\node [style=none] (72) at (-4.25, -2.5) {};
+		\node [style=none] (73) at (-3.25, -2.5) {};
+		\node [style=none] (84) at (-6.25, 0.5) {};
+		\node [style=none] (85) at (-5.25, 0.5) {};
+		\node [style=none] (86) at (-5.25, -0.5) {};
+		\node [style=none] (87) at (-6.25, -0.5) {};
+		\node [style=none] (88) at (-5.25, -0.5) {};
+		\node [style=none] (89) at (-4.25, -0.5) {};
+		\node [style=none] (90) at (-4.25, -1.5) {};
+		\node [style=none] (91) at (-5.25, -1.5) {};
+		\node [style=none] (92) at (-4.25, -1.5) {};
+		\node [style=none] (93) at (-3.25, -1.5) {};
+		\node [style=none] (94) at (-3.25, -2.5) {};
+		\node [style=none] (95) at (-4.25, -2.5) {};
+		\node [style=none] (96) at (-3.25, -2.5) {};
+		\node [style=none] (108) at (-10.25, 0.5) {};
+		\node [style=none] (109) at (-9.25, -0.5) {};
+		\node [style=none] (110) at (-8.25, -1.5) {};
+		\node [style=none] (111) at (-7.25, -2.5) {};
+		\node [style=small black dot] (115) at (-11, -0.5) {};
+		\node [style=small black dot] (116) at (-10.5, -0.5) {};
+		\node [style=small black dot] (117) at (-10, -0.5) {};
+		\node [style=small black dot] (118) at (-3.5, -0.5) {};
+		\node [style=small black dot] (119) at (-3, -0.5) {};
+		\node [style=small black dot] (120) at (-2.5, -0.5) {};
+		\node [style=none] (121) at (5, 1.75) {};
+		\node [style=none] (122) at (6, 1.75) {};
+		\node [style=none] (123) at (6, 0.75) {};
+		\node [style=none] (124) at (7, 1.75) {};
+		\node [style=none] (125) at (8, 1.75) {};
+		\node [style=none] (126) at (8, 0.75) {};
+		\node [style=none] (127) at (7, 0.75) {};
+		\node [style=none] (128) at (6, 1.75) {};
+		\node [style=none] (129) at (6, 0.75) {};
+		\node [style=none] (130) at (7, 0.75) {};
+		\node [style=none] (131) at (7, 1.75) {};
+		\node [style=none] (132) at (8, 1.75) {};
+		\node [style=none] (135) at (8, 0.75) {};
+		\node [style=none] (136) at (6, 0.75) {};
+		\node [style=none] (137) at (7, 0.75) {};
+		\node [style=none] (156) at (7, 0.75) {};
+		\node [style=none] (159) at (8, 0.75) {};
+		\node [style=none] (180) at (8, 0.75) {};
+		\node [style=none] (228) at (5, 0.75) {};
+		\node [style=none] (229) at (9, 0.75) {};
+		\node [style=none] (230) at (9, 1.75) {};
+		\node [style=none] (231) at (10, 1.75) {};
+		\node [style=none] (232) at (10, 0.75) {};
+		\node [style=none] (233) at (10, 1.75) {};
+		\node [style=none] (234) at (11, 1.75) {};
+		\node [style=none] (235) at (11, 0.75) {};
+		\node [style=none] (236) at (12, 1.75) {};
+		\node [style=none] (237) at (13, 1.75) {};
+		\node [style=none] (238) at (13, 0.75) {};
+		\node [style=none] (239) at (12, 0.75) {};
+		\node [style=none] (240) at (11, 1.75) {};
+		\node [style=none] (241) at (11, 0.75) {};
+		\node [style=none] (242) at (12, 0.75) {};
+		\node [style=none] (243) at (12, 1.75) {};
+		\node [style=none] (244) at (13, 1.75) {};
+		\node [style=none] (245) at (13, 0.75) {};
+		\node [style=none] (246) at (11, 0.75) {};
+		\node [style=none] (247) at (12, 0.75) {};
+		\node [style=none] (248) at (12, 0.75) {};
+		\node [style=none] (249) at (13, 0.75) {};
+		\node [style=none] (250) at (13, 0.75) {};
+		\node [style=none] (251) at (10, 0.75) {};
+		\node [style=none] (252) at (14, 0.75) {};
+		\node [style=none] (253) at (14, 1.75) {};
+		\node [style=none] (254) at (15, 1.75) {};
+		\node [style=none] (255) at (15, 0.75) {};
+		\node [style=none] (256) at (16, 1.75) {};
+		\node [style=none] (257) at (16, 0.75) {};
+		\node [style=none] (258) at (6, 0.75) {};
+		\node [style=none] (259) at (7, 0.75) {};
+		\node [style=none] (260) at (7, -0.25) {};
+		\node [style=none] (261) at (8, 0.75) {};
+		\node [style=none] (262) at (9, 0.75) {};
+		\node [style=none] (263) at (9, -0.25) {};
+		\node [style=none] (264) at (8, -0.25) {};
+		\node [style=none] (265) at (7, 0.75) {};
+		\node [style=none] (266) at (7, -0.25) {};
+		\node [style=none] (267) at (8, -0.25) {};
+		\node [style=none] (268) at (8, 0.75) {};
+		\node [style=none] (269) at (9, 0.75) {};
+		\node [style=none] (270) at (9, -0.25) {};
+		\node [style=none] (271) at (7, -0.25) {};
+		\node [style=none] (272) at (8, -0.25) {};
+		\node [style=none] (273) at (8, -0.25) {};
+		\node [style=none] (274) at (9, -0.25) {};
+		\node [style=none] (275) at (9, -0.25) {};
+		\node [style=none] (276) at (6, -0.25) {};
+		\node [style=none] (277) at (10, -0.25) {};
+		\node [style=none] (278) at (10, 0.75) {};
+		\node [style=none] (279) at (11, 0.75) {};
+		\node [style=none] (280) at (11, -0.25) {};
+		\node [style=none] (281) at (11, 0.75) {};
+		\node [style=none] (282) at (12, 0.75) {};
+		\node [style=none] (283) at (12, -0.25) {};
+		\node [style=none] (284) at (13, 0.75) {};
+		\node [style=none] (285) at (14, 0.75) {};
+		\node [style=none] (286) at (14, -0.25) {};
+		\node [style=none] (287) at (13, -0.25) {};
+		\node [style=none] (288) at (12, 0.75) {};
+		\node [style=none] (289) at (12, -0.25) {};
+		\node [style=none] (290) at (13, -0.25) {};
+		\node [style=none] (291) at (13, 0.75) {};
+		\node [style=none] (292) at (14, 0.75) {};
+		\node [style=none] (293) at (14, -0.25) {};
+		\node [style=none] (294) at (12, -0.25) {};
+		\node [style=none] (295) at (13, -0.25) {};
+		\node [style=none] (296) at (13, -0.25) {};
+		\node [style=none] (297) at (14, -0.25) {};
+		\node [style=none] (298) at (14, -0.25) {};
+		\node [style=none] (299) at (11, -0.25) {};
+		\node [style=none] (300) at (15, -0.25) {};
+		\node [style=none] (301) at (15, 0.75) {};
+		\node [style=none] (302) at (16, 0.75) {};
+		\node [style=none] (303) at (16, -0.25) {};
+		\node [style=none] (304) at (17, 0.75) {};
+		\node [style=none] (305) at (17, -0.25) {};
+		\node [style=none] (306) at (7, -0.25) {};
+		\node [style=none] (307) at (8, -0.25) {};
+		\node [style=none] (308) at (8, -1.25) {};
+		\node [style=none] (309) at (9, -0.25) {};
+		\node [style=none] (310) at (10, -0.25) {};
+		\node [style=none] (311) at (10, -1.25) {};
+		\node [style=none] (312) at (9, -1.25) {};
+		\node [style=none] (313) at (8, -0.25) {};
+		\node [style=none] (314) at (8, -1.25) {};
+		\node [style=none] (315) at (9, -1.25) {};
+		\node [style=none] (316) at (9, -0.25) {};
+		\node [style=none] (317) at (10, -0.25) {};
+		\node [style=none] (318) at (10, -1.25) {};
+		\node [style=none] (319) at (8, -1.25) {};
+		\node [style=none] (320) at (9, -1.25) {};
+		\node [style=none] (321) at (9, -1.25) {};
+		\node [style=none] (322) at (10, -1.25) {};
+		\node [style=none] (323) at (10, -1.25) {};
+		\node [style=none] (324) at (7, -1.25) {};
+		\node [style=none] (325) at (11, -1.25) {};
+		\node [style=none] (326) at (11, -0.25) {};
+		\node [style=none] (327) at (12, -0.25) {};
+		\node [style=none] (328) at (12, -1.25) {};
+		\node [style=none] (329) at (12, -0.25) {};
+		\node [style=none] (330) at (13, -0.25) {};
+		\node [style=none] (331) at (13, -1.25) {};
+		\node [style=none] (332) at (14, -0.25) {};
+		\node [style=none] (333) at (15, -0.25) {};
+		\node [style=none] (334) at (15, -1.25) {};
+		\node [style=none] (335) at (14, -1.25) {};
+		\node [style=none] (336) at (13, -0.25) {};
+		\node [style=none] (337) at (13, -1.25) {};
+		\node [style=none] (338) at (14, -1.25) {};
+		\node [style=none] (339) at (14, -0.25) {};
+		\node [style=none] (340) at (15, -0.25) {};
+		\node [style=none] (341) at (15, -1.25) {};
+		\node [style=none] (342) at (13, -1.25) {};
+		\node [style=none] (343) at (14, -1.25) {};
+		\node [style=none] (344) at (14, -1.25) {};
+		\node [style=none] (345) at (15, -1.25) {};
+		\node [style=none] (346) at (15, -1.25) {};
+		\node [style=none] (347) at (12, -1.25) {};
+		\node [style=none] (348) at (16, -1.25) {};
+		\node [style=none] (349) at (16, -0.25) {};
+		\node [style=none] (350) at (17, -0.25) {};
+		\node [style=none] (351) at (17, -1.25) {};
+		\node [style=none] (352) at (18, -0.25) {};
+		\node [style=none] (353) at (18, -1.25) {};
+		\node [style=none] (354) at (8, -1.25) {};
+		\node [style=none] (355) at (9, -1.25) {};
+		\node [style=none] (356) at (9, -2.25) {};
+		\node [style=none] (357) at (10, -1.25) {};
+		\node [style=none] (358) at (11, -1.25) {};
+		\node [style=none] (359) at (11, -2.25) {};
+		\node [style=none] (360) at (10, -2.25) {};
+		\node [style=none] (361) at (9, -1.25) {};
+		\node [style=none] (362) at (9, -2.25) {};
+		\node [style=none] (363) at (10, -2.25) {};
+		\node [style=none] (364) at (10, -1.25) {};
+		\node [style=none] (365) at (11, -1.25) {};
+		\node [style=none] (366) at (11, -2.25) {};
+		\node [style=none] (367) at (9, -2.25) {};
+		\node [style=none] (368) at (10, -2.25) {};
+		\node [style=none] (369) at (10, -2.25) {};
+		\node [style=none] (370) at (11, -2.25) {};
+		\node [style=none] (371) at (11, -2.25) {};
+		\node [style=none] (372) at (8, -2.25) {};
+		\node [style=none] (373) at (12, -2.25) {};
+		\node [style=none] (374) at (12, -1.25) {};
+		\node [style=none] (375) at (13, -1.25) {};
+		\node [style=none] (376) at (13, -2.25) {};
+		\node [style=none] (377) at (13, -1.25) {};
+		\node [style=none] (378) at (14, -1.25) {};
+		\node [style=none] (379) at (14, -2.25) {};
+		\node [style=none] (380) at (15, -1.25) {};
+		\node [style=none] (381) at (16, -1.25) {};
+		\node [style=none] (382) at (16, -2.25) {};
+		\node [style=none] (383) at (15, -2.25) {};
+		\node [style=none] (384) at (14, -1.25) {};
+		\node [style=none] (385) at (14, -2.25) {};
+		\node [style=none] (386) at (15, -2.25) {};
+		\node [style=none] (387) at (15, -1.25) {};
+		\node [style=none] (388) at (16, -1.25) {};
+		\node [style=none] (389) at (16, -2.25) {};
+		\node [style=none] (390) at (14, -2.25) {};
+		\node [style=none] (391) at (15, -2.25) {};
+		\node [style=none] (392) at (15, -2.25) {};
+		\node [style=none] (393) at (16, -2.25) {};
+		\node [style=none] (394) at (16, -2.25) {};
+		\node [style=none] (395) at (13, -2.25) {};
+		\node [style=none] (396) at (17, -2.25) {};
+		\node [style=none] (397) at (17, -1.25) {};
+		\node [style=none] (398) at (18, -1.25) {};
+		\node [style=none] (399) at (18, -2.25) {};
+		\node [style=none] (400) at (19, -1.25) {};
+		\node [style=none] (401) at (19, -2.25) {};
+		\node [style=small black dot] (402) at (4.75, -0.5) {};
+		\node [style=small black dot] (403) at (5.25, -0.5) {};
+		\node [style=small black dot] (404) at (18.75, -0.5) {};
+		\node [style=small black dot] (405) at (19.25, -0.5) {};
+		\node [style=small black dot] (406) at (19.75, -0.5) {};
+		\node [style=small black dot] (407) at (4.25, -0.5) {};
+		\node [style=none] (408) at (-14.5, 1) {};
+		\node [style=none] (409) at (-14.5, -1) {};
+		\node [style=none] (410) at (-12.5, -1) {};
+		\node [style=none] (411) at (-15.25, 1) {$j$};
+		\node [style=none] (412) at (-12.5, -2) {$i$};
+		\node [style=small black dot] (413) at (-8.025, 3.175) {};
+		\node [style=small black dot] (414) at (-8.025, 2.675) {};
+		\node [style=small black dot] (415) at (-8.025, 2.175) {};
+		\node [style=small black dot] (416) at (11.25, -3.575) {};
+		\node [style=small black dot] (417) at (11.25, -4.075) {};
+		\node [style=small black dot] (418) at (11.25, -4.575) {};
+		\node [style=small black dot] (419) at (-5.5, -3.575) {};
+		\node [style=small black dot] (420) at (-5.5, -4.075) {};
+		\node [style=small black dot] (421) at (-5.5, -4.575) {};
+		\node [style=small black dot] (422) at (11, 3.675) {};
+		\node [style=small black dot] (423) at (11, 3.175) {};
+		\node [style=small black dot] (424) at (11, 2.675) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gray filled] (1.center)
+			 to (2.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=gray filled] (6.center)
+			 to (5.center)
+			 to (4.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=white filled] (10.center)
+			 to (7.center)
+			 to (8.center)
+			 to (9.center)
+			 to cycle;
+		\draw [style=gray filled] (13.center)
+			 to (11.center)
+			 to (12.center)
+			 to cycle;
+		\draw [style=white filled] (11.center) to (14.center);
+		\draw [style=white filled] (14.center) to (13.center);
+		\draw [style=gray filled] (16.center)
+			 to (17.center)
+			 to (15.center)
+			 to cycle;
+		\draw [style=gray filled] (19.center)
+			 to (20.center)
+			 to (18.center)
+			 to cycle;
+		\draw [style=gray filled] (22.center)
+			 to (23.center)
+			 to (21.center)
+			 to cycle;
+		\draw [style=gray filled] (24.center) to (25.center);
+		\draw [style=white filled] (39.center)
+			 to (36.center)
+			 to (37.center)
+			 to (38.center)
+			 to cycle;
+		\draw [style=white filled] (43.center)
+			 to (40.center)
+			 to (41.center)
+			 to (42.center)
+			 to cycle;
+		\draw [style=white filled] (47.center)
+			 to (44.center)
+			 to (45.center)
+			 to (46.center)
+			 to cycle;
+		\draw [style=white filled] (51.center) to (48.center);
+		\draw [style=gray filled] (63.center)
+			 to (62.center)
+			 to (61.center)
+			 to (60.center)
+			 to cycle;
+		\draw [style=gray filled] (67.center)
+			 to (66.center)
+			 to (65.center)
+			 to (64.center)
+			 to cycle;
+		\draw [style=gray filled] (71.center)
+			 to (70.center)
+			 to (69.center)
+			 to (68.center)
+			 to cycle;
+		\draw [style=gray filled] (73.center) to (72.center);
+		\draw [style=gray filled] (86.center)
+			 to (84.center)
+			 to (85.center)
+			 to cycle;
+		\draw [style=white filled] (84.center) to (87.center);
+		\draw [style=white filled] (87.center) to (86.center);
+		\draw [style=gray filled] (90.center)
+			 to (88.center)
+			 to (89.center)
+			 to cycle;
+		\draw [style=white filled] (88.center) to (91.center);
+		\draw [style=white filled] (91.center) to (90.center);
+		\draw [style=gray filled] (94.center)
+			 to (92.center)
+			 to (93.center)
+			 to cycle;
+		\draw [style=white filled] (92.center) to (95.center);
+		\draw [style=white filled] (95.center) to (94.center);
+		\draw [style=white filled] (0.center) to (108.center);
+		\draw [style=white filled] (108.center) to (15.center);
+		\draw [style=white filled] (15.center) to (109.center);
+		\draw [style=white filled] (109.center) to (37.center);
+		\draw [style=white filled] (37.center) to (110.center);
+		\draw [style=white filled] (110.center) to (41.center);
+		\draw [style=white filled] (41.center) to (111.center);
+		\draw [style=white filled] (111.center) to (45.center);
+		\draw [style=gray filled] (122.center)
+			 to (123.center)
+			 to (121.center)
+			 to cycle;
+		\draw [style=gray filled] (127.center)
+			 to (126.center)
+			 to (125.center)
+			 to (124.center)
+			 to cycle;
+		\draw [style=white filled] (131.center)
+			 to (128.center)
+			 to (129.center)
+			 to (130.center)
+			 to cycle;
+		\draw [style=white filled] (132.center) to (135.center);
+		\draw [style=gray filled] (136.center) to (137.center);
+		\draw [style=white filled] (159.center) to (156.center);
+		\draw [style=white filled] (121.center) to (228.center);
+		\draw [style=white filled] (228.center) to (136.center);
+		\draw [style=gray filled] (132.center) to (230.center);
+		\draw [style=gray filled] (230.center)
+			 to (231.center)
+			 to (232.center)
+			 to (229.center)
+			 to cycle;
+		\draw [style=gray filled] (234.center) to (235.center);
+		\draw [style=gray filled] (235.center)
+			 to (233.center)
+			 to (234.center);
+		\draw [style=white filled] (243.center) to (240.center);
+		\draw [style=white filled] (241.center) to (242.center);
+		\draw [style=gray filled] (246.center) to (247.center);
+		\draw [style=white filled] (233.center) to (251.center);
+		\draw [style=white filled] (251.center) to (246.center);
+		\draw [style=gray filled] (244.center) to (253.center);
+		\draw [style=gray filled] (253.center)
+			 to (254.center)
+			 to (255.center)
+			 to (252.center)
+			 to cycle;
+		\draw [style=gray filled] (252.center) to (250.center);
+		\draw [style=gray filled] (250.center)
+			 to (244.center)
+			 to (243.center)
+			 to (248.center)
+			 to cycle;
+		\draw [style=gray filled] (254.center)
+			 to (256.center)
+			 to (257.center)
+			 to cycle;
+		\draw [style=gray filled] (255.center) to (257.center);
+		\draw [style=gray filled] (259.center) to (260.center);
+		\draw [style=gray filled] (260.center)
+			 to (258.center)
+			 to (259.center);
+		\draw [style=white filled] (268.center) to (265.center);
+		\draw [style=white filled] (266.center) to (267.center);
+		\draw [style=gray filled] (271.center) to (272.center);
+		\draw [style=white filled] (258.center) to (276.center);
+		\draw [style=white filled] (276.center) to (271.center);
+		\draw [style=gray filled] (269.center) to (278.center);
+		\draw [style=gray filled] (278.center)
+			 to (279.center)
+			 to (280.center)
+			 to (277.center)
+			 to cycle;
+		\draw [style=gray filled] (277.center) to (275.center);
+		\draw [style=gray filled] (282.center) to (283.center);
+		\draw [style=gray filled] (283.center)
+			 to (281.center)
+			 to (282.center);
+		\draw [style=white filled] (291.center) to (288.center);
+		\draw [style=white filled] (289.center) to (290.center);
+		\draw [style=gray filled] (294.center) to (295.center);
+		\draw [style=white filled] (281.center) to (299.center);
+		\draw [style=white filled] (299.center) to (294.center);
+		\draw [style=gray filled] (292.center) to (301.center);
+		\draw [style=gray filled] (301.center)
+			 to (302.center)
+			 to (303.center)
+			 to (300.center)
+			 to cycle;
+		\draw [style=gray filled] (300.center) to (298.center);
+		\draw [style=gray filled] (298.center)
+			 to (292.center)
+			 to (291.center)
+			 to (296.center)
+			 to cycle;
+		\draw [style=gray filled] (302.center)
+			 to (304.center)
+			 to (305.center)
+			 to cycle;
+		\draw [style=gray filled] (303.center) to (305.center);
+		\draw [style=gray filled] (275.center)
+			 to (273.center)
+			 to (268.center)
+			 to (269.center)
+			 to cycle;
+		\draw [style=gray filled] (307.center) to (308.center);
+		\draw [style=gray filled] (308.center)
+			 to (306.center)
+			 to (307.center);
+		\draw [style=white filled] (316.center) to (313.center);
+		\draw [style=white filled] (314.center) to (315.center);
+		\draw [style=gray filled] (319.center) to (320.center);
+		\draw [style=white filled] (306.center) to (324.center);
+		\draw [style=white filled] (324.center) to (319.center);
+		\draw [style=gray filled] (317.center) to (326.center);
+		\draw [style=gray filled] (326.center)
+			 to (327.center)
+			 to (328.center)
+			 to (325.center)
+			 to cycle;
+		\draw [style=gray filled] (330.center) to (331.center);
+		\draw [style=gray filled] (331.center)
+			 to (329.center)
+			 to (330.center);
+		\draw [style=white filled] (339.center) to (336.center);
+		\draw [style=white filled] (337.center) to (338.center);
+		\draw [style=gray filled] (342.center) to (343.center);
+		\draw [style=white filled] (329.center) to (347.center);
+		\draw [style=white filled] (347.center) to (342.center);
+		\draw [style=gray filled] (340.center) to (349.center);
+		\draw [style=gray filled] (348.center) to (346.center);
+		\draw [style=gray filled] (346.center)
+			 to (340.center)
+			 to (339.center)
+			 to (344.center)
+			 to cycle;
+		\draw [style=gray filled] (350.center)
+			 to (352.center)
+			 to (353.center)
+			 to cycle;
+		\draw [style=gray filled] (351.center) to (353.center);
+		\draw [style=gray filled] (355.center) to (356.center);
+		\draw [style=gray filled] (356.center)
+			 to (354.center)
+			 to (355.center);
+		\draw [style=white filled] (362.center) to (363.center);
+		\draw [style=gray filled] (367.center) to (368.center);
+		\draw [style=white filled] (354.center) to (372.center);
+		\draw [style=white filled] (372.center) to (367.center);
+		\draw [style=gray filled] (365.center) to (374.center);
+		\draw [style=gray filled] (376.center)
+			 to (373.center)
+			 to (374.center)
+			 to (375.center);
+		\draw [style=gray filled] (375.center) to (376.center);
+		\draw [style=gray filled] (373.center) to (371.center);
+		\draw [style=gray filled] (377.center)
+			 to (378.center)
+			 to (379.center)
+			 to cycle;
+		\draw [style=white filled] (387.center) to (384.center);
+		\draw [style=white filled] (385.center) to (386.center);
+		\draw [style=gray filled] (390.center) to (391.center);
+		\draw [style=white filled] (395.center) to (390.center);
+		\draw [style=gray filled] (397.center)
+			 to (398.center)
+			 to (399.center)
+			 to (396.center)
+			 to cycle;
+		\draw [style=gray filled] (396.center) to (394.center);
+		\draw [style=gray filled] (388.center)
+			 to (387.center)
+			 to (392.center)
+			 to (394.center)
+			 to cycle;
+		\draw [style=gray filled] (401.center)
+			 to (398.center)
+			 to (400.center)
+			 to cycle;
+		\draw [style=gray filled] (399.center) to (401.center);
+		\draw [style=gray filled] (371.center)
+			 to (369.center)
+			 to (364.center)
+			 to (365.center)
+			 to cycle;
+		\draw [style=gray filled] (364.center)
+			 to (317.center)
+			 to (316.center)
+			 to (361.center)
+			 to cycle;
+		\draw [style=gray filled] (388.center)
+			 to (349.center)
+			 to (350.center)
+			 to (397.center)
+			 to cycle;
+		\draw [style=direct arrow] (409.center) to (408.center);
+		\draw [style=direct arrow] (409.center) to (410.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

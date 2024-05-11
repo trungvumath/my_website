@@ -1,0 +1,67 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (8, 5) {};
+		\node [style=none] (2) at (0, 18) {};
+		\node [style=none] (3) at (-4, 14) {};
+		\node [style=none] (4) at (4, 14) {};
+		\node [style=none] (5) at (0, 5) {};
+		\node [style=none] (6) at (-6, 12) {};
+		\node [style=none] (7) at (6, 12) {};
+		\node [style=none] (8) at (-4, 3.25) {};
+		\node [style=none] (9) at (4, 3.25) {};
+		\node [style=none] (10) at (-8, 8.5) {};
+		\node [style=none] (11) at (-5, 17.75) {$\epsilon=-1,\eta=1$};
+		\node [style=none] (12) at (6.25, 16.5) {$\epsilon=\eta=1$};
+		\node [style=none] (13) at (6.75, 10.25) {$\epsilon=1,\eta=-1$};
+		\node [style=none] (15) at (-2.5, 9.75) {};
+		\node [style=none] (16) at (-9.75, 8) {$\epsilon=\eta=-1$};
+		\node [style=none] (17) at (-4.5, 16.5) {};
+		\node [style=none] (18) at (-2.75, 15.75) {};
+		\node [style=none] (19) at (5.5, 15.75) {};
+		\node [style=none] (20) at (3.5, 15) {};
+		\node [style=none] (21) at (6.25, 11) {};
+		\node [style=none] (22) at (3.25, 11.5) {};
+		\node [style=none] (23) at (0, 2.5) {};
+		\node [style=none] (24) at (0, 2.5) {$0$};
+		\node [style=none] (26) at (-4, 2.25) {$-\frac{ri+sj+tk}{r+t}$};
+		\node [style=none] (28) at (0, 18) {};
+		\node [style=small black dot] (29) at (0, 18) {};
+		\node [style=none] (30) at (0.25, 18.25) {};
+		\node [style=none] (31) at (2.75, 19) {};
+		\node [style=none] (32) at (2.75, 19.75) {$1+\frac{2(ri+sj+tk)}{t-s}$};
+		\node [style=none] (33) at (0, 20) {};
+		\node [style=none] (34) at (6.25, 3.25) {};
+		\node [style=none] (36) at (8, 3.75) {$x-i$};
+		\node [style=none] (38) at (-0.5, 20.5) {$w$};
+		\node [style=none] (39) at (4, 2.25) {$\frac{ri+sj+tk}{t-r}$};
+		\node [style=none] (40) at (-8, 3.25) {};
+		\node [style=none] (41) at (0, 3.25) {};
+		\node [style=none] (42) at (-4, 3.25) {};
+		\node [style=none] (43) at (4, 3.25) {};
+		\node [style=none] (44) at (6.25, 3.25) {};
+		\node [style=none] (45) at (8, 3.25) {};
+		\node [style=none] (46) at (0.5, 5) {$1$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gray filled] (2.center) to (3.center);
+		\draw [style=gray filled] (3.center) to (5.center);
+		\draw [style=gray filled] (5.center) to (4.center);
+		\draw [style=gray filled] (4.center) to (2.center);
+		\draw [style=gray filled] (4.center) to (7.center);
+		\draw [style=gray filled] (3.center) to (6.center);
+		\draw [style=gray filled] (2.center) to (5.center);
+		\draw [style=direct arrow, bend left=15] (10.center) to (15.center);
+		\draw [style=direct arrow, bend left, looseness=1.25] (17.center) to (18.center);
+		\draw [style=direct arrow, bend left=330, looseness=1.25] (19.center) to (20.center);
+		\draw [style=direct arrow, bend right=45, looseness=1.25] (21.center) to (22.center);
+		\draw [style=dashed edges] (3.center) to (8.center);
+		\draw [style=dashed edges] (4.center) to (9.center);
+		\draw [style=dashed edges] (3.center) to (4.center);
+		\draw [style=direct arrow, bend right=45, looseness=1.50] (31.center) to (30.center);
+		\draw [style=thick arrow] (29) to (33.center);
+		\draw [style=thick arrow] (5.center) to (33.center);
+		\draw [style=thick arrow] (44.center) to (45.center);
+		\draw [style=thick arrow] (40.center) to (45.center);
+		\draw [style=gray filled] (5.center) to (41.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

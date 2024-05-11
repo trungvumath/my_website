@@ -1,0 +1,69 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=black dot] (0) at (4, 0) {};
+		\node [style=black dot] (1) at (-4, 0) {};
+		\node [style=black dot] (2) at (8, -4) {};
+		\node [style=black dot] (3) at (0, -4) {};
+		\node [style=white dot] (4) at (0, 0) {};
+		\node [style=white dot] (5) at (-4, -4) {};
+		\node [style=white dot] (6) at (4, -4) {};
+		\node [style=white dot] (7) at (8, 0) {};
+		\node [style=white dot] (8) at (-8, 0) {};
+		\node [style=black dot] (9) at (-8, -4) {};
+		\node [style=black dot] (10) at (0, 4) {};
+		\node [style=black dot] (11) at (-4, -8) {};
+		\node [style=white dot] (12) at (4, 4) {};
+		\node [style=white dot] (13) at (0, -8) {};
+		\node [style=none] (14) at (0, -2) {$\rho_{i,j}=-1$};
+		\node [style=none] (15) at (2, 2) {$\rho_{i,j+1}=\frac{-1}{2}$};
+		\node [style=none] (16) at (-2, -6) {$\rho_{i,j-1}=\frac{-1}{2}$};
+		\node [style=none] (17) at (-6, -2) {$\rho_{i-1,j}=\frac{1}{2}$};
+		\node [style=none] (18) at (6, -2) {$\rho_{i+1,j}=\frac{1}{2}$};
+		\node [style=black dot] (19) at (25, 0) {};
+		\node [style=black dot] (20) at (17, 0) {};
+		\node [style=black dot] (21) at (29, -4) {};
+		\node [style=black dot] (22) at (21, -4) {};
+		\node [style=white dot] (23) at (21, 0) {};
+		\node [style=white dot] (24) at (17, -4) {};
+		\node [style=white dot] (25) at (25, -4) {};
+		\node [style=white dot] (26) at (29, 0) {};
+		\node [style=white dot] (27) at (13, 0) {};
+		\node [style=black dot] (28) at (13, -4) {};
+		\node [style=black dot] (29) at (21, 4) {};
+		\node [style=black dot] (30) at (17, -8) {};
+		\node [style=white dot] (31) at (25, 4) {};
+		\node [style=white dot] (32) at (21, -8) {};
+		\node [style=none] (33) at (21, -2) {$\rho_{i,j}=1$};
+		\node [style=none] (34) at (23, 2) {$\rho_{i,j+1}=\frac{1}{2}$};
+		\node [style=none] (35) at (19, -6) {$\rho_{i,j-1}=\frac{1}{2}$};
+		\node [style=none] (36) at (15, -2) {$\rho_{i-1,j}=\frac{-1}{2}$};
+		\node [style=none] (37) at (27, -2) {$\rho_{i+1,j}=\frac{-1}{2}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gray filled] (9) to (2);
+		\draw [style=gray filled] (2) to (7);
+		\draw [style=gray filled] (7) to (8);
+		\draw [style=gray filled] (8) to (9);
+		\draw [style=gray filled] (1) to (11);
+		\draw [style=gray filled] (11) to (13);
+		\draw [style=gray filled] (13) to (3);
+		\draw [style=gray filled] (12) to (6);
+		\draw [style=gray filled] (10) to (4);
+		\draw [style=gray filled] (10) to (12);
+		\draw [style=gray filled] (28) to (21);
+		\draw [style=gray filled] (21) to (26);
+		\draw [style=gray filled] (26) to (27);
+		\draw [style=gray filled] (27) to (28);
+		\draw [style=gray filled] (20) to (30);
+		\draw [style=gray filled] (30) to (32);
+		\draw [style=gray filled] (32) to (22);
+		\draw [style=gray filled] (31) to (25);
+		\draw [style=gray filled] (29) to (23);
+		\draw [style=gray filled] (29) to (31);
+		\draw [style=gray filled] (6.center)
+			 to (0.center)
+			 to (1.center)
+			 to (5.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

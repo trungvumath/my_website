@@ -1,0 +1,401 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=white dot] (0) at (-6, 1) {};
+		\node [style=white dot] (1) at (-4, -1) {};
+		\node [style=black dot] (2) at (-4, 1) {};
+		\node [style=black dot] (3) at (-6, -1) {};
+		\node [style=none] (4) at (-5, 0) {};
+		\node [style=black dot] (5) at (-2, -1) {};
+		\node [style=black dot] (6) at (-10, -1) {};
+		\node [style=black dot] (7) at (2, -1) {};
+		\node [style=white dot] (9) at (-8, -1) {};
+		\node [style=white dot] (10) at (0, -1) {};
+		\node [style=white dot] (11) at (4, -1) {};
+		\node [style=black dot] (12) at (-8, -3) {};
+		\node [style=black dot] (13) at (-4, -3) {};
+		\node [style=white dot] (14) at (-6, -3) {};
+		\node [style=white dot] (15) at (-2, -3) {};
+		\node [style=black dot] (16) at (-8, 1) {};
+		\node [style=white dot] (17) at (-10, 1) {};
+		\node [style=black dot] (18) at (0, 1) {};
+		\node [style=white dot] (19) at (-2, 1) {};
+		\node [style=black dot] (20) at (4, 1) {};
+		\node [style=white dot] (21) at (2, 1) {};
+		\node [style=black dot] (22) at (-6, 3) {};
+		\node [style=white dot] (23) at (-8, 3) {};
+		\node [style=black dot] (24) at (2, 3) {};
+		\node [style=white dot] (25) at (0, 3) {};
+		\node [style=black dot] (26) at (-2, 3) {};
+		\node [style=white dot] (27) at (-4, 3) {};
+		\node [style=black dot] (28) at (-4, 5) {};
+		\node [style=white dot] (29) at (-6, 5) {};
+		\node [style=black dot] (30) at (0, 5) {};
+		\node [style=white dot] (31) at (-2, 5) {};
+		\node [style=black dot] (32) at (-2, 7) {};
+		\node [style=white dot] (33) at (-4, 7) {};
+		\node [style=none] (34) at (-8, 0) {$t_{-1,0}$};
+		\node [style=none] (35) at (-3, 0) {$t_{1,0}$};
+		\node [style=none] (36) at (0, 0) {$t_{2,0}$};
+		\node [style=none] (37) at (3, 0) {$t_{3,0}$};
+		\node [style=none] (39) at (-3, -2) {$t_{1,-1}$};
+		\node [style=none] (40) at (1, 2) {$t_{2,1}$};
+		\node [style=none] (41) at (-2, 2) {$t_{1,1}$};
+		\node [style=none] (42) at (-5, 2) {$t_{0,1}$};
+		\node [style=none] (43) at (-7, 2) {$t_{-1,1}$};
+		\node [style=none] (45) at (-1.25, 4) {$t_{1,2}$};
+		\node [style=white dot] (47) at (16, 1) {};
+		\node [style=white dot] (48) at (18, -1) {};
+		\node [style=black dot] (49) at (18, 1) {};
+		\node [style=black dot] (50) at (16, -1) {};
+		\node [style=none] (51) at (17, 0) {$t_{0,0}$};
+		\node [style=black dot] (52) at (20, -1) {};
+		\node [style=black dot] (53) at (12, -1) {};
+		\node [style=black dot] (54) at (24, -1) {};
+		\node [style=white dot] (55) at (14, -1) {};
+		\node [style=white dot] (56) at (22, -1) {};
+		\node [style=white dot] (57) at (26, -1) {};
+		\node [style=black dot] (58) at (14, -3) {};
+		\node [style=black dot] (59) at (18, -3) {};
+		\node [style=white dot] (60) at (16, -3) {};
+		\node [style=white dot] (61) at (20, -3) {};
+		\node [style=black dot] (62) at (14, 1) {};
+		\node [style=white dot] (63) at (12, 1) {};
+		\node [style=black dot] (64) at (22, 1) {};
+		\node [style=white dot] (65) at (20, 1) {};
+		\node [style=black dot] (66) at (26, 1) {};
+		\node [style=white dot] (67) at (24, 1) {};
+		\node [style=black dot] (68) at (16, 3) {};
+		\node [style=white dot] (69) at (14, 3) {};
+		\node [style=black dot] (70) at (24, 3) {};
+		\node [style=white dot] (71) at (22, 3) {};
+		\node [style=black dot] (72) at (20, 3) {};
+		\node [style=white dot] (73) at (18, 3) {};
+		\node [style=black dot] (74) at (18, 5) {};
+		\node [style=white dot] (75) at (16, 5) {};
+		\node [style=black dot] (76) at (22, 5) {};
+		\node [style=white dot] (77) at (20, 5) {};
+		\node [style=black dot] (78) at (20, 7) {};
+		\node [style=white dot] (79) at (18, 7) {};
+		\node [style=none] (80) at (14, 0) {$t_{-1,0}$};
+		\node [style=none] (81) at (19, 0) {$t_{1,0}$};
+		\node [style=none] (82) at (22, 0) {$t_{2,0}$};
+		\node [style=none] (83) at (25, 0) {$t_{3,0}$};
+		\node [style=none] (86) at (23, 2) {$t_{2,1}$};
+		\node [style=none] (87) at (20, 2) {$t_{1,1}$};
+		\node [style=none] (88) at (17, 2) {$t_{0,1}$};
+		\node [style=none] (89) at (15, 2) {$t_{-1,1}$};
+		\node [style=none] (91) at (20.75, 4) {$t_{1,2}$};
+		\node [style=white dot] (93) at (-6, -12) {};
+		\node [style=white dot] (94) at (-4, -14) {};
+		\node [style=black dot] (95) at (-4, -12) {};
+		\node [style=black dot] (96) at (-6, -14) {};
+		\node [style=black dot] (98) at (-2, -14) {};
+		\node [style=black dot] (99) at (-10, -14) {};
+		\node [style=black dot] (100) at (2, -14) {};
+		\node [style=white dot] (101) at (-8, -14) {};
+		\node [style=white dot] (102) at (0, -14) {};
+		\node [style=white dot] (103) at (4, -14) {};
+		\node [style=black dot] (104) at (-8, -16) {};
+		\node [style=black dot] (105) at (-4, -16) {};
+		\node [style=white dot] (106) at (-6, -16) {};
+		\node [style=white dot] (107) at (-2, -16) {};
+		\node [style=black dot] (108) at (-8, -12) {};
+		\node [style=white dot] (109) at (-10, -12) {};
+		\node [style=black dot] (110) at (0, -12) {};
+		\node [style=white dot] (111) at (-2, -12) {};
+		\node [style=black dot] (112) at (4, -12) {};
+		\node [style=white dot] (113) at (2, -12) {};
+		\node [style=black dot] (114) at (-6, -10) {};
+		\node [style=white dot] (115) at (-8, -10) {};
+		\node [style=black dot] (116) at (2, -10) {};
+		\node [style=white dot] (117) at (0, -10) {};
+		\node [style=black dot] (118) at (-2, -10) {};
+		\node [style=white dot] (119) at (-4, -10) {};
+		\node [style=black dot] (120) at (-4, -8) {};
+		\node [style=white dot] (121) at (-6, -8) {};
+		\node [style=black dot] (122) at (0, -8) {};
+		\node [style=white dot] (123) at (-2, -8) {};
+		\node [style=black dot] (124) at (-2, -6) {};
+		\node [style=white dot] (125) at (-4, -6) {};
+		\node [style=none] (126) at (-8, -13) {$t_{-1,0}$};
+		\node [style=none] (127) at (-3, -13) {$t_{1,0}$};
+		\node [style=none] (128) at (0, -13) {$t_{2,0}$};
+		\node [style=none] (129) at (3, -13) {$t_{3,0}$};
+		\node [style=none] (131) at (-3, -15) {$t_{1,-1}$};
+		\node [style=none] (132) at (1, -11) {$t_{2,1}$};
+		\node [style=none] (133) at (-2, -11) {$t_{1,1}$};
+		\node [style=none] (135) at (-7, -11) {$t_{-1,1}$};
+		\node [style=none] (138) at (-3, -7) {$t_{0,3}$};
+		\node [style=white dot] (139) at (16, -12) {};
+		\node [style=white dot] (140) at (18, -14) {};
+		\node [style=black dot] (141) at (18, -12) {};
+		\node [style=black dot] (142) at (16, -14) {};
+		\node [style=none] (143) at (17, -13) {$t_{0,0}$};
+		\node [style=black dot] (144) at (20, -14) {};
+		\node [style=black dot] (145) at (12, -14) {};
+		\node [style=black dot] (146) at (24, -14) {};
+		\node [style=white dot] (147) at (14, -14) {};
+		\node [style=white dot] (148) at (22, -14) {};
+		\node [style=white dot] (149) at (26, -14) {};
+		\node [style=black dot] (150) at (14, -16) {};
+		\node [style=black dot] (151) at (18, -16) {};
+		\node [style=white dot] (152) at (16, -16) {};
+		\node [style=white dot] (153) at (20, -16) {};
+		\node [style=black dot] (154) at (14, -12) {};
+		\node [style=white dot] (155) at (12, -12) {};
+		\node [style=black dot] (156) at (22, -12) {};
+		\node [style=white dot] (157) at (20, -12) {};
+		\node [style=black dot] (158) at (26, -12) {};
+		\node [style=white dot] (159) at (24, -12) {};
+		\node [style=black dot] (160) at (16, -10) {};
+		\node [style=white dot] (161) at (14, -10) {};
+		\node [style=black dot] (162) at (24, -10) {};
+		\node [style=white dot] (163) at (22, -10) {};
+		\node [style=black dot] (164) at (20, -10) {};
+		\node [style=white dot] (165) at (18, -10) {};
+		\node [style=black dot] (166) at (18, -8) {};
+		\node [style=white dot] (167) at (16, -8) {};
+		\node [style=black dot] (168) at (22, -8) {};
+		\node [style=white dot] (169) at (20, -8) {};
+		\node [style=black dot] (170) at (20, -6) {};
+		\node [style=white dot] (171) at (18, -6) {};
+		\node [style=none] (172) at (14, -13) {$t_{-1,0}$};
+		\node [style=none] (173) at (19, -13) {$t_{1,0}$};
+		\node [style=none] (174) at (22, -13) {$t_{2,0}$};
+		\node [style=none] (175) at (25, -13) {$t_{3,0}$};
+		\node [style=none] (178) at (23, -11) {$t_{2,1}$};
+		\node [style=none] (179) at (20, -11) {$t_{1,1}$};
+		\node [style=none] (181) at (15, -11) {$t_{-1,1}$};
+		\node [style=none] (184) at (19, -7) {$t_{0,3}$};
+		\node [style=white dot] (186) at (-3, 6) {};
+		\node [style=white dot] (187) at (-3, 6) {\huge $t_{0,3}$};
+		\node [style=white dot] (188) at (-4.25, 4) {\huge $t_{0,2}$};
+		\node [style=white dot] (189) at (-5, 0) {\huge $t_{0,0}$};
+		\node [style=white dot] (190) at (-6, -2) {\huge $t_{0,-1}$};
+		\node [style=white dot] (191) at (19, 6) {\huge $t_{0,3}$};
+		\node [style=white dot] (192) at (18, 4) {\huge $t_{0,2}$};
+		\node [style=white dot] (193) at (16, -2) {\huge $t_{0,-1}$};
+		\node [style=white dot] (194) at (19, -2) {\huge $t_{1,-1}$};
+		\node [style=white dot] (195) at (-4.25, -9) {\huge $t_{0,2}$};
+		\node [style=white dot] (196) at (-1, -9) {\huge $t_{1,2}$};
+		\node [style=white dot] (197) at (-5, -11.25) {\huge $t_{0,1}$};
+		\node [style=white dot] (198) at (-5, -13.25) {\huge $t_{0,0}$};
+		\node [style=white dot] (199) at (-6.25, -15) {\huge $t_{0,-1}$};
+		\node [style=white dot] (200) at (18, -9) {\huge $t_{0,2}$};
+		\node [style=white dot] (201) at (21, -9) {\huge $t_{1,2}$};
+		\node [style=white dot] (202) at (16.75, -11) {\huge $t_{0,1}$};
+		\node [style=white dot] (203) at (15.5, -15) {\huge $t_{0,-1}$};
+		\node [style=white dot] (204) at (18.75, -15) {\huge $t_{1,-1}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0) to (3);
+		\draw (3) to (1);
+		\draw (1) to (2);
+		\draw (2) to (0);
+		\draw (33) to (32);
+		\draw (32) to (31);
+		\draw (31) to (30);
+		\draw (33) to (28);
+		\draw (28) to (29);
+		\draw (28) to (31);
+		\draw (23) to (24);
+		\draw (29) to (22);
+		\draw (31) to (26);
+		\draw (30) to (25);
+		\draw (17) to (20);
+		\draw (23) to (16);
+		\draw (22) to (0);
+		\draw (25) to (18);
+		\draw (24) to (21);
+		\draw (12) to (15);
+		\draw (9) to (12);
+		\draw (1) to (13);
+		\draw (5) to (15);
+		\draw (17) to (6);
+		\draw (19) to (5);
+		\draw (21) to (7);
+		\draw (20) to (11);
+		\draw (6) to (11);
+		\draw (27) to (2);
+		\draw (47) to (50);
+		\draw (50) to (48);
+		\draw (48) to (49);
+		\draw (49) to (47);
+		\draw (79) to (78);
+		\draw (78) to (77);
+		\draw (77) to (76);
+		\draw (79) to (74);
+		\draw (74) to (75);
+		\draw (74) to (77);
+		\draw (69) to (70);
+		\draw (75) to (68);
+		\draw (77) to (72);
+		\draw (76) to (71);
+		\draw (63) to (66);
+		\draw (69) to (62);
+		\draw (68) to (47);
+		\draw (71) to (64);
+		\draw (70) to (67);
+		\draw (58) to (61);
+		\draw (55) to (58);
+		\draw (48) to (59);
+		\draw (52) to (61);
+		\draw (63) to (53);
+		\draw (65) to (52);
+		\draw (67) to (54);
+		\draw (66) to (57);
+		\draw (53) to (57);
+		\draw (73) to (49);
+		\draw [style=gray filled] (13.center)
+			 to (1.center)
+			 to (9.center)
+			 to (12.center)
+			 to cycle;
+		\draw [style=gray filled] (3.center)
+			 to (1.center)
+			 to (2.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=gray filled] (28.center)
+			 to (29.center)
+			 to (22.center)
+			 to (27.center)
+			 to (26.center)
+			 to (32.center)
+			 to (33.center)
+			 to cycle;
+		\draw [style=red path] (9) to (12);
+		\draw [style=red path] (14) to (13);
+		\draw [style=red path] (3) to (1);
+		\draw [style=red path] (0) to (2);
+		\draw [style=red path] (29) to (22);
+		\draw [style=red path] (28) to (31);
+		\draw [style=red path] (27) to (26);
+		\draw [style=red path] (33) to (32);
+		\draw (93) to (96);
+		\draw (96) to (94);
+		\draw (94) to (95);
+		\draw (95) to (93);
+		\draw (125) to (124);
+		\draw (124) to (123);
+		\draw [style=gray filled] (114.center)
+			 to (121.center)
+			 to (120.center)
+			 to (123.center)
+			 to (122.center)
+			 to (117.center)
+			 to cycle;
+		\draw (125) to (120);
+		\draw (115) to (116);
+		\draw (121) to (114);
+		\draw (123) to (118);
+		\draw (109) to (112);
+		\draw (115) to (108);
+		\draw (114) to (93);
+		\draw (117) to (110);
+		\draw (116) to (113);
+		\draw (104) to (107);
+		\draw (101) to (104);
+		\draw (94) to (105);
+		\draw (98) to (107);
+		\draw (109) to (99);
+		\draw (111) to (98);
+		\draw (113) to (100);
+		\draw (112) to (103);
+		\draw (99) to (103);
+		\draw (119) to (95);
+		\draw (139) to (142);
+		\draw (142) to (140);
+		\draw (140) to (141);
+		\draw (141) to (139);
+		\draw (171) to (170);
+		\draw (170) to (169);
+		\draw (169) to (168);
+		\draw (171) to (166);
+		\draw (166) to (167);
+		\draw (166) to (169);
+		\draw (161) to (162);
+		\draw (167) to (160);
+		\draw (169) to (164);
+		\draw (168) to (163);
+		\draw (155) to (158);
+		\draw (161) to (154);
+		\draw (160) to (139);
+		\draw (163) to (156);
+		\draw (162) to (159);
+		\draw (150) to (153);
+		\draw [style=gray filled] (150.center)
+			 to (153.center)
+			 to (144.center)
+			 to (147.center)
+			 to cycle;
+		\draw (140) to (151);
+		\draw (144) to (153);
+		\draw (155) to (145);
+		\draw (157) to (144);
+		\draw (159) to (146);
+		\draw (158) to (149);
+		\draw (145) to (149);
+		\draw (165) to (141);
+		\draw [style=gray filled] (58.center)
+			 to (55.center)
+			 to (52.center)
+			 to (61.center)
+			 to cycle;
+		\draw [style=gray filled] (74.center)
+			 to (75.center)
+			 to (68.center)
+			 to (72.center)
+			 to (78.center)
+			 to (79.center)
+			 to cycle;
+		\draw [style=gray filled] (96.center)
+			 to (114.center)
+			 to (119.center)
+			 to (105.center)
+			 to (104.center)
+			 to (101.center)
+			 to cycle;
+		\draw [style=gray filled] (167) to (139);
+		\draw [style=gray filled] (139.center)
+			 to (141.center)
+			 to (165.center)
+			 to (163.center)
+			 to (168.center)
+			 to (167.center)
+			 to cycle;
+		\draw [style=red path] (79) to (78);
+		\draw [style=red path] (74) to (77);
+		\draw [style=red path] (73) to (72);
+		\draw [style=red path] (75) to (68);
+		\draw [style=red path] (55) to (50);
+		\draw [style=red path] (58) to (60);
+		\draw [style=red path] (48) to (59);
+		\draw [style=red path] (52) to (61);
+		\draw [style=red path] (123) to (118);
+		\draw [style=red path] (122) to (117);
+		\draw [style=red path] (121) to (120);
+		\draw [style=red path] (114) to (119);
+		\draw [style=red path] (93) to (95);
+		\draw [style=red path] (96) to (94);
+		\draw [style=red path] (106) to (105);
+		\draw [style=red path] (101) to (104);
+		\draw [style=red path] (147) to (150);
+		\draw [style=red path] (142) to (140);
+		\draw [style=red path] (152) to (151);
+		\draw [style=red path] (144) to (153);
+		\draw [style=red path] (139) to (141);
+		\draw [style=red path] (160) to (165);
+		\draw [style=red path] (167) to (166);
+		\draw [style=red path] (169) to (164);
+		\draw [style=red path] (168) to (163);
+		\draw [style=gray filled] (17) to (0);
+		\draw [style=gray filled] (109) to (93);
+		\draw [style=gray filled] (115) to (108);
+		\draw [style=gray filled] (109) to (99);
+		\draw [style=gray filled] (155) to (139);
+		\draw [style=gray filled] (155) to (145);
+		\draw [style=gray filled] (161) to (154);
+		\draw [style=gray filled] (161) to (160);
+	\end{pgfonlayer}
+\end{tikzpicture}

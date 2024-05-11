@@ -1,0 +1,304 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=white dot] (342) at (-2, 15) {};
+		\node [style=white dot] (343) at (-3, 14) {};
+		\node [style=black dot] (344) at (-1, 15) {};
+		\node [style=black dot] (345) at (-2, 14) {};
+		\node [style=white dot] (346) at (-1, 14) {};
+		\node [style=white dot] (348) at (-2, 13) {};
+		\node [style=black dot] (350) at (0, 14) {};
+		\node [style=white dot] (352) at (0, 13) {};
+		\node [style=white dot] (353) at (-4, 13) {};
+		\node [style=black dot] (356) at (-3, 13) {};
+		\node [style=black dot] (357) at (-1, 13) {};
+		\node [style=black dot] (358) at (1, 13) {};
+		\node [style=white dot] (361) at (-3, 12) {};
+		\node [style=white dot] (362) at (-1, 12) {};
+		\node [style=white dot] (363) at (1, 12) {};
+		\node [style=black dot] (365) at (-4, 12) {};
+		\node [style=black dot] (366) at (-2, 12) {};
+		\node [style=black dot] (367) at (0, 12) {};
+		\node [style=black dot] (368) at (2, 12) {};
+		\node [style=black dot] (370) at (-5, 11) {};
+		\node [style=black dot] (371) at (-3, 11) {};
+		\node [style=black dot] (372) at (-1, 11) {};
+		\node [style=black dot] (373) at (1, 11) {};
+		\node [style=white dot] (375) at (-4, 11) {};
+		\node [style=white dot] (376) at (-2, 11) {};
+		\node [style=white dot] (377) at (0, 11) {};
+		\node [style=white dot] (378) at (2, 11) {};
+		\node [style=black dot] (380) at (-4, 10) {};
+		\node [style=black dot] (381) at (-2, 10) {};
+		\node [style=white dot] (384) at (-3, 10) {};
+		\node [style=white dot] (385) at (-1, 10) {};
+		\node [style=none] (474) at (9.05, 15) {};
+		\node [style=none] (475) at (10.05, 15) {};
+		\node [style=none] (476) at (9.05, 14) {};
+		\node [style=none] (477) at (10.05, 14) {};
+		\node [style=none] (478) at (11.05, 14) {};
+		\node [style=none] (479) at (8.05, 14) {};
+		\node [style=none] (482) at (8.05, 15) {};
+		\node [style=none] (483) at (9.05, 15) {};
+		\node [style=none] (487) at (6.05, 13) {};
+		\node [style=none] (488) at (7.05, 13) {};
+		\node [style=none] (489) at (8.05, 13) {};
+		\node [style=none] (490) at (9.05, 13) {};
+		\node [style=none] (491) at (10.05, 13) {};
+		\node [style=none] (492) at (11.05, 13) {};
+		\node [style=none] (493) at (12.05, 13) {};
+		\node [style=none] (496) at (5.05, 12) {};
+		\node [style=none] (497) at (6.05, 12) {};
+		\node [style=none] (498) at (7.05, 12) {};
+		\node [style=none] (499) at (8.05, 12) {};
+		\node [style=none] (500) at (9.05, 12) {};
+		\node [style=none] (501) at (10.05, 12) {};
+		\node [style=none] (502) at (11.05, 12) {};
+		\node [style=none] (503) at (12.05, 12) {};
+		\node [style=none] (504) at (13.05, 12) {};
+		\node [style=none] (507) at (5.05, 11) {};
+		\node [style=none] (508) at (6.05, 11) {};
+		\node [style=none] (509) at (7.05, 11) {};
+		\node [style=none] (510) at (8.05, 11) {};
+		\node [style=none] (511) at (9.05, 11) {};
+		\node [style=none] (512) at (10.05, 11) {};
+		\node [style=none] (513) at (11.05, 11) {};
+		\node [style=none] (515) at (13.05, 11) {};
+		\node [style=none] (519) at (6.05, 10) {};
+		\node [style=none] (520) at (7.05, 10) {};
+		\node [style=none] (521) at (8.05, 10) {};
+		\node [style=none] (522) at (9.05, 10) {};
+		\node [style=none] (523) at (10.05, 10) {};
+		\node [style=none] (525) at (12.05, 11) {};
+		\node [style=none, font={\tiny}] (538) at (-2.5, 11.5) {$a$};
+		\node [style=none, font={\tiny}] (539) at (-1.5, 11.5) {$c$};
+		\node [style=none, font={\tiny}] (540) at (0, 11.5) {$a$};
+		\node [style=none, font={\tiny}] (541) at (1.5, 11.5) {$c$};
+		\node [style=none, font={\tiny}] (542) at (-1, 12.5) {$d$};
+		\node [style=none, font={\tiny}] (543) at (0.5, 12.5) {$b$};
+		\node [style=none, font={\tiny}] (544) at (-2.5, 12.5) {$b$};
+		\node [style=none, font={\tiny}] (545) at (-3.5, 12.5) {$d$};
+		\node [style=none, font={\tiny}] (546) at (-4, 11.5) {$c$};
+		\node [style=none, font={\tiny}] (552) at (-3, 10.5) {$b$};
+		\node [style=none, font={\tiny}] (553) at (-1.5, 10.5) {$d$};
+		\node [style=none, font={\tiny}] (562) at (-2, 13.5) {$a$};
+		\node [style=none, font={\tiny}] (563) at (-0.5, 13.5) {$c$};
+		\node [style=none, font={\tiny}] (564) at (-1.5, 14.5) {$b$};
+		\node [style=none, font={\tiny}] (565) at (9.05, 11.5) {$c$};
+		\node [style=none, font={\tiny}] (566) at (8.05, 11.5) {$a$};
+		\node [style=none, font={\tiny}] (567) at (10.55, 11.5) {$a$};
+		\node [style=none, font={\tiny}] (570) at (8.55, 13.5) {$a$};
+		\node [style=none, font={\tiny}] (572) at (12.05, 11.5) {$c$};
+		\node [style=none, font={\tiny}] (573) at (6.55, 11.5) {$c$};
+		\node [style=none, font={\tiny}] (578) at (10.05, 13.5) {$c$};
+		\node [style=none, font={\tiny}] (581) at (8.05, 12.5) {$b$};
+		\node [style=none, font={\tiny}] (582) at (11.05, 12.5) {$b$};
+		\node [style=none, font={\tiny}] (583) at (7.55, 10.5) {$b$};
+		\node [style=none, font={\tiny}] (586) at (9.05, 14.5) {$b$};
+		\node [style=none, font={\tiny}] (588) at (9.55, 12.5) {$d$};
+		\node [style=none, font={\tiny}] (589) at (7.05, 12.5) {$d$};
+		\node [style=none, font={\tiny}] (590) at (9.05, 10.5) {$d$};
+		\node [style=none] (596) at (-12, 15) {};
+		\node [style=none] (597) at (-13, 14) {};
+		\node [style=none] (598) at (-11, 14) {};
+		\node [style=none] (599) at (-13, 13) {};
+		\node [style=none] (600) at (-12, 14) {};
+		\node [style=none] (601) at (-12, 13) {};
+		\node [style=none] (602) at (-11, 13) {};
+		\node [style=none] (603) at (-10, 13) {};
+		\node [style=none] (604) at (-14, 12) {};
+		\node [style=none] (605) at (-13, 12) {};
+		\node [style=none] (606) at (-12, 12) {};
+		\node [style=none] (607) at (-11, 12) {};
+		\node [style=none] (608) at (-10, 12) {};
+		\node [style=none] (609) at (-9, 12) {};
+		\node [style=none] (610) at (-8, 11) {};
+		\node [style=none] (611) at (-14, 11) {};
+		\node [style=none] (612) at (-13, 11) {};
+		\node [style=none] (613) at (-12, 11) {};
+		\node [style=none] (614) at (-11, 11) {};
+		\node [style=none] (615) at (-10, 11) {};
+		\node [style=none] (616) at (-9, 11) {};
+		\node [style=none] (617) at (-9, 10) {};
+		\node [style=none] (618) at (-10, 10) {};
+		\node [style=none] (619) at (-11, 10) {};
+		\node [style=none] (620) at (-12, 10) {};
+		\node [style=none] (621) at (-13, 10) {};
+		\node [style=none] (622) at (-12, 9) {};
+		\node [style=none] (623) at (-11, 9) {};
+		\node [style=white dot] (624) at (-5, 12) {};
+		\node [style=none] (625) at (7, 14) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=thick line] (342) to (344);
+		\draw [style=thick line] (342) to (345);
+		\draw [style=thick line] (345) to (343);
+		\draw [style=thick line] (344) to (346);
+		\draw [style=thick line] (345) to (346);
+		\draw [style=thick line] (346) to (350);
+		\draw [style=thick line] (353) to (356);
+		\draw [style=thick line] (356) to (348);
+		\draw [style=thick line] (348) to (357);
+		\draw [style=thick line] (357) to (352);
+		\draw [style=thick line] (352) to (358);
+		\draw [style=thick line] (350) to (352);
+		\draw [style=thick line] (346) to (357);
+		\draw [style=thick line] (343) to (356);
+		\draw [style=thick line] (365) to (361);
+		\draw [style=thick line] (361) to (366);
+		\draw [style=thick line] (366) to (362);
+		\draw [style=thick line] (362) to (367);
+		\draw [style=thick line] (367) to (363);
+		\draw [style=thick line] (363) to (368);
+		\draw [style=thick line] (353) to (365);
+		\draw [style=thick line] (356) to (361);
+		\draw [style=thick line] (348) to (366);
+		\draw [style=thick line] (352) to (367);
+		\draw [style=thick line] (358) to (363);
+		\draw [style=thick line] (370) to (375);
+		\draw [style=thick line] (375) to (371);
+		\draw [style=thick line] (371) to (376);
+		\draw [style=thick line] (376) to (372);
+		\draw [style=thick line] (372) to (377);
+		\draw [style=thick line] (377) to (373);
+		\draw [style=thick line] (373) to (378);
+		\draw [style=thick line] (368) to (378);
+		\draw [style=thick line] (361) to (371);
+		\draw [style=thick line] (366) to (376);
+		\draw [style=thick line] (362) to (372);
+		\draw [style=thick line] (363) to (373);
+		\draw [style=thick line] (380) to (384);
+		\draw [style=thick line] (384) to (381);
+		\draw [style=thick line] (381) to (385);
+		\draw [style=thick line] (375) to (380);
+		\draw [style=thick line] (376) to (381);
+		\draw [style=thick line] (372) to (385);
+		\draw [style=dashed edges] (482.center) to (483.center);
+		\draw [style=dashed edges] (476.center) to (477.center);
+		\draw [style=thick line] (483.center) to (475.center);
+		\draw [style=thick line] (477.center) to (478.center);
+		\draw [style=thick line] (483.center) to (477.center);
+		\draw [style=thick line] (483.center) to (479.center);
+		\draw [style=thick line] (479.center) to (476.center);
+		\draw [style=dashed edges] (487.center) to (488.center);
+		\draw [style=dashed edges] (489.center) to (490.center);
+		\draw [style=dashed edges] (491.center) to (492.center);
+		\draw [style=thick line] (488.center) to (489.center);
+		\draw [style=thick line] (490.center) to (491.center);
+		\draw [style=thick line] (492.center) to (493.center);
+		\draw [style=thick line] (477.center) to (492.center);
+		\draw [style=thick line] (477.center) to (490.center);
+		\draw [style=thick line] (488.center) to (479.center);
+		\draw [style=dashed edges] (496.center) to (497.center);
+		\draw [style=dashed edges] (498.center) to (499.center);
+		\draw [style=dashed edges] (500.center) to (501.center);
+		\draw [style=dashed edges] (502.center) to (503.center);
+		\draw [style=thick line] (497.center) to (498.center);
+		\draw [style=thick line] (499.center) to (500.center);
+		\draw [style=thick line] (501.center) to (502.center);
+		\draw [style=thick line] (503.center) to (504.center);
+		\draw [style=thick line] (492.center) to (503.center);
+		\draw [style=thick line] (492.center) to (501.center);
+		\draw [style=thick line] (490.center) to (499.center);
+		\draw [style=thick line] (488.center) to (499.center);
+		\draw [style=thick line] (488.center) to (497.center);
+		\draw [style=dashed edges] (508.center) to (509.center);
+		\draw [style=dashed edges] (510.center) to (511.center);
+		\draw [style=dashed edges] (512.center) to (513.center);
+		\draw [style=thick line] (507.center) to (497.center);
+		\draw [style=thick line] (507.center) to (508.center);
+		\draw [style=thick line] (509.center) to (510.center);
+		\draw [style=thick line] (511.center) to (512.center);
+		\draw [style=thick line] (503.center) to (515.center);
+		\draw [style=thick line] (513.center) to (503.center);
+		\draw [style=thick line] (511.center) to (501.center);
+		\draw [style=thick line] (499.center) to (511.center);
+		\draw [style=thick line] (499.center) to (509.center);
+		\draw [style=thick line] (513.center) to (525.center);
+		\draw [style=dashed edges] (525.center) to (515.center);
+		\draw [style=thick line] (519.center) to (520.center);
+		\draw [style=thick line] (521.center) to (522.center);
+		\draw [style=dashed edges] (520.center) to (521.center);
+		\draw [style=dashed edges] (522.center) to (523.center);
+		\draw [style=thick line] (519.center) to (509.center);
+		\draw [style=thick line] (521.center) to (511.center);
+		\draw [style=thick line] (511.center) to (523.center);
+		\draw [style=gray filled] (596.center) to (597.center);
+		\draw [style=gray filled] (601.center)
+			 to (597.center)
+			 to (600.center)
+			 to cycle;
+		\draw [style=gray filled] (598.center)
+			 to (600.center)
+			 to (596.center)
+			 to cycle;
+		\draw [style=gray filled] (597.center) to (599.center);
+		\draw [style=gray filled] (605.center)
+			 to (606.center)
+			 to (601.center)
+			 to (599.center)
+			 to cycle;
+		\draw [style=gray filled] (602.center)
+			 to (607.center)
+			 to (601.center)
+			 to cycle;
+		\draw [style=gray filled] (603.center)
+			 to (602.center)
+			 to (598.center)
+			 to cycle;
+		\draw [style=gray filled] (599.center) to (604.center);
+		\draw [style=gray filled] (604.center)
+			 to (612.center)
+			 to (605.center)
+			 to cycle;
+		\draw [style=gray filled] (607.center)
+			 to (614.center)
+			 to (613.center)
+			 to (606.center)
+			 to cycle;
+		\draw [style=gray filled] (608.center)
+			 to (615.center)
+			 to (607.center)
+			 to cycle;
+		\draw [style=gray filled] (609.center)
+			 to (608.center)
+			 to (603.center)
+			 to cycle;
+		\draw [style=gray filled] (604.center) to (611.center);
+		\draw [style=gray filled] (612.center)
+			 to (611.center)
+			 to (621.center)
+			 to cycle;
+		\draw [style=gray filled] (613.center)
+			 to (620.center)
+			 to (612.center)
+			 to cycle;
+		\draw [style=gray filled] (618.center)
+			 to (615.center)
+			 to (614.center)
+			 to (619.center)
+			 to cycle;
+		\draw [style=gray filled] (616.center)
+			 to (617.center)
+			 to (615.center)
+			 to cycle;
+		\draw [style=gray filled] (616.center)
+			 to (609.center)
+			 to (610.center)
+			 to cycle;
+		\draw [style=gray filled] (621.center)
+			 to (622.center)
+			 to (620.center)
+			 to cycle;
+		\draw [style=gray filled] (619.center)
+			 to (623.center)
+			 to (620.center)
+			 to cycle;
+		\draw [style=gray filled] (618.center) to (617.center);
+		\draw [style=gray filled] (622.center) to (623.center);
+		\draw [style=gray filled] (623.center) to (618.center);
+		\draw [style=gray filled] (624) to (365);
+		\draw [style=gray filled] (624) to (370);
+		\draw [style=gray filled] (617.center) to (610.center);
+		\draw [style=dashed edges] (625.center) to (479.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
