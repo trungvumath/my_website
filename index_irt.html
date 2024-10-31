@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <h1>University of Illinois Urbana-Champaign Integrability and Representation Theory Seminar 2024</h1>
+    <title>Seminar Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: url('background.webp') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            filter: blur(8px);
+            z-index: -1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color:  rgba(255, 255, 255, 0.9); /* Slightly opaque background for the table */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .abstract {
+            display: none;
+        }
+        .more {
+            color: blue;
+            cursor: pointer;
+        }
+        p {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background for paragraphs */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.more').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var abstract = document.getElementById(this.dataset.target);
+                    abstract.style.display = abstract.style.display === "none" ? "table-row" : "none";
+                });
+            });
+        });
+    </script>
+   
+    <script>
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            if (abstract.style.display === "none") {
+                abstract.style.display = "table-row";
+            } else {
+                abstract.style.display = "none";
+            }
+        }
+    </script>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1>Seminar Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Date</th>
+                <th>Speaker</th>
+                <th>Institution</th>
+                <th>Location</th>
+                <th>Title</th>
+                <th>Abstract</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12:00pm - 1:00pm</td>
+                <td>October 17th, 2024</td>
+                <td>David Keating</td>
+                <td>UIUC</td>
+                <td>Online. Email Trung Vu (hvu at illinois dot edu) for Zoom information</td>
+                <td>A Vertex Model for LLT polynomials</td>
+                <td><span class="more" onclick="toggleAbstract('abstract1')">Click for abstract</span></td>
+            </tr>
+            <tr id="abstract1" class="abstract">
+                <td colspan="6">The LLT polynomials introduced by Lascoux, Leclerc, and Thibon are a family of symmetric polynomials indexed by tuples of partitions that generalize the more well-known Schur polynomials. In this talk will show
+                how to construct a version of theses LLT polynomials as the partition function of a Yang-Baxter integrable vertex model. As a consequence, we will be able to prove that the polynomials are in fact symmetric and that they satisfy a certain Cauchy identity. Building on this we will
+                    define coupled domino tilings of the Aztec diamond and use our vertex
+                    model to enumerate them. Finally, if time permits, we will present an
+                    algorithm for determining when the LLT polynomial indexed by the pair of
+                    partitions <span class="math inline">\((\lambda^{(1)},
+                    \lambda^{(2)})\)</span> is equal to the LLT polynomial indexed by <span
+                    class="math inline">\((\lambda^{(2)}, \lambda^{(1)})\)</span>. The key
+                ingredient will be the vertex model construction of the polynomials.</td>
+            </tr>
+            <tr>
+                <td>12:00pm - 1:00pm</td>
+                <td>November 7th, 2024</td>
+                <td>Trung Vu</td>
+                <td>UIUC</td>
+                <td>Online. Email Trung Vu (hvu at illinois dot edu) for Zoom information</td>
+                <td>Part 1: Introduction dimer model on inifinite <span class="math inline">ℤ<sup>2</sup></span> periodic graph, Kasteleyn matrix and height functions</td>
+                <td><span class="more" onclick="toggleAbstract('abstract2')">Click for abstract</span></td>
+            </tr>
+            <tr id="abstract2" class="abstract">
+                <td colspan="6">The <em>partition function</em> is one of the key objects in statistical mechanics encoding the macroscopic behavior of the underlying models. In 1967, Kasteleyn, and independently by Fisher and Temperley, gave an explicit computation of the partition function for the <em>dimer models</em> on the square lattice as the determinant of the signed adjacency matrix. In this talk, I will introduce the notion of <em>Kasteleyn matrix</em> for the infinite, bipartite planar graphs with <span class="math inline">ℤ<sup>2</sup></span>-periodic property, the <em>height function</em> of dimer covers and how the two objects related. Understanding these objects will be crucial for constructing <em>invariant Gibbs measure</em> and the phase diagram of the Gibbs measures for dimers on a particular graph, represented by the <em>amoeba</em>. This is the first talk in a series of 3 talks on the paper "Dimer and Amoeba" by Kenyon-Okounkov-Sheffield and (if time allowed) the correspondence between amoeba and the arctic curves from the T-system dimer model.</td>
+            </tr>
+
+            <tr>
+                <td>12:00pm - 1:00pm</td>
+                <td></td>
+                <td>Trung Vu</td>
+                <td>UIUC</td>
+                <td>Online. Email Trung Vu (hvu at illinois dot edu) for Zoom information</td>
+                <td>Part 2: Characteristic polynomials and spectral curves of  inifinite <span class="math inline">ℤ<sup>2</sup></span> periodic dimer models</td>
+                <td><span class="more" onclick="toggleAbstract('abstract3')">Click for abstract</span></td>
+            </tr>
+            <tr id="abstract3" class="abstract">
+                <td colspan="6"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <p>Organizer of the IRT seminar are <a href="https://math.illinois.edu/directory/profile/philippe">Philippe Di Francesco</a>, <a href="https://math.illinois.edu/directory/profile/rinat">Rinat Kedem</a>, <a href="https://davidalipio.github.io/">David Keating</a>, <a href="https://sites.google.com/illinois.edu/wonwoo-kang/home">Wonwoo Kang</a> and <a href="https://htrungvu.com">Trung Vu</a></p>
+</body>
+</html>
