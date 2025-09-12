@@ -8,7 +8,7 @@
 }
 .pub-title {
     font-weight: 600;
-    color: #7fdfff;
+    color: #fefefe;
     font-size: 1.15rem;
 }
 .pub-authors, .pub-journal, .pub-citation {
@@ -17,7 +17,7 @@
 }
 .pub-citation {
     font-style: italic;
-    color: #b2f7ef;
+    color: #fefefe;
     font-size: 0.98rem;
 }
 body {
@@ -51,7 +51,7 @@ body {
 .nav-title {
     font-size: 1.7rem;
     font-weight: 600;
-    color: #7fdfff;
+    color: #fcfcfc;
     letter-spacing: 1px;
 }
 .nav-links {
