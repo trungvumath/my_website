@@ -8,37 +8,89 @@
 }
 .pub-title {
     font-weight: 600;
-    color: #fefefe;
+    color: #ffffff;
     font-size: 1.15rem;
 }
 .pub-authors, .pub-journal, .pub-citation {
-    color: #e0e0e0;
+    color: #e8e8e8;
     font-size: 1rem;
 }
 .pub-citation {
     font-style: italic;
-    color: #fefefe;
+    color: #ffffff;
     font-size: 0.98rem;
 }
+
+/* Blackboard background with math formulas */
 body {
-    background: #181818;
+    background: url('blackboard.jpg') center center / cover no-repeat fixed;
     color: #f5f5f5;
-    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-family: 'Kalam', 'Caveat', cursive, sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     width: 100vw;
     box-sizing: border-box;
     overflow-x: hidden;
+    position: relative;
+}
+
+/* Blackboard texture overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(255, 255, 255, 0.03) 2px,
+            rgba(255, 255, 255, 0.03) 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(255, 255, 255, 0.03) 2px,
+            rgba(255, 255, 255, 0.03) 4px
+        );
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+/* Mathematical formulas background */
+body::after {
+    content: "O(n) model    SLE_κ    percolation    Ising model    dimer model    Z = ∑_σ e^{-βH(σ)}    partition function    critical point    universality    random cluster    FK representation    loop model    vertex model    transfer matrix    Gibbs measure    correlation length    scaling limit    conformal invariance    cluster expansion    phase transition    self-avoiding walk    spanning tree    Potts model    random walk    Markov chain    stochastic Loewner evolution    crossing probability    fractal dimension    Schramm-Loewner evolution    Z = Tr[e^{-βH}]    Pfaffian    Kasteleyn matrix    domino tiling    height function    arctic curve    limit shape    boundary conditions    local statistics    ergodicity    entropy    free energy    critical exponents    universality class    scaling law    percolation threshold    SLE_κ    O(n) model    dimer model    partition function    Ising model    percolation    transfer matrix    Gibbs measure    correlation length    scaling limit    conformal invariance    cluster expansion    phase transition    self-avoiding walk    spanning tree    Potts model    random walk    Markov chain    stochastic Loewner evolution    crossing probability    fractal dimension    Schramm-Loewner evolution    Z = Tr[e^{-βH}]    Pfaffian    Kasteleyn matrix    domino tiling    height function    arctic curve    limit shape    boundary conditions    local statistics    ergodicity    entropy    free energy    critical exponents    universality class    scaling law    percolation threshold";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.10);
+    font-family: 'Gochi Hand', cursive;
+    line-height: 3;
+    word-spacing: 2rem;
+    white-space: pre-wrap;
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(-5deg);
+    overflow: hidden;
 }
 
 .navbar {
-    background: #222;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    background: rgba(34, 50, 40, 0.95);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    backdrop-filter: blur(10px);
 }
 .nav-container {
     display: flex;
@@ -47,12 +99,15 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 2rem;
+    position: relative;
+    z-index: 2;
 }
 .nav-title {
     font-size: 1.7rem;
-    font-weight: 600;
-    color: #fcfcfc;
+    font-weight: 700;
+    color: #ffffff;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 .nav-links {
     list-style: none;
@@ -65,13 +120,13 @@ body {
     color: #f5f5f5;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.2s;
+    transition: color 0.2s, background 0.2s;
     padding: 0.3rem 0.7rem;
     border-radius: 6px;
 }
 .nav-links li a:hover {
-    background: #333;
-    color: #7fdfff;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffcc;
 }
 
 main {
@@ -80,13 +135,26 @@ main {
     margin: 2rem auto;
     padding: 0 1vw;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: none;
 }
 .section {
     padding: 2rem 0;
 }
+.section-title {
+    color: #ffffcc;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+}
 .navbar {
-    background: #222;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    background: rgba(34, 50, 40, 0.95);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
@@ -94,40 +162,73 @@ main {
     width: 100vw;
 }
 a {
-    color: #7fdfff;
+    color: #ffee99;
     text-decoration: none;
     transition: color 0.2s;
+    font-weight: 500;
 }
 a:hover {
-    color: #b2f7ef;
+    color: #ffffcc;
+    text-shadow: 0 0 8px rgba(255, 238, 153, 0.5);
+}
+.button {
+    display: inline-block;
+    background: rgba(255, 238, 153, 0.2);
+    color: #ffffcc;
+    border: 2px solid #ffee99;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+.button:hover {
+    background: rgba(255, 238, 153, 0.3);
+    box-shadow: 0 0 15px rgba(255, 238, 153, 0.4);
+}
+.divider {
+    border: none;
+    height: 2px;
+    background: rgba(255, 238, 153, 0.3);
+    margin: 2rem 0;
+}
+p, li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 input, textarea, button {
-    background: #181818;
+    background: rgba(26, 58, 46, 0.5);
     color: #f5f5f5;
-    border: 1px solid #444;
+    border: 1px solid rgba(255, 238, 153, 0.4);
     border-radius: 6px;
     padding: 0.7rem;
     margin-bottom: 1rem;
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
+    font-family: 'Kalam', cursive;
 }
 button {
-    background: #7fdfff;
-    color: #181818;
+    background: rgba(255, 238, 153, 0.2);
+    color: #ffffcc;
     font-weight: 600;
     cursor: pointer;
-    border: none;
-    transition: background 0.2s;
+    border: 2px solid #ffee99;
+    transition: all 0.3s;
 }
 button:hover {
-    background: #b2f7ef;
+    background: rgba(255, 238, 153, 0.3);
+    box-shadow: 0 0 15px rgba(255, 238, 153, 0.4);
 }
 footer {
     text-align: center;
     padding: 2rem 0 1rem 0;
-    color: #888;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 1rem;
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 900px) {
@@ -158,15 +259,21 @@ footer {
     }
     main {
         max-width: 100vw;
-        padding: 0 2vw;
+        padding: 1.5rem;
+        margin: 1rem auto;
     }
     .section {
         padding: 1.2rem 0;
     }
     .section-title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     p, li {
         font-size: 1rem;
     }
+    body::after {
+        font-size: 1rem;
+        line-height: 2.5;
+    }
 }
+
