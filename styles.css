@@ -23,7 +23,15 @@
 
 /* Blackboard background with math formulas */
 body {
-    background: url('blackboard.jpg') center center / cover no-repeat fixed;
+    background-image:
+        radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 28%),
+        radial-gradient(circle at 82% 74%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 24%),
+        linear-gradient(160deg, rgba(7, 23, 18, 0.58) 0%, rgba(6, 18, 14, 0.72) 100%),
+        url('blackboard.jpg');
+    background-position: center center, center center, center center, center center;
+    background-size: cover, cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed, fixed;
     color: #f5f5f5;
     font-family: 'Kalam', 'Caveat', cursive, sans-serif;
     margin: 0;
@@ -43,28 +51,19 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 2px,
-            rgba(255, 255, 255, 0.03) 2px,
-            rgba(255, 255, 255, 0.03) 4px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 2px,
-            rgba(255, 255, 255, 0.03) 2px,
-            rgba(255, 255, 255, 0.03) 4px
-        );
+    background-image:
+        radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 18%),
+        radial-gradient(circle at 76% 12%, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 22%),
+        radial-gradient(circle at 86% 82%, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 20%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 65%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, 0.20) 100%);
     pointer-events: none;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.42;
 }
 
 /* Mathematical formulas background */
-body::after {
+/* body::after {
     content: "O(n) model    SLE_κ    percolation    Ising model    dimer model    Z = ∑_σ e^{-βH(σ)}    partition function    critical point    universality    random cluster    FK representation    loop model    vertex model    transfer matrix    Gibbs measure    correlation length    scaling limit    conformal invariance    cluster expansion    phase transition    self-avoiding walk    spanning tree    Potts model    random walk    Markov chain    stochastic Loewner evolution    crossing probability    fractal dimension    Schramm-Loewner evolution    Z = Tr[e^{-βH}]    Pfaffian    Kasteleyn matrix    domino tiling    height function    arctic curve    limit shape    boundary conditions    local statistics    ergodicity    entropy    free energy    critical exponents    universality class    scaling law    percolation threshold    SLE_κ    O(n) model    dimer model    partition function    Ising model    percolation    transfer matrix    Gibbs measure    correlation length    scaling limit    conformal invariance    cluster expansion    phase transition    self-avoiding walk    spanning tree    Potts model    random walk    Markov chain    stochastic Loewner evolution    crossing probability    fractal dimension    Schramm-Loewner evolution    Z = Tr[e^{-βH}]    Pfaffian    Kasteleyn matrix    domino tiling    height function    arctic curve    limit shape    boundary conditions    local statistics    ergodicity    entropy    free energy    critical exponents    universality class    scaling law    percolation threshold";
     position: fixed;
     top: 0;
@@ -81,7 +80,7 @@ body::after {
     z-index: 0;
     transform: rotate(-5deg);
     overflow: hidden;
-}
+} */
 
 .navbar {
     background: rgba(34, 50, 40, 0.95);
@@ -243,6 +242,10 @@ footer {
 }
 
 @media (max-width: 700px) {
+    body {
+        background-attachment: scroll, scroll, scroll, scroll;
+    }
+
     .nav-container {
         flex-direction: column;
         align-items: flex-start;
